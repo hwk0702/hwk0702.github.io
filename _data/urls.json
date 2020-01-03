@@ -2,53 +2,53 @@
   {
     "text": "Home",
     "url": "/",
-    "icon": "fas fa-home",
+    "icon": "fa fa-home",
     "layout": "post"
   },
   {
     "text": "About",
     "url": "/about/",
-    "icon": "fas fa-comments"
+    "icon": "fa fa-comments"
   },
   {
     "text": "Data Science",
     "url": "/Data Science/",
-    "icon": "fas fa-book"
+    "icon": "fa fa-book"
   },
   {
     "text": "Data Engineering",
     "url": "/Data Engineering/",
-    "icon": "fas fa-data"
+    "icon": "fa fa-data"
   },
   {
     "text": "Machine learnong",
     "url": "/Machine learnong/",
-    "icon": "fas fa-whmcs"
+    "icon": "fa fa-whmcs"
   },
   {
     "text": "Deep learnong",
     "url": "/Deep learnong/",
-    "icon": "fas fa-brain"
+    "icon": "fa fa-brain"
   },
   {
     "text": "Programming",
     "url": "/Programming/",
-    "icon": "fas fa-laptop-code"
+    "icon": "fa fa-laptop-code"
   },
   {
     "text": "Projects",
     "url": "/projects",
-    "icon": "fas fa-desktop"
+    "icon": "fa fa-desktop"
   },
   {
     "text": "Thesis review",
     "url": "/Thesis review/",
-    "icon": "fas fa-file"
+    "icon": "fa fa-file"
   },
   {
     "text": "Resume",
     "url": "/#",
-    "icon": "fas fa-graduation-cap",
+    "icon": "fa fa-graduation-cap",
   },
   {
     "text": "Github",
