@@ -11,22 +11,22 @@
     "icon": "fas fa-comments"
   },
   {
-    "text": "Data Science",
+    "text": "DS",
     "url": "/Data Science/",
     "icon": "fas fa-book"
   },
   {
-    "text": "Data Engineering",
+    "text": "DE",
     "url": "/Data Engineering/",
     "icon": "fas fa-database"
   },
   {
-    "text": "Machine learning",
+    "text": "ML",
     "url": "/Machine learning/",
     "icon": "fab fa-whmcs"
   },
   {
-    "text": "Deep learning",
+    "text": "DL",
     "url": "/Deep learning/",
     "icon": "fas fa-brain"
   },
