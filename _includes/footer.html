@@ -1,12 +1,13 @@
-<footer>
-  © 2016 Your Name <a href="#">Privacy link</a> - Powered by Jekyll.
-</footer>
-<div align="center">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-0000000000000000"
-    data-ad-slot="0000000000"
-    data-ad-format="auto"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<!-- Footer -->
+<div id="footer">
+  
+  <!-- Copyright -->
+  <ul class="copyright">
+    {% if site.title or site.author %}
+      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
+    {% endif %}
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  
 </div>

@@ -1,16 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
 <html>
-  <head>
-    {% include meta.html %}
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-      <script type="text/javascript">window.baseurl = '{{ site.url }}';</script>
-      {% include css.html %}
-  </head>
-
-  <body class="home overflow-hidden">
-    {% include header.html %}
-    {% include main.html %}
-    {% include js.html %}
-    {% include analytics.html %}
-  </body>
+	{%- include head.html -%}
+	<body>
+		{{- content -}}
+		{%- include footer.html -%}
+	</body>
 </html>
