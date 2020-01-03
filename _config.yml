@@ -1,12 +1,12 @@
-title: John Smith
+title: Won Kang
 description: My Personal Blog
-author: John Smith
-logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+author: Won Kang
+logo: /static/img/statistics.png
+github: https://github.com/hwk0702
+about: Data Scientist
 
-baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
-url: "https://codeasashu.github.io/hcz-jekyll-blog"
+baseurl: "https://hwk0702.github.io"
+url: "https://hwk0702.github.io"
 
 allowsearch: true
 
