@@ -2,58 +2,58 @@
   {
     "text": "Home",
     "url": "/",
-    "icon": "fa fa-home",
+    "icon": "fas fa-home",
     "layout": "post"
   },
   {
     "text": "About",
     "url": "/about/",
-    "icon": "fa fa-comments"
+    "icon": "fas fa-comments"
   },
   {
     "text": "Data Science",
     "url": "/Data Science/",
-    "icon": "fa fa-book"
+    "icon": "fas fa-book"
   },
   {
     "text": "Data Engineering",
     "url": "/Data Engineering/",
-    "icon": "fa fa-data"
+    "icon": "fas fa-data"
   },
   {
     "text": "Machine learnong",
     "url": "/Machine learnong/",
-    "icon": "fa fa-whmcs"
+    "icon": "fas fa-whmcs"
   },
   {
     "text": "Deep learnong",
     "url": "/Deep learnong/",
-    "icon": "fa fa-brain"
+    "icon": "fas fa-brain"
   },
   {
     "text": "Programming",
     "url": "/Programming/",
-    "icon": "fa fa-laptop-code"
+    "icon": "fas fa-laptop-code"
   },
   {
     "text": "Projects",
     "url": "/projects",
-    "icon": "fa fa-desktop"
+    "icon": "fas fa-desktop"
   },
   {
     "text": "Thesis review",
     "url": "/Thesis review/",
-    "icon": "fa fa-file"
+    "icon": "fas fa-file"
   },
   {
     "text": "Resume",
     "url": "/#",
-    "icon": "fa fa-graduation-cap",
+    "icon": "fas fa-graduation-cap",
   },
   {
     "text": "Github",
     "url": "/#",
-    "icon": "fa fa-github"
+    "icon": "fab fa-github"
   },
   {
     "text": "XML Feed",
