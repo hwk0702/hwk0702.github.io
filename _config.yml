@@ -1,12 +1,12 @@
-title: John Smith
+title: 최고의 데이터사이언티스트가 될 남자의 블로그
 description: My Personal Blog
-author: John Smith
+author: Won Kang
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+github: https://github.com/hwk0702
+about: Data scientist
 
-baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
-url: "https://codeasashu.github.io/hcz-jekyll-blog"
+baseurl: "https://hwk0702.github.io/"
+url: "https://hwk0702.github.io/"
 
 allowsearch: true
 
