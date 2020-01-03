@@ -18,12 +18,12 @@
   {
     "text": "Data Engineering",
     "url": "/Data Engineering/",
-    "icon": "fas fa-data"
+    "icon": "fas fa-database"
   },
   {
     "text": "Machine learnong",
     "url": "/Machine learnong/",
-    "icon": "fas fa-whmcs"
+    "icon": "fab fa-whmcs"
   },
   {
     "text": "Deep learnong",
@@ -58,7 +58,7 @@
   {
     "text": "XML Feed",
     "url": "/feed.xml",
-    "icon": "fas fa-feed",
+    "icon": "fas fa-rss-square",
     "target": _blank
   }
 ]

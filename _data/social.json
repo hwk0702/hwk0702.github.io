@@ -1,18 +1,18 @@
 [
   {
-    "icon": "fa-facebook",
+    "icon": "fab fa-facebook",
     "link": ""
   },
   {
-    "icon": "fa-twitter",
+    "icon": "fab fa-twitter",
     "link": ""
   },
   {
-    "icon": "fa-linkedin",
+    "icon": "fab fa-linkedin",
     "link": ""
   },
   {
-    "icon": "fa-stack-exchange",
+    "icon": "fab fa-stack-exchange",
     "link": ""
   }
 ]
