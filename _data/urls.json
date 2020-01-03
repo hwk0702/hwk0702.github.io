@@ -11,6 +11,11 @@
     "icon": "fa-comments"
   },
   {
+    "text": "Data Science",
+    "url": "/Data Science/",
+    "icon": "fa-book"
+  },
+  {
     "text": "Projects",
     "url": "/projects",
     "icon": "fa-desktop"
