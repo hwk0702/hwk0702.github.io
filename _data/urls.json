@@ -21,13 +21,13 @@
     "icon": "fas fa-database"
   },
   {
-    "text": "Machine learnong",
-    "url": "/Machine learnong/",
+    "text": "Machine learning",
+    "url": "/Machine learning/",
     "icon": "fab fa-whmcs"
   },
   {
-    "text": "Deep learnong",
-    "url": "/Deep learnong/",
+    "text": "Deep learning",
+    "url": "/Deep learning/",
     "icon": "fas fa-brain"
   },
   {
