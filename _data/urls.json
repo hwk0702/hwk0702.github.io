@@ -16,9 +16,34 @@
     "icon": "fa-book"
   },
   {
+    "text": "Data Engineering",
+    "url": "/Data Engineering/",
+    "icon": "fa-data"
+  },
+  {
+    "text": "Machine learnong",
+    "url": "/Machine learnong/",
+    "icon": "fa-whmcs"
+  },
+  {
+    "text": "Deep learnong",
+    "url": "/Deep learnong/",
+    "icon": "fa-brain"
+  },
+  {
+    "text": "Programming",
+    "url": "/Programming/",
+    "icon": "fa-laptop-code"
+  }
+  {
     "text": "Projects",
     "url": "/projects",
     "icon": "fa-desktop"
+  },
+  {
+    "text": "Thesis review",
+    "url": "/Thesis review/",
+    "icon": "fa-file"
   },
   {
     "text": "Resume",
