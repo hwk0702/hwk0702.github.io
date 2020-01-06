@@ -23,6 +23,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
   - jekyll-polyglot
+  - jekyll-seo-tag
 
 languages: ['ja', 'ko', 'en']
 default_lang: 'ko'
