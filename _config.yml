@@ -4,8 +4,8 @@ tagline: Bulma Clean Theme
 email: your-email@domain.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: "/bulma-clean-theme"
-url: "https://www.csrhymes.com"
+baseurl: "/hwk0702.github.io"
+url: "https://hwk0702.github.io/"
 permalink: pretty
 #favicon: /path/to/favicon.png
 
@@ -28,7 +28,7 @@ plugins:
   - kramdown
   - rouge
 
-exclude: 
+exclude:
   - Gemfile
   - clean-theme.gemspec
   - Gemfile.lock
@@ -69,7 +69,7 @@ highlighter: rouge
 footer_menu: example_footer_menu
 
 collections:
-  products: 
+  products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600
