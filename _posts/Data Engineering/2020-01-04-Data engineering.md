@@ -1,0 +1,55 @@
+---
+
+layout: post
+
+title: "데이터 엔지니어링"
+
+date: 2020-01-05 10:50:07
+
+categories: [Data Engineering/Data Engineering]
+
+description:
+
+image:
+
+published: true
+
+canonical_url:
+
+---
+
+﻿데이터 엔지니어링
+=================
+
+데이터 분석과 데이터 엔지니어링의 차이
+--------------------------------------
+
+### 데이터 분석
+
+갖춰진 데이터 시스템과 데이터를 통해서 다양한 분석 비즈니스 최전방에서 다양한 전략 분석
+
+### 데이터 엔지니어링
+
+비즈니스에 어떤 데이터가 필요하고 그 데이터를 이용해서 데이터 분석가가 어떤 분석을 만들어 할 수 있는지 환경을 만들어 내는 것
+
+예) 데이터 전처리, 데이터 추출, 데이터 정제 등
+
+데이터 엔지니어링의 중요성
+--------------------------
+
+-	데이터가 없으면 데이터 분석을 할 수 가 없다.
+-	비즈니스에서 필요한 어떤 데이터를 가져와서 어떤 환경을 갖출 것인지 고민이 필요하다.
+-	매우 다양한 곳에 데이터 존재하기 때문에 데이터 통합이 필요하다.
+
+데이터 기반 가설 검증 단계
+--------------------------
+
+```mermaid
+graph LR
+A(문제) --> B(데이터분석)
+B --> C(가설수립)
+C --> D(실험 및 테스팅)
+D --> E(최적화)
+```
+
+|<h4>구축 되어야<br>하는 시스템| <h5>-분석할 데이터 <br> -데이터 분석 조직<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<h5> -통계적 실험 설계 <br> -클린한 테스팅 환경<br>&nbsp;&nbsp;&nbsp;&nbsp;|<h5>-데이터 기반 <br> 자동화 시스템 |--------------------|-----------|------|--|-|
