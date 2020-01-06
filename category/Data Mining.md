@@ -1,6 +1,8 @@
 ---
 
-layout: category title: Data Science/Data Mining
+layout: category
+
+title: Data Science/Data Mining
 
 permalink: '/DS/DM'
 
