@@ -1,28 +1,76 @@
+# Site Settings
 title: Won Kang
-description: My Personal Blog
-author: Won Kang
-logo: /static/img/statistics.png
-github: https://github.com/hwk0702
-about: Data Scientist
-
+tagline: Won Kang
+email: hwk0702@gmail.com
+description: >
+  The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
 baseurl: "https://hwk0702.github.io"
 url: "https://hwk0702.github.io"
+permalink: pretty
+#favicon: /path/to/favicon.png
 
-allowsearch: true
+paginate: 5
+paginate_path: "/blog/page:num"
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+# Disqus Comments
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  # shortname: my_disqus_shortname
+  shortname: hwk0702
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown
+  - rouge
 
-enableTags: true
-tagarray: []
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-paginate: 20
-per_page: 20
-paginate_path: "/page:num/"
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+#google_analytics: UA-code-here
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "C.S. Rhymes"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: true
+
 markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]
+highlighter: rouge
+
+footer_menu: example_footer_menu
+
+collections:
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false

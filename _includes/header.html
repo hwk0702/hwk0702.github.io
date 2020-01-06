@@ -1,47 +1,36 @@
-<div class="header-panel shadow-z-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="row-picture">
-              <img id="about" class="logo-img" src="{{ site.logo }}" height="75px" width="75px">
-            </div>
-            <div class="row-details">
-              <h4 class="list-group-item-heading">{{ site.author }}</h4>
-              <p class="list-group-item-text">{{ site.about }}</p>
-              {% include social_links.html %}
-            </div>
-            <div class="navbar-header pull-right">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-2x fa-bars"></i>
-              </button>
-            </div>
-          </div>
-          <div class="col-md-9 col-sm-8 col-xs-12">
-          <div class="row">
-            <h2 class="blog-title-pro {% if site.allowsearch ==  true %}col-md-6 col-sm-12 col-xs-12 {% endif %}">{{ page.title }}</h2>
-            {% if site.allowsearch ==  true %}
-            <div class="col-md-6 col-sm-12 col-xs-12 searchcontrol" id="js-search">
-              <input class="form-control" type="text" id="js-search__input" placeholder="Search">
-              <ul class="search__results" id="js-search__results"></ul>
-            </div>
-            {% endif %}
-            </div>
-            <p class="info">
-              {% if page.date %}
-                <span class="time">{{ page.date | date_to_string }}</span>
-              {% endif %}
-              {% if page.categories.size > 0 %}
-                <span class="categories">
-                  &raquo; 
-                  {% for category in page.categories %}
-                    <a href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>
-                    {% if forloop.last == false %}, {% endif %}
-                  {% endfor %}
-                </span>
-              {% endif %}
-            </p>
-          </div>
+
+<nav class="navbar is-primary" >
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="{{ site.baseurl }}/" class="navbar-item">
+                {{ site.title }}
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-      </div>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
+                {% if site.data.navigation %}
+                {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="{{ item.link | prepend: site.baseurl }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        <div class="navbar-dropdown">
+                            {% for subitem in item.dropdown %}
+                            <a href="{{ subitem.link | prepend: site.baseurl }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <a href="{{ item.link | prepend: site.baseurl }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% endif %}
+            </div>
+        </div>
     </div>
+</nav>

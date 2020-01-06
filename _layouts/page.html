@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="well">
-    {% if page.subtitle %}
-    <h4 class="home-subtitle">{{ page.subtitle }}</h4>
-    {% endif %}
-    <div>
-    	{{ content }}
-    </div>
+
+{% if page.toc %}
+    {% assign contentsTitle = page.toc_title | default: 'Contents' %}
+    {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
+{% endif %}
+<div class="content">
+    {{ content }}
 </div>

@@ -1,12 +1,20 @@
-<footer>
-  © 2016 Your Name <a href="#">Privacy link</a> - Powered by Jekyll.
+<footer class="footer">
+    <div class="container">
+        
+        {% if site.footer_menu %}
+        <div class="columns is-multiline">
+            {% for item in site.data[site.footer_menu] %}
+            <div class="column has-text-centered">
+                <div>
+                    <a href="{{ item.link | prepend: site.baseurl }}" class="link">{{ item.name }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="content is-small has-text-centered">
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
 </footer>
-<div align="center">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-0000000000000000"
-    data-ad-slot="0000000000"
-    data-ad-format="auto"></ins>
-  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
