@@ -2,7 +2,7 @@ title:              won의 데이터 사이언스 세계
 email:              hwk0702@gmail.com
 description:        데이터 사이언스
 author:             Hyeongwon Kang
-baseurl:            "https://hwk0702.github.io"
+baseurl:            "/hwk0702.github.io"
 url:                "https://hwk0702.github.io"
 
 # Social Profiles
