@@ -2,41 +2,41 @@
   link: /#
   dropdown:
     - name: Algorithm
-      link: /page-1/
+      link: /PY/AL
     - name: Crawler
-      link: /page-2/
+      link: /PY/CR
     - name: Tips
-      link: /page-3/
+      link: /PY/TP
 
 - name: Data Science
   link: /#
   dropdown:
     - name: Statistics
-      link: /page-1/
+      link: /DS/ST
     - name: Data Mining
       link: /DS/DM
     - name: R Programming
-      link: /page-3/
+      link: /DS/RP
 
 - name: Data Engineering
   link: /#
   dropdown:
     - name: Data Engineering
-      link: /page-1/
+      link: /DE/DE
     - name: SQL
-      link: /page-2/
+      link: /DE/SQL
     - name: NoSQL
-      link: /page-3/
+      link: /PY/NS
 
 - name: ML/DL
   link: /#
   dropdown:
     - name: Machine Learning
-      link: /page-1/
+      link: /MLDL/ML
     - name: Deep Learning
-      link: /page-2/
-    - name: Latest trends
-      link: /page-3/
+      link: /MLDL/DL
+    - name: Latest Trends
+      link: /MLDL/LT
 
 - name: Projects
   link: /projects/
