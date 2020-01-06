@@ -52,4 +52,5 @@ C --> D(실험 및 테스팅)
 D --> E(최적화)
 ```
 
-|<h4>구축 되어야<br>하는 시스템| <h5>-분석할 데이터 <br> -데이터 분석 조직<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<h5> -통계적 실험 설계 <br> -클린한 테스팅 환경<br>&nbsp;&nbsp;&nbsp;&nbsp;|<h5>-데이터 기반 <br> 자동화 시스템 |--------------------|-----------|------|--|-|
+| 구축 되어야 하는 시스템 | -분석할 데이터 <br> -데이터 분석 조직 | -통계적 실헙 설계 <br>-클린한 테스팅 환경 | -데이터 기반 <br> - 자동화 시스템 |
+|-------------------------|---------------------------------------|-------------------------------------------|-----------------------------------|
