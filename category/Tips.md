@@ -2,9 +2,9 @@
 
 layout: category
 
-title: Data Science/Statistics
+title: Python/Tips
 
-permalink: '/DS/ST'
+permalink: '/PY/TP'
 
 ---
 
