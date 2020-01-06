@@ -6,7 +6,7 @@ title: "Why use a static site generator"
 
 date: 2018-05-28 10:50:07
 
-categories: [Data Science/Data Mining]
+categories: "Data Science/Data Mining"
 
 description: "There are many ways to make a website, but what about static site generators"
 
