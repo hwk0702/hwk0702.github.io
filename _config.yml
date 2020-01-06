@@ -15,7 +15,7 @@ paginate:            5
 # About/contact
 author:
   name:              Hyeongwon Kang
-  url:               https://twitter.com/mdo
+  url:
   email:             hwk0702@gmail.com
 
 # Custom vars
