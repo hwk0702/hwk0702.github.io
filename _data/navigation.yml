@@ -1,4 +1,61 @@
-- name: Pages
+- name: Python
+  link: /#
+  dropdown:
+    - name: Algorithm
+      link: /page-1/
+    - name: Page No Sidebar
+      link: /page-2/
+    - name: Page With Menubar
+      link: /page-3/
+    - name: Page With Tabs
+      link: /page-4/
+    - name: Page Without Footer
+      link: /page-5/
+    - name: Page Without Hero
+      link: /page-without-hero/
+    - name: Page With Contents
+      link: /page-with-contents/
+    - name: Landing Page With Callouts
+      link: /landing/
+- name: Data Science
+  link: /#
+  dropdown:
+    - name: Page With Sidebar
+      link: /page-1/
+    - name: Page No Sidebar
+      link: /page-2/
+    - name: Page With Menubar
+      link: /page-3/
+    - name: Page With Tabs
+      link: /page-4/
+    - name: Page Without Footer
+      link: /page-5/
+    - name: Page Without Hero
+      link: /page-without-hero/
+    - name: Page With Contents
+      link: /page-with-contents/
+    - name: Landing Page With Callouts
+      link: /landing/
+- name: Data Engineering
+  link: /#
+  dropdown:
+    - name: Page With Sidebar
+      link: /page-1/
+    - name: Page No Sidebar
+      link: /page-2/
+    - name: Page With Menubar
+      link: /page-3/
+    - name: Page With Tabs
+      link: /page-4/
+    - name: Page Without Footer
+      link: /page-5/
+    - name: Page Without Hero
+      link: /page-without-hero/
+    - name: Page With Contents
+      link: /page-with-contents/
+    - name: Landing Page With Callouts
+      link: /landing/
+- name: ML/DL
   link: /#
   dropdown:
     - name: Page With Sidebar
