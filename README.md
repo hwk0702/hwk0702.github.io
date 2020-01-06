@@ -1,143 +1,298 @@
-# [Start Bootstrap - Clean Blog Jekyll](https://startbootstrap.com/template-overviews/clean-blog-jekyll/) - Official Jekyll Version
+# Type Theme
 
-[Clean Blog Jekyll](http://startbootstrap.com/template-overviews/clean-blog-jekyll/) is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working contact form powered by [Formspree](https://formspree.io/).
+![Default Type Theme blog](https://user-images.githubusercontent.com/816965/30518919-d5978024-9bcd-11e7-81b3-3dd07e99a1f9.png)
 
-This repository holds the official Jekyll version of the Clean Blog theme on Start Bootstrap!
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-## Preview
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-[![Clean Blog (Jekyll) Preview](https://startbootstrap.com/assets/img/screenshots/themes/clean-blog-jekyll.png)](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)
+## Usage
 
-**[View Live Preview](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)**
+1. Fork and clone the [Type Theme repo](https://github.com/rohanchandra/type-theme): `git clone https://github.com/rohanchandra/type-theme`
+2. [Install Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`
+3. Install the theme's dependencies: `bundle install`
+4. Customize the theme (see below)
+5. Run the Jekyll server: `jekyll serve`
 
-## Installation & Setup
+## Customizing Type Theme
 
-### Using RubyGems:
+Open `_config.yml` in a text editor to change most of the blog's settings.
 
-When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. For example, to prevent the avatar from rendering in the header, the avatar line should read:
 
-1. (Optional) Create a new Jekyll site: `jekyll new my-site`
-2. Replace the current theme in your `Gemfile` with `gem "jekyll-theme-clean-blog"`.
-3. Install the theme: `bundle install`
-4. Replace the current theme in your `_config.yml` file with `theme: jekyll-theme-clean-blog`.
-5. Build your site: `bundle exec jekyll serve`
-
-Assuming there are no errors and the site is building properly, follow these steps next:
-
-1. Create the following pages if they do not exist already (or change the extension of exisitig markdown files from `.md` to `.html`):
-   - `index.html` - set to `layout: home`
-   - `about.html` - set to `layout: page`
-   - `contact.html` - set to `layout: page`
-   - `posts/index.html` - set to `layout: page` (you will also need to create a `posts` directory)
-2. Configure the `index.html` front matter. Example:
+```yml
+theme:
+  title: Type Theme
+  avatar:
+  gravatar:
 ```
+
+Notice the avatar variable is left intentionally blank.
+
+Below is a summary of the configuration options in Type Theme.
+
+### Site configuration
+The most common configurations, included here for guidance, are:
+
+Jekyll website *without* a subpath (such as a GitHub Pages website for a given username):
+
+```yml
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://username.github.io"
+```
+
+Jekyll website *with* subpath (like the Type Theme demo page):
+
+```yml
+# SITE CONFIGURATION
+baseurl: "/sub-directory"
+url: "https://username.github.io/"
+```
+
+Please configure this in `_config.yml` before using the theme.
+
+### Meta
+
+Meta variables hold basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+
+Change these variables in `_config.yml`:
+
+| Variable    | Example                          | Description                                                                                                                    | Optional |
+| ----------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| title       | My Jekyll Blog                   | Name of website                                                                                                                | Yes      |
+| avatar      | assets/img/avatar.png            | Path of avatar image, to be displayed in the theme's header                                                                    | Yes      |
+| gravatar    | f9879d71855b5ff21e4963273a886bfc | [MD5 hash of your email address](https://secure.gravatar.com/site/implement/hash/) to load your Gravatar in the theme's header | Yes      |
+| description | My blog posts                    | Short description, primarily used by search engines                                                                            | Yes      |
+
+### Header and footer text
+
+Change these variables in `_config.yml`:
+
+
+| Variable                  | Example                             | Description                                                             | Optional |
+| ------------------------- | ----------------------------------- | ----------------------------------------------------------------------- | -------- |
+| header_text               | Welcome to my Jekyll blog           | HTML (shown below the navigation) with a background colour for emphasis | Yes      |
+| header_text_feature_image | assets/img/sample_feature_img_3.png | Background image for the header text                                    | Yes      |
+| footer_text               | Copyright 2014                      | HTML (shown at end of the site) with lighter text                       | Yes      |
+
+### Icons
+
+Add your username on selected websites in the icon section of the `_config.yml` file to display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the header navigation. All icon variables should be your username enclosed in quotes (e.g. "username"), except for the following variables:
+
+
+| Variable       | Example                                         | Description                                            | Optional |
+| -------------- | ----------------------------------------------- | ------------------------------------------------------ | -------- |
+| rss            | true                                            | Takes boolean value (true/false) to show RSS feed icon | Yes      |
+| email_address  | type@example.com                                | Email address                                          | Yes      |
+| linkedin       | https://www.linkedin.com/in/FirstLast           | Full URL to profile on LinkedIn                        | Yes      |
+| stack_exchange | https://stackoverflow.com/users/0000/first-last | Full URL to profile on Stack Exchange                  | Yes      |
+
+### Scripts
+
+Change these variables in `_config.yml`:
+
+
+| Variable         | Example      | Description                                                                                                                         | Optional |
+| ---------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| google_analytics | UA-123456-01 | Google Analytics [tracking ID](https://support.google.com/analytics/answer/1032385?hl=en)                                           | Yes      |
+| disqus_shortname | shortname    | Disqus [shortname](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-)                                     | Yes      |
+| katex            | true         | Takes boolean value (true/false) to conditionally load [KaTeX](https://khan.github.io/KaTeX/) scripts required for math typesetting | Yes      |
+
+Scripts listed here are only loaded if you provide a value in the `_config.yml` file.
+
+### Localization strings
+
+Change localization string variables in `_config.yml`.
+
+English text used in the theme (such as the "continue reading" label) has been grouped  so you can quickly translate the theme or change labels to suit your needs.
+
+### Colours, typography, padding
+
+![A selection of colours set in Type Theme by modifying the CSS](https://cloud.githubusercontent.com/assets/816965/5142488/130869a6-71d7-11e4-8a38-a69ec1673436.png)
+
+
+| Variable     | Example                    | Description                          | Optional                                                     |
+| ------------ | -------------------------- | ------------------------------------ | ------------------------------------------------------------ |
+| google_fonts | "Playfair+Display:400,700\ | PT+Sans:400,700,700italic,400italic" | [Google Fonts](https://www.google.com/fonts) to load for use |
+
+Navigate to the `_sass > base` directory and open `_variables.scss` to change colours, typography and padding used in the theme with CSS.
+
+Once you have loaded a Google Font in `config.yml`, you can integrate the fonts into your CSS by changing the font-family in `_variables.scss`. For example, after loading the Playfair Display and PT Sans fonts from Google:
+
+```css
+// Typography
+$font-family-main: 'PT Sans', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Playfair Display', Helvetica, Arial, sans-serif;
+```
+
+Mozilla's [ColorPicker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) is a helpful tool to get your preferred colours in hexadecimal or RGBA form for use in `_variables.scss`.
+
+### Customize style when using the remote_theme
+
+If you're using Type Theme as a `remote_theme`, you can override variables and styles.
+To do so, simply create a `assets/css/main.scss` file on your website with the following content:
+
+```scss
+// assets/css/main.scss
 ---
-layout: home
-background: '/PATH_TO_IMAGE'
 ---
+
+@import "type-theme";
 ```
-3. Configure the `about.html`, `contact.html`, and `posts/index.html` front matter. Example:
+
+`@import "type-theme";` includes the theme styles, so you can add custom imports before and after it, depending on your needs.
+Best practice is to put your custom files in the `_sass` folder of your project. Jekyll will automatically look for them there.
+For example, say you wanted to override some theme variables and add some custom styles, you can create the following files:
+
+```scss
+// _sass/_variables.scss
+$background-color: black;
 ```
+
+```sass
+// _sass/_custom.sass
+
+// SASS is supported as well, just note the file extension is .sass
+.feature-image header
+  height: 300px
+```
+
+Then import them both into `main.scss`:
+
+```scss
+// assets/css/main.scss
 ---
-layout: page
-title: Page Title
-description: This is the page description.
-background: '/PATH_TO_IMAGE'
 ---
+
+@import "variables";
+@import "type-theme";
+@import "custom";
 ```
-4. For each post in the `_posts` directory, update the front matter. Example:
+
+## Posts and pages in Type Theme
+Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). Non-standard features are documented below.
+
+### Math typesetting
+Wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
+
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
+
+```latex
+Type math within a sentence $$2x^2 + x + c$$ to display inline
 ```
+
+For display math typesetting, type your math expression on a *new line*. For example:
+
+```latex
+$$
+  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+$$
+```
+
+Type Theme makes use for [KaTeX](https://khan.github.io/KaTeX/) for typesetting.
+
+### Feature images
+
+![Posts with geometric feature images](https://cloud.githubusercontent.com/assets/816965/5142406/19726478-71d6-11e4-8111-94f788b0e44d.png)
+
+Add a feature image by specifying a path to an image in the [front matter](http://jekyllrb.com/docs/frontmatter/) in the form of `feature-img: "img/PATH_TO_IMAGE.png"`.
+
+For example:
+
+```yml
 ---
 layout: post
-title: "Post Title"
-subtitle: "This is the post subtitle."
-date: YYYY-MM-DD HH:MM:SS
-background: '/PATH_TO_IMAGE'
+title: Hello World
+feature-img: "assets/img/sample_feature_img.png"
 ---
 ```
 
-For reference, look at the [demo repository](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll) to see how the files are set up.
+By default, the page title is displayed on top of the feature image, as well as on the browser's tab. You can change the feature image's displayed title by specifying a `feature-title` in the front matter:
 
-5. Add the form to the `contact.html` page. Add the following code to your `contact.html` page:
-```
-<form name="sentMessage" id="contactForm" novalidate>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Name</label>
-      <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Email Address</label>
-      <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-      <label>Phone Number</label>
-      <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group floating-label-form-group controls">
-      <label>Message</label>
-      <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <br>
-  <div id="success"></div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-  </div>
-</form>
+```yml
+---
+layout: post
+title: Short title
+feature-title: A much longer title
+feature-img: "assets/img/sample_feature_img.png"
+---
 ```
 
-Make sure you have the `email` setting in your `_config.yml` file set to a working email address! Once this is set, fill out the form and then check your email, verify the email address using the link sent to you by Formspree, and then the form will be working!
+### Hiding pages from navigation
 
-6. Build your site: `bundle exec jekyll serve`
+In the front matter of a page, add `hide: true` to prevent the page from showing up in the header's navigation bar (visitors can still visit the URL through other means).
 
-### Using Core Files
+For example:
 
-When using the core files, the demo images, posts, and pages are all included with the download. After following the instructions below, you can then go and change the content of the pages and posts.
+```yml
+---
+layout: page
+title: "Error 404: Page not found"
+permalink: /404.html
+hide: true
+---
+```
 
-1. [Download](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/archive/master.zip) or Clone the repository.
-2. Update the following configuration settings in your `_config.yml` file:
-   - `baseurl`
-   - `url`
-   - `title`
-   - `email` (after setting this setting to a working email address, fill out the form on the contact page and send it - then check your email and verify the address and the form will send you messages when used)
-   - `description`
-   - `author`
-   - `twitter_username` (Optional)
-   - `facebook_username` (Optional)
-   - `github_username` (Optional)
-   - `linkedin_username` (Optional)
-3. Build your site: `bundle exec jekyll serve`
+### Sorting pages in navigation
 
-## Bugs and Issues
+You can configure this theme to **sort your pages** in the header's navigation bar.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/issues) here on GitHub!
+- Set `site_navigation_sort` in theme settings to a property name e.g. `'order'`
+- In the front matter of a non-hidden page, add `order: n`
 
-## About
+For example:
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+```yml
+---
+layout: page
+title: Team
+permalink: /team/
+order: 4
+---
+```
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+### Tags
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+Post tags should be placed between `[]` in your post metadata. Separate each tag with a comma.
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+For example:
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+```yml
+---
+layout: post
+title: Markdown and HTML
+tags: [sample, markdown, html]
+---
+```
 
-## Copyright and License
+A tags listing will be automatically generated using the `tags.html` file provided in Type Theme. If you're not using the tags feature it is safe to delete `tags.html`.
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/blob/gh-pages/LICENSE) license.
+### Search
+
+The search feature can be activated in the `_config.yml` file by changing its value from `false` to `true`.
+
+```yml
+  #Scripts
+  search: true
+```
+
+Once activated, the search bar will appear in the header. This feature uses [Lunr](https://lunrjs.com/) and searches through the title, tags and content of your posts.
+
+### Subtitles
+A subtitle can be displayed below your title on permalink post pages.
+
+To enable this feature, add `subtitle` to your post metadata.
+
+For example:
+
+```yml
+---
+layout: post
+title: "This is a title"
+subtitle: "This is a subtitle"
+---
+```
+
+## License
+[The MIT License (MIT)](https://github.com/rohanchandra/type-theme/blob/master/LICENSE)
