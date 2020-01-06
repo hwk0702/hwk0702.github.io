@@ -1,24 +1,22 @@
 - name: Pages
   link: /#
   dropdown:
-    - name: Page With Sidebar
+    - name: Data analysis 
       link: /page-1/
-    - name: Page No Sidebar
+    - name: Data engineering
       link: /page-2/
-    - name: Page With Menubar
+    - name: Programming
       link: /page-3/
-    - name: Page With Tabs
+    - name: Algorithms
       link: /page-4/
-    - name: Page Without Footer
+    - name: Machine learning
       link: /page-5/
-    - name: Page Without Hero
+    - name: Deep learning
       link: /page-without-hero/
-    - name: Page With Contents
+    - name: Thesis review
       link: /page-with-contents/
-    - name: Landing Page With Callouts
-      link: /landing/
-- name: Products
-  link: /products/
+- name: Projects
+  link: /Projects/
 - name: Showcase
   link: /showcase/
 - name: Blog
