@@ -65,6 +65,9 @@ defaults:
 
 markdown: kramdown
 highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 footer_menu: example_footer_menu
 
