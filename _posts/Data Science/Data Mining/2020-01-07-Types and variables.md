@@ -69,12 +69,9 @@ canonical_url:
 데이터 셋의 유형
 ----------------
 
-1.	record data
-2.	record data, transaction data, data matrix, document-term matrix
-3.	graph data
-4.	world wide data, molecular structures
-5.	ordered data
-6.	spatial, temporal, sequential, genetic sequence
+1.	record data <br> - record data, transaction data, data matrix, document-term matrix
+2.	graph data <br> - world wide data, molecular structures
+3.	ordered data <br> - spatial, temporal, sequential, genetic sequence
 
 데이터 셋의 특징
 ----------------
@@ -87,7 +84,7 @@ canonical_url:
 --------------
 
 1.	Mean (평균)
-2.	데이터의 중앙을 대표하는 통계값 $\bar{x}={\sum*{i=1}^N x_i \over N}$ or $\bar{x}={\sum*{i=1}^N w*ix_i \over \sum*{i=1}^N w_i}$
+2.	데이터의 중앙을 대표하는 통계값 <br> $\bar{x}={\sum*{i=1}^N x_i \over N}$ or $\bar{x}={\sum*{i=1}^N w*ix_i \over \sum*{i=1}^N w_i}$
 
 3.	Median (중위수)
 
