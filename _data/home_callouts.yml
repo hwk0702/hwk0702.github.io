@@ -2,7 +2,7 @@ style: is-light
 items:
   - title: Industrial Management Engineering
     subtitle: Including sidebar, menubar, tabs and callouts
-    icon: fa-industry
+    icon: fas fa-industry
   - title: AI software
     subtitle: Layouts for blog and post pages included
     icon: fas fa-brain
