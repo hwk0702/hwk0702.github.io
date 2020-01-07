@@ -2,10 +2,10 @@ style: is-light
 items:
   - title: Industrial Management Engineering
     subtitle: Including sidebar, menubar, tabs and callouts
-    icon: fas fa-industry-alt
+    icon: fa-industry-alt
   - title: AI software
     subtitle: Layouts for blog and post pages included
     icon: fas fa-brain
   - title: Data Scientist
     subtitle: Quick and easy to get started
-    icon: fas fa-analytics
+    icon: fa-analytics
