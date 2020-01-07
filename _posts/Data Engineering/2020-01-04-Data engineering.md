@@ -10,7 +10,7 @@ categories: [Data Engineering/Data Engineering]
 
 description:
 
-image:
+image: /img/data-eng.jpg
 
 published: true
 
