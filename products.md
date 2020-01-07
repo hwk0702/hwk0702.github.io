@@ -1,6 +1,12 @@
 ---
 
-title: Projects subtitle: Check out our range of projects layout: project-category show_sidebar: false
+title: Projects
+
+subtitle: Check out our range of projects
+
+layout: project-category
+
+show_sidebar: false
 
 sort: price
 
