@@ -16,7 +16,7 @@ published: true
 
 canonical_url:
 
-use_math: true
+use_math:
 
 ---
 
