@@ -10,7 +10,7 @@ categories: [Python/Tips]
 
 description:
 
-image:
+image: /img/regular.png
 
 published: true
 
