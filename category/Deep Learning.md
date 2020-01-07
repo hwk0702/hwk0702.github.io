@@ -2,9 +2,9 @@
 
 layout: category
 
-title: ML/DL/Machine Learning
+title: ML/DL/Deep Learning
 
-permalink: '/MLDL/ML'
+permalink: '/MLDL/DL'
 
 ---
 

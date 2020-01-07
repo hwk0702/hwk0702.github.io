@@ -2,9 +2,9 @@
 
 layout: category
 
-title: ML/DL/Machine Learning
+title: Data Science/Statistics
 
-permalink: '/MLDL/ML'
+permalink: '/DS/ST'
 
 ---
 

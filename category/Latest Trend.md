@@ -2,9 +2,9 @@
 
 layout: category
 
-title: ML/DL/Machine Learning
+title: ML/DL/Latest Trends
 
-permalink: '/MLDL/ML'
+permalink: '/MLDL/LT'
 
 ---
 

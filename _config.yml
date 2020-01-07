@@ -1,7 +1,7 @@
 # Site Settings
 title: Devwon's blog
 tagline: Devwon's blog
-email: your-email@domain.com
+email: hwk0702@gmail.com
 description: >
   The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
 baseurl: "/hwk0702.github.io"
@@ -58,7 +58,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "C.S. Rhymes"
+      author: "H.W Kang"
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
