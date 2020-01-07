@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title: "데이터 타입"
+
+date: 2020-01-07 10:50:07
+
+categories: [Data Science/Data Mining]
+
+description:
+
+image: /img/data.png
+
+published: true
+
+canonical_url:
+
+---
+
 ﻿데이터 타입
 ===========
 
