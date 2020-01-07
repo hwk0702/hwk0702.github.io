@@ -1,52 +1,32 @@
 ---
-title: Bulma Clean Theme
-subtitle: This is the demo site for Bulma Clean Theme
+
+title: Devwon's blog
+
+subtitle: Data Scientist Devwon의 blog 입니다.
+
 layout: page
+
 callouts: home_callouts
+
 show_sidebar: true
+
 ---
 
-# Bulma Clean Theme demo website
+안녕하세요!
+===========
 
-This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages. 
+이 블로그는 **Devwon**의 블로그 입니다.
 
-[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
-![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
+최고의 데이터 사이언티스트가 될 남자?
+-------------------------------------
 
-## Ruby Gem
+저는 전공으로 **산업경영공학과**, 복수전공으로 **인공지능 소프트웨어**를 하였습니다. 주로 파이썬, R, Tensorflow를 이용하고 있습니다.
 
-The ruby gem is available on the Ruby Gems website at the following location. [https://rubygems.org/gems/bulma-clean-theme](https://rubygems.org/gems/bulma-clean-theme)
+이 블로그는?
+------------
 
-## GitHub Pages
+이 블로그는 제가 전공 및 코딩 공부를 하면서 공부한 내용들, 프로젝트 및 여러 데이터 분석한 결과들, 논문 리뷰등을 블로그에 올릴 예정입니다.
 
-The theme can be used with GitHub Pages bu setting the `remote_theme` in your Jekyll sites `_config.yml`
+공부한 내용들은 **산업경영공학 전공 내용들, 데이터 분석/머신러닝/딥러닝 관련 내용들**을 주로 다룰 예정이며 그 외에 **프로그래밍 기초나 알고 있으면 좋은 팁들, 알고 있으나 기억이 잘 안나 자주 찾아보는 것들**(이건 제가 다시 볼라고...)을 올릴 예정입니다.
 
-```yml
-remote_theme: chrisrhymes/bulma-clean-theme
-```
-
-## Instructions
-
-For full instructions, please see the Readme at the GitHub repo:
-[https://github.com/chrisrhymes/bulma-clean-theme/blob/master/README.md](https://github.com/chrisrhymes/bulma-clean-theme/blob/master/README.md)
-
-## Page Layouts
-
-This demo site showcases the available page layout options.
-
-* Page With Sidebar
-* Page Without Sidebar
-* Page With Menubar
-* Page With Tabs
-* Page Without Footer
-* Page Without Hero
-* Page With Contents
-* Landing Page With Callouts
-* Blog
-* Post
-
-## Supported By JetBrains
-
-JetBrains have kindly provided an Open Source licence to aid in the future development of Bulma Clean Theme.
-
-[![JetBrains](img/jetbrains-variant-4.svg)](https://www.jetbrains.com/?from=bulma-clean-theme)
+아직 최고의 데이터 사이언티스트가 아닌 만큼 많이 부족 할 수 있습니다. 혹시 제가 잘 못 이해하고 있는 부분이 있으면 댓글로 알려주시면 감사하겠습니다. 또한, 같이 공부하면서 모르는 내용이 있으시면 댓글로 남겨주세요. 저도 같이 공부하면서 답 해드리도록 하겠습니다. 감사합니다!
