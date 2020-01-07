@@ -5,7 +5,11 @@ layout: default
 <div class="content">
 
     <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
-
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/math...">
+    </script>
     {{ content }}
 </div>
 
