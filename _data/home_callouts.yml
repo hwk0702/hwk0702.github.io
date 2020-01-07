@@ -1,11 +1,11 @@
 style: is-light
 items:
-  - title: Multiple page layouts
+  - title: Industrial Management Engineering
     subtitle: Including sidebar, menubar, tabs and callouts
-    icon: fa-copy
-  - title: Blog included
+    icon: fas fa-industry-alt
+  - title: AI software
     subtitle: Layouts for blog and post pages included
-    icon: fa-mail-bulk
-  - title: Works with GitHub Pages
+    icon: fas fa-brain
+  - title: Data Scientist
     subtitle: Quick and easy to get started
-    icon: fab fa-github
+    icon: fas fa-analytics
