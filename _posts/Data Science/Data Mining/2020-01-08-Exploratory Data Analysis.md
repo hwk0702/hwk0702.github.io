@@ -10,7 +10,7 @@ categories: [Data Science/Data Mining]
 
 description:
 
-image: /img/data.png
+image: /img/EDA.png
 
 published: true
 
