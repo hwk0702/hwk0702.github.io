@@ -28,12 +28,15 @@ from bs4 import Beautifulsoup
 ```
 
 2.	HTML 문자열 파싱
+
   (1) html 파일 열기
+
   ```python
   with open("example.html") as f:
     soup = BeautifulSoup(f, 'html.parser')
   ```
   (2) urllib를 통해서 웹에 있는 소스 가져오기
+
   ```python
   import urllib.request
   import urllib.parse
@@ -44,6 +47,7 @@ from bs4 import Beautifulsoup
     soup = BeautifulSoup(html, 'html.parser')
   ```
   (3) requests를 통해서 웹에 있는 소스 가져오기
+
   ```python
   import requests
 
