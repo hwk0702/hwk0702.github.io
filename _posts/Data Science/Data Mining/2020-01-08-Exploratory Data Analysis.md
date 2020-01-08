@@ -52,3 +52,8 @@ attribute value의 빈도는 데이터 세트에서 값이 발생하는 횟수(�
 $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 - outliers에 민감하기 때문에 다음과 같은 방법을 사용하기도 한다.
 $$AAD(x)={1 \over m}\sum_{i=1}^m \left |x_i-\bar{x} \right |$$ <br> $$MAD(x)=median( \left \{ {\left | x_1-\bar{x} \right |} \right \},..., \left \{ {\left | x_m-\bar{x} \right |} \right \})$$ <br> $$IQR$$(interquartile range)는 밑에 설명
+
+### 5. IQR(interquartile range)
+- 4분위수는 분포의 중심, 확산 및 모양을 나타낸다.
+- $$IQR=Q_3-Q_1$$
+- 중간에 50% 데이터들이 흩어진 정도
