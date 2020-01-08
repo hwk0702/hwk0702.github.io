@@ -110,6 +110,36 @@ print(root_node.find("channel").find("description").text)
 
 items = root_node.find("channel").findall("item")
 for item in items:
-print(item.find("title").text)
-print(item.find("link").text)
+	print(item.find("title").text)
+	print(item.find("link").text)
+```
+
+---------------------------------------------------------------
+##JSON
+- JavaScript Object Notation
+- 본래는 자바스크립트 언어로부터 파생
+- 속성-값 쌍 또는 "키-값 쌍"으로 이루어진 데이터 오브젝트를 전달하기 위해 인간이 읽을 수 있는 텍스트를 사용하는 개방형 표준 포맷
+- 장점:
+	1. 내용이 함축적으로 최소한의 정보만 표현
+	2. 용량이 적고 빠른 속도
+	3. 언어에 독립적
+	4. 사용하기 쉽다.
+	5. 확장이 용이
+-단점:
+	1. 내용이 함축적이다 보니 의미 파악이 힘들 수 있다.
+	2. 대용량급 데이터 송수신에는 부적합한 모습도 있다.
+
+### Read by Python
+```Python
+import json
+
+f = open("naver_search.json",'r', encoding="utf-8")
+json_text = f.read()
+
+dict = json.loads(json_text)
+
+print(dict['lastBuildDate'])
+for item in dict['items']:
+	print(item['title'])
+	print(item['link'])
 ```
