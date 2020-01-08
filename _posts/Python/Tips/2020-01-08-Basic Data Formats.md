@@ -39,7 +39,7 @@ Data formats
 -	각 줄에 대해 목록 유형과 같은 특정 셀에 액세스 할 수 있다.
 
 
-```Python
+```python
 import csv
 
 # f = open('범죄발생장소_2016년_.csv', 'r', encoding='utf-8')
@@ -54,7 +54,7 @@ f.close()
 - writerow () 함수를 사용하여 각 행을 작성할 수 있다.
 - 한 행은 하나의 리스트 형식으로 나타낸다.
 
-```Python
+```python
 import csv
 
 f = open(‘myfile.csv', 'w', newline='')
@@ -90,7 +90,7 @@ f.close()
 - 먼저, root를 얻는다.
 - 구조에 따라 자식 노드를 찾는다.
 
-```Python
+```python
 from xml.etree.ElementTree import parse
 
 tree = parse("상표_공보_2015년_샘플_.xml")
@@ -100,7 +100,7 @@ print(root_node.find("KR_Bibliographic").find("KR_PublishingORG").text)
 print(root_node.find("KR_Bibliographic").find("KR_PublishingORG").get("TYPE"))
 ```
 
-```Python
+```python
 from xml.etree.ElementTree import fromstring
 import requests
 
@@ -131,7 +131,8 @@ for item in items:
 	2. 대용량급 데이터 송수신에는 부적합한 모습도 있다.
 
 ### Read by Python
-```Python
+
+```python
 import json
 
 f = open("naver_search.json",'r', encoding="utf-8")
@@ -150,20 +151,21 @@ for item in dict['items']:
 ### 파일 입출력
 1. 파일 생성: open()
 	* 파일 객체를 사용한 후에는 반드시 closer() 함수를 이용하여 객체를 반환하여야 한다.
-	```Python
+	```python
 	#파일 객체 = open(파일명, 파일 속성)
 	f = open(“test.txt”, “w”)
 	f.close()
 	```
 	<img src="/img/file1.jpg">
+
 2. 파일 읽기: readline(), readlines(), read()
 	* 파일 한줄씩 읽기: readline()
-	```Python
+	```python
 	f = open("c:/python_sample/test.txt", "r")
 	print(f.readline())
 	f.close()
 	```
-	```Python
+	```python
 	f = open("c:/python_sample/test.txt", "r")
 	while True:
 		line = f.readline()
