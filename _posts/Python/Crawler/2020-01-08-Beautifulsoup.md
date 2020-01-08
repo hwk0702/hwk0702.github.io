@@ -53,6 +53,18 @@ from bs4 import Beautifulsoup
 
   req = request.get(web_url)
   ```
+- 예시 HTML
+
+```html
+html='''
+<html>
+  <head>
+    <title>Hello BeautifulSoup</title>
+  </head>
+  <body>
+
+```
+
 3. find 함수
 - 특정 html tag를 검색
 - 검색 조건을 명시하여 찾고자 하는 tag 검색
