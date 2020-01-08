@@ -100,15 +100,15 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 일반적으로 버킷의 폭은 동일하다.
 - 높이 = 개체 수
 - 그룹을 비교하기에는 좋지 않다
-<br> ![Histogram](/img/histogram.JPG)
+<br> <img src="/img/histogram.JPG" width="400">
 - Two-Dimensional Histogram: 두 속성 값의 공동 분포를 보여준다.
-<br> ![Two-Dimensional Histogram](/img/two-histo.JPG)
+<br> <img src="/img/two-histo.JPG" width="400">!
 ### 2. Box Plots
 - 데이터의 분포를 나타내는 방법
 - $$outlier<Q_1-1.5*IQR$$ & $$Q_3+1.5*IQR<outlier$$
 - attribute들 비교할 때도 사용
 - classification 작업에 유용한 attribute를 식별하는데에도 사용
-<br> ![boxplot](/img/boxplot.JPG)
+<br> <img src="/img/boxplot.JPG" width="150">
 
 ### 3. Scatter Plots
 - 두 가지 numeric attributes 사이의 관계, 패턴 또는 추세를 감지하는 효과적인 방법
@@ -118,17 +118,17 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 ### 4. Quantile plots
 - quantil plots은 단변량 데이터 분포를 먼저 살펴 보는 좋은 방법
 - 수집 데이터를 표준 정규 분포의 분위수와 비교하여 그리는 그래프
-<br> ![Quantile plots](/img/quantileplot.JPG)
+<br> <img src="/img/quantileplot.JPG" width="400">
 
 ### 5. Q-Q plots
 - 두 확률 분포를 각각의 quantiles를 그려 넣음으로써 비교하는 것
 - 두 분포가 비슷하면 y=x 라인
-<br> ![Q-Q plots](/img/qqplot.JPG)
+<br> <img src="/img/qqplot.JPG" width="400">
 
 ### 6. Matrix of Scatter plots
 - 산점도의 배열이 여러 쌍의 속성의 관계를 간결하게 요약
 - 속성이 많을 수록 비 효과적
-<br> ![Matrix of Scatter plots](/img/matrixofscatter.png)
+<br> <img src="/img/matrixofscatter.png" width="400">
 
 ### 7. Parallel Coordinates
 - 평행 좌표를 사용하여 속성이 많은 경우 속성 값을 플로팅 가능
@@ -137,7 +137,7 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 
 ### 8. Pie chart
 - 원형 차트에서 슬라이스 크기는 각 범주의 빈도를 나타낸다.
-<br> ![pie chart](/img/pie-chart.png)
+<br> <img src="/img/pie-chart.png" width="300">
 
 ### 9. Mosaic plots
 - 모자이크 플롯은 두 개의 개별 속성 사이의 Contingency table을 기반으로 한다.
@@ -153,4 +153,5 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 -------------------------
 
 ## 데이터 특성에 따른 분포 조사
-![disttable](/img/disttable.png)
+
+<img src="/img/disttable.png" width="500">
