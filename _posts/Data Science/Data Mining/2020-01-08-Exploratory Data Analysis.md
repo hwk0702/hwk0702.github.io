@@ -100,7 +100,7 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 일반적으로 버킷의 폭은 동일하다.
 - 높이 = 개체 수
 - 그룹을 비교하기에는 좋지 않다
-![Histogram](/img/histogram.jpg)
+<br> ![Histogram](/img/histogram.jpg)
 - Two-Dimensional Histogram: 두 속성 값의 공동 분포를 보여준다.
-![Two-Dimensional Histogram](/img/two-histo.jpg)
+<br> ![Two-Dimensional Histogram](/img/two-histo.jpg)
 ### 2.
