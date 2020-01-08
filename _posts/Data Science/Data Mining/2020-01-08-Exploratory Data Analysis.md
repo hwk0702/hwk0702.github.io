@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "데이터 탐색"
+title: "탐색적 데이터 분석"
 
 date: 2020-01-08 09:57:07
 
@@ -18,7 +18,7 @@ canonical_url:
 
 ---
 
-# 데이터 탐색
+# 탐색적 데이터 분석
 --------------------------
 
 ## What is Data Exploration
@@ -56,4 +56,6 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 ### 5. IQR(interquartile range)
 - 4분위수는 분포의 중심, 확산 및 모양을 나타낸다.
 - 중간에 50% 데이터들이 흩어진 정도
-$$IQR=Q_3-Q_1$$
+<br> $$IQR=Q_3-Q_1$$
+
+![IQR](/img/IQR.png)
