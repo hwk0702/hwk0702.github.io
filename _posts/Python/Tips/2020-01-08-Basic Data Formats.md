@@ -57,7 +57,7 @@ f.close()
 ```python
 import csv
 
-f = open(‘myfile.csv', 'w', newline='')
+f = open('myfile.csv', 'w', newline='')
 wr = csv.writer(f)
 wr.writerow([1, "김정수", False])
 wr.writerow([2, "박상미", True])
