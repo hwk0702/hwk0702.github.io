@@ -8,7 +8,7 @@ description: This is a product description
 
 product_code: ABC124
 
-layout: projects
+layout: products
 
 image: /img/EDA.png
 
