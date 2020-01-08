@@ -16,8 +16,6 @@ published: true
 
 canonical_url:
 
-use_math:
-
 ---
 
 ﻿데이터 타입
@@ -86,7 +84,7 @@ use_math:
 --------------
 
 1.	Mean (평균)
-2.	데이터의 중앙을 대표하는 통계값 <br> $\bar{x}={\sum*{i=1}^N x_i \over N}$ or $\bar{x}={\sum*{i=1}^N w*ix_i \over \sum*{i=1}^N w_i}$
+2.	데이터의 중앙을 대표하는 통계값 <br> $$\bar{x}={\sum*{i=1}^N x_i \over N}$$ or $$\bar{x}={\sum*{i=1}^N w*ix_i \over \sum*{i=1}^N w_i}$$
 
 3.	Median (중위수)
 
