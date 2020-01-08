@@ -4,7 +4,7 @@ title: Projects
 
 subtitle: Check out our range of projects
 
-layout: project-category
+layout: product-category
 
 show_sidebar: false
 
