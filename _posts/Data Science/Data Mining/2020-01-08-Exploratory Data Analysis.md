@@ -63,7 +63,7 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 - 실수 값 확률 변수의 확률분포 비대칭성을 나타내는 지표
 - Skewed 되어있는 값을 그대로 학습시키면 꼬리 부분이 상대적으로 적고 멀어서 모델에 영향이 거의 없이 학습. 따라서 변환 필요
 <br> $$\gamma_1=E\left [ ({ {X-\mu}\over\sigma })^3 \right ]={E\left [ (X-\mu)^3\right]\over (E \left [ (X-\mu)^2\right ])^{3\over2}}$$
-<br> $$표본 왜도:g_1={{1 \over n}\sum_{i=1}^n (x_i-\bar{x})^3 \over ({1 \over n}\sum_{i=1}^n (x_i-\bar{x})^2)^{3\over2}}$$
+<br> $$표본 왜도:g_1= { {1 \over n}\sum_{i=1}^n (x_i-\bar{x})^3 \over ({1 \over n}\sum_{i=1}^n (x_i-\bar{x})^2)^{3\over2} }$$
 <br> $$모 왜도:G_1={\sqrt{n(n-1)} \over n-2}g_1$$
 ![Skewness](/img/skew.jpg)
 
