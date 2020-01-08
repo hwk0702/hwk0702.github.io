@@ -9,7 +9,7 @@ url: "https://hwk0702.github.io/"
 permalink: pretty
 #favicon: /path/to/favicon.png
 
-paginate: 5
+paginate: 12
 paginate_path: "/blog/page:num"
 
 # Disqus Comments
