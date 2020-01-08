@@ -82,7 +82,7 @@ f.close()
 - 단점:
 	1. 지나치게 많은 것을 정의해 주어야 한다.
 	2. 속도가 느리다.
-<br> <img src="/img/xml.jpg" width="150">
+<br> <img src="/img/xml.JPG" width="150">
 
 일반적으로 데이터 분석을 위해 XML을 작성할 필요가 없으므로 parsing만 다룬다.
 
@@ -156,7 +156,7 @@ for item in dict['items']:
 	f = open(“test.txt”, “w”)
 	f.close()
 	```
-	<img src="/img/file1.jpg">
+	<img src="/img/file1.JPG">
 
 2. 파일 읽기: readline(), readlines(), read()
 	* 파일 한줄씩 읽기: readline()
