@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+use_math: true
+
 ---
 
 ﻿데이터 타입

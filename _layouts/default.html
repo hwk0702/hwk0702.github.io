@@ -8,10 +8,11 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  {% if page.use_math %}
-  {% include mathjax_support.html %}
-  {% endif %}
+
   <body>
+    {% if page.use_math %}
+    {% include mathjax_support.html %}
+    {% endif %}
     {% include header.html %}
     {% unless page.hide_hero %}
         {% include hero.html %}
