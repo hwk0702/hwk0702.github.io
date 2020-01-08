@@ -33,6 +33,7 @@ Data formats
 -	Comma Separated Version file
 -	장점: 숫자나 문자열로 구성되어 있는 표(혹은 스프레드시트) 형태의 데이터가 일반 텍스트로 저장되므로 이를 저장하거나 전송하고 처리할 수 있는 프로그램이 다양
 -	단점: 수식 없이 오직 데이터만 저장 가능, 각 셀이 은 자료형이 없는 raw data이다.
+
 ### Read by Python
 -	csv.reader (file)은 행 단위 액세스에 대한 Iterator type object를 리턴.
 -	각 줄에 대해 목록 유형과 같은 특정 셀에 액세스 할 수 있다.
