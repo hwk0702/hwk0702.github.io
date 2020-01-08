@@ -103,4 +103,34 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 <br> ![Histogram](/img/histogram.JPG)
 - Two-Dimensional Histogram: 두 속성 값의 공동 분포를 보여준다.
 <br> ![Two-Dimensional Histogram](/img/two-histo.JPG)
-### 2.
+### 2. Box Plots
+- 데이터의 분포를 나타내는 방법
+- $$outlier<Q_1-1.5*IQR$$ & $$Q_3+1.5*IQR<outlier$$
+- attribute들 비교할 때도 사용
+- classification 작업에 유용한 attribute를 식별하는데에도 사용
+<br> ![boxplot](/img/boxplot.JPG)
+
+### 3. Scatter Plots
+- 두 가지 numeric attributes 사이의 관계, 패턴 또는 추세를 감지하는 효과적인 방법
+- 2차원 scatter plots이 보통 사용되지만 3차원 scatter plots도 사용
+<br> ![scatter plots](/img/scatter.JPG)
+
+### 4. Quantile plots
+- quantil plots은 단변량 데이터 분포를 먼저 살펴 보는 좋은 방법
+- 수진 데이터를 표준 정규 분포의 분위수와 비교하여 그리는 그래프
+<br> ![Quantile plots](/img/quantileplot.JPG)
+
+### 5. Q-Q plots
+- 두 확률 분포를 각각의 quantiles를 그려 넣음으로써 비교하는 것
+- 두 분포가 비슷하면 y=x 라인
+<br> ![Q-Q plots](/img/qqplot.JPG)
+
+### 6. Matrix of Scatter plots
+- 산점도의 배열이 여러 쌍의 속성의 관계를 간결하게 요약
+- 속성이 많을 수록 비 효과적
+<br> ![Matrix of Scatter plots](/img/matrixofscatter.png)
+
+### 7. Parallel Coordinates
+- 평행 좌표를 사용하여 속성이 많은 경우 속성 값을 플로팅 가능
+- 각 객체의 속성 값은 각 해당 좌표 축에 점으로 표시되며 점은 선으로 연결
+<br> ![Parallel Coordinates](/img/ParallelCoordinates.png)
