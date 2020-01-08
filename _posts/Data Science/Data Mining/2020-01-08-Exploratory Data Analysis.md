@@ -63,17 +63,17 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 - 실수 값 확률 변수의 확률분포 비대칭성을 나타내는 지표
 - Skewed 되어있는 값을 그대로 학습시키면 꼬리 부분이 상대적으로 적고 멀어서 모델에 영향이 거의 없이 학습. 따라서 변환 필요
 <br> $$\gamma_1=E\left [ ({ {X-\mu}\over\sigma })^3 \right ]={E\left [ (X-\mu)^3\right]\over (E \left [ (X-\mu)^2\right ])^{3\over2}}$$
-<br> $$표본 왜도:g_1= { {1 \over n}\sum_{i=1}^n (x_i-\bar{x})^3 \over ({1 \over n}\sum_{i=1}^n (x_i-\bar{x})^2)^{3\over2} }$$
-<br> $$모 왜도:G_1={\sqrt{n(n-1)} \over n-2}g_1$$
-![Skewness](/img/skew.jpg)
+<br> $$\textbf{표본 왜도}:\mathbf{g}_1= { {1 \over n}\sum_{i=1}^n (x_i-\bar{x})^3 \over ({1 \over n}\sum_{i=1}^n (x_i-\bar{x})^2)^{3\over2} }$$
+<br> $$\textbf{모 왜도}:\mathbf{G}_1={\sqrt{n(n-1)} \over n-2}g_1$$
+<br> ![Skewness](/img/skew.jpg)
 
 ### 7. Kurtosis(첨도)
 - 자료의 분포가 뾰족한 정도를 나타내는 척도
 - 정규분포를 따른다면 첨도값은 0, 중간이 뾰족하다면 첨도값은 0보다 크고, 반대로 중간이 평평하다면 첨도값은 0보다 작은 값
 <br> $$\gamma_1=E\left [ ({X-\mu}^4)\over\sigma\right]-3={E\left [ (X-\mu)^4\right]\over (E\left[ (X-\mu)^2\right])^2}-3$$
-<br> $$표본 첨도: \mathbf{g}_2=$$$${1\over n}\sum_{i=1}^n (x_i-\bar{x})^4 \over ({1\over n}\sum_{i=1}^n(x_i-\bar{x})^2)^2-3$$
-<br> $$모 첨도: G_2={n-1 \over (n-2)(n-3)}((n+1)g_2+6)$$
-![Kurtosis](/img/kurto.png)
+<br> $$\textbf{표본 첨도}: \mathbf{g}_2=$$$${1\over n}\sum_{i=1}^n (x_i-\bar{x})^4 \over ({1\over n}\sum_{i=1}^n(x_i-\bar{x})^2)^2-3$$
+<br> $$\textbf{모 첨도}: \mathbf{G}_2={n-1 \over (n-2)(n-3)}((n+1)g_2+6)$$
+<br> ![Kurtosis](/img/kurto.png)
 
 ### 8. Coefficent of variation(변동계수, CV)
 - 서로 다른 두 집단의 자료분포를 평균 관점에서 어느 정도 퍼져 있나를 대략적으로 확인
