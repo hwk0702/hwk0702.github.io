@@ -134,3 +134,32 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 - 평행 좌표를 사용하여 속성이 많은 경우 속성 값을 플로팅 가능
 - 각 객체의 속성 값은 각 해당 좌표 축에 점으로 표시되며 점은 선으로 연결
 <br> ![Parallel Coordinates](/img/ParallelCoordinates.png)
+
+### 8. Pie chart
+- 원형 차트에서 슬라이스 크기는 각 범주의 빈도를 나타낸다.
+<br> ![pie chart](/img/pie-chart.png)
+
+### 9. Mosaic plots
+- 모자이크 플롯은 두 개의 개별 속성 사이의 Contingency table을 기반으로 한다.
+- 범주 내 높이는 클래스 내 범주의 상대 빈도수를 나타냅니다.
+- 상자 그림과 유사하게 모자이크 그림을 사용하여 분류에 중요한 속성을 식별 할 수 있다.
+<br> ![mosaic](/img/mosaic.JPG)
+
+### 10. Network structure
+- transaction records를 시각화하려면 모든 레코드를 품목간에 confusion matrix로 변환해야한다.
+- 그런 다음 confusion matrix는 소셜 네트워크 구조로 표현 될 수 있다.
+<br> ![Network structure](/img/network.png)
+
+-------------------------
+
+## 데이터 특성에 따른 분포 조사
+|속성 개수|타입|방법|
+|---------|-------|--------------------------|
+|단일 속성|연속형|1) Boxplot을 통한 사분위수 분석 <br> 2) Histogram으로 빈도수 분석 <br> 3) Index plot을 통해 속성의 위치 분석|
+||명목형|1) Pie chart <br> 2) Bar plot|
+|두개 속성|연속형 2개|1) 각각의 속성을 x축, y축으로 하여 도해 후 회귀선 표시 <br> 2) 공분산, 상관계수를 토앻 두 속성간의 관계정도 파악 <br> 3) Jitter, Sunflower plot (오버랩된 많은 점 표현)|
+||연속형, 명목형|1) 명목형 속성별 수치 분포(Box plot) 파악<br> 2) Box plot에 유의수준 추가(노치) <br> 3) Y축의 scale을 log로한 Strip chart <br> 4) 막대그래프에 신뢰구간 추가 <br> 5) 막대그래프에 색상 표현|
+||명목형 2개|Table 함수|
+|세개 속성|연속형 3개|1) 세개 속성 3차원 표현 <br> 2) 버블 도표 <br> 3) 산점도에 점의 속성을 표현하여 도해|
+||연속형 2개 명목형 1개|1) 문자열 도표로 표현<br> 2) 연속형 속성을 도해하되 명목형은 점 모형으로 표현 <br> 3) 산포도에 점들 간의 관계 표현 <br> 4) 점과 문자열을 동시 표현|
+|다수의 속성||1) 다중 패널 레이아웃 <br> 2) 개체의 변화 파악 <br> 3) 여러 속성 쌍의 관계 파악
