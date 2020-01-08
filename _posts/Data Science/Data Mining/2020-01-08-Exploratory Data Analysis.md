@@ -117,7 +117,7 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 
 ### 4. Quantile plots
 - quantil plots은 단변량 데이터 분포를 먼저 살펴 보는 좋은 방법
-- 수진 데이터를 표준 정규 분포의 분위수와 비교하여 그리는 그래프
+- 수집 데이터를 표준 정규 분포의 분위수와 비교하여 그리는 그래프
 <br> ![Quantile plots](/img/quantileplot.JPG)
 
 ### 5. Q-Q plots
