@@ -71,7 +71,7 @@ $$variance(x) = s^2_{x}={1\over{m-1}}\sum_{i=1}^m(x_i-\bar{x})^2$$
 - 자료의 분포가 뾰족한 정도를 나타내는 척도
 - 정규분포를 따른다면 첨도값은 0, 중간이 뾰족하다면 첨도값은 0보다 크고, 반대로 중간이 평평하다면 첨도값은 0보다 작은 값
 <br> $$\gamma_1=E\left [ ({X-\mu}^4)\over\sigma\right]-3={E\left [ (X-\mu)^4\right]\over (E\left[ (X-\mu)^2\right])^2}-3$$
-<br> $$표본 첨도: g_2={{1\over n}\sum_{i=1}^n (x_i-\bar{x})^4 \over ({1\over n}\sum_{i=1}^n(x_i-\bar{x})^2)^2}-3$$
+<br> $$표본 첨도: \mathbf{g}_2=$$$${1\over n}\sum_{i=1}^n (x_i-\bar{x})^4 \over ({1\over n}\sum_{i=1}^n(x_i-\bar{x})^2)^2-3$$
 <br> $$모 첨도: G_2={n-1 \over (n-2)(n-3)}((n+1)g_2+6)$$
 ![Kurtosis](/img/kurto.png)
 
