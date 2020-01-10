@@ -309,3 +309,33 @@ resp.json()
  'url': 'https://news.v.daum.net/v/20200110071011691',
  'userId': 0}
 ```
+
+### 로그인 후 데이터 크롤링하기
+1. endpoint 찾기 (개발자 도구의 network 활용)
+2. id와 password가 전달되는 form data 찾기
+3. session 객체 생성하여 login 진행
+- endpoint(url)과 data를 구성하여 요청
+- login의 경우 post로 구성하는 것이 정상적인 웹사이트이다.
+4. 이후 session 객체로 원하는 페이지로 이동하여 크롤링
+- login 시 사용했던 session을 다시 사용하여 요청
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = 'Login URL'
+data = {
+  'id': 'Your id'
+  'pwd': 'Your password'
+}
+
+s = requests.Session()
+resp = s.post(url, data=data)
+
+url2 = 'Your URL'
+resp = s.get(url2)
+
+soup = BeautifulSoup(resp.text)
+
+soup.select('tag')
+```
