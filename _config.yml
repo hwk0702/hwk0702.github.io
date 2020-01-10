@@ -1,9 +1,9 @@
 # Site Settings
-title: Devwon's blog
-tagline: Devwon's blog
+title: Dev-hwon's blog
+tagline: Dev-hwon's blog
 email: hwk0702@gmail.com
 description: >
-  데이터 사이언티스트 Devwon의 블로그
+  데이터 사이언티스트 Dev-hwon의 블로그
 baseurl: "/hwk0702.github.io"
 url: "https://hwk0702.github.io/"
 permalink: pretty
@@ -17,7 +17,7 @@ disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   # shortname: my_disqus_shortname
-  shortname: Devwon
+  shortname: Dev-hwon
 
 
 plugins:
@@ -58,7 +58,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "H.W Kang"
+      author: "Dev-hwon"
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
