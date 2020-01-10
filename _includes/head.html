@@ -7,6 +7,16 @@
           {% if site.favicon %} href="{{ site.favicon | prepend: site.baseurl }}" {% else %} href="{{ site.baseurl }}/favicon.png" {% endif %}
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156025917-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156025917-1');
+</script>
+
     {% seo %}
     {%- if site.google_analytics -%}
       {%- include google-analytics.html -%}
