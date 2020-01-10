@@ -1,8 +1,8 @@
 ---
 
-title: Devwon's blog
+title: Dev-hwon's blog
 
-subtitle: Data Scientist Devwon의 blog 입니다.
+subtitle: Data Scientist Dev-hwon의 blog 입니다.
 
 layout: page
 
@@ -17,7 +17,7 @@ show_sidebar: true
 
 ---
 
-이 블로그는 **Devwon**의 블로그 입니다.
+이 블로그는 **Dev-hwon**의 블로그 입니다.
 
 최고의 데이터 사이언티스트가 될 남자?
 -------------------------------------
