@@ -4,7 +4,7 @@ layout: post
 
 title: "beautifulsoup 모듈"
 
-date: 2020-01-08 17:50:07
+date: 2020-01-10 13:50:07
 
 categories: [Python/Crawler]
 
@@ -180,6 +180,8 @@ print(tag['title'])
 <h3 title="Content Title">Content Title</h3>
 'Content Title'
 ```
+
+---------------------------
 
 ### CSS를 이용하여 tag 찾기
 - select, select_one 함수 사용
