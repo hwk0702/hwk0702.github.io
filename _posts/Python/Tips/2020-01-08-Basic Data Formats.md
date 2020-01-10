@@ -171,11 +171,14 @@ for item in dict['items']:
 
 2.	파일 읽기: readline(), readlines(), read()
 
-	-	파일 한줄씩 읽기: readline()`python
+	-	파일 한줄씩 읽기: readline()
+		```python
 		f = open("c:/python_sample/test.txt", "r")
 		print(f.readline())
 		f.close()
-		``python
+		```
+
+		```python
 		f = open("c:/python_sample/test.txt", "r")
 		while True:
 		line = f.readline()
@@ -183,47 +186,62 @@ for item in dict['items']:
 		    break
 		print(line)
 		f.close()
-		`
-	-	파일 전체를 리스트로 읽어오기: readlines()`python
+		```
+
+	-	파일 전체를 리스트로 읽어오기: readlines()
+
+		```python
 		f = open("c:/python_sample/test.txt", "r")
 		lines = f.readlines()
 		for line in lines:
 		print(line)
 		f.close()
-		`
-	-	파일 전체를 객체로 읽어오기: read()`python
+		```
+
+	-	파일 전체를 객체로 읽어오기: read()
+
+		```python
 		f = open("c:/python_sample/test.txt", "r")
 		lines = f.read()
 		print(lines)
 		f.close()
-		`
+		```
 
 3.	파일 쓰기: write()
 
-	-	행단위 입력: write()`python
+	-	행단위 입력: write()
+
+		```python
 		f = open("c:/python_sample/test.txt", 'w')
 		f.write("첫번째 줄입니다")
 		f.write("두번째 줄입니다")
 		f.close()
-		`
-	-	개행문자의 추가: \n`python
+		```
+
+	-	개행문자의 추가: \n
+
+		```python
 		f = open("c:/python_sample/test.txt", 'w')
 		f.write("첫번째 줄입니다")
 		f.write("\n")
 		f.write("두번째 줄입니다")
 		f.write("\n")
 		f.close()
-		`
-	-	파일 내용 추가: 'a' 속성`python
+		```
+
+	-	파일 내용 추가: 'a' 속성
+
+		```python
 		f = open("c:/python_sample/test.txt", 'a')
 		f.write("추가한 줄입니다")
 		f.close()
-		`
+		```
 
 4.	with 문
+	- with문과 함께 사용하면 close()를 호출하지 않아도 된다. with 블록을 벗어나면서 자동으로 close() 호출
 
-5.	with문과 함께 사용하면 close()를 호출하지 않아도 된다. with 블록을 벗어나면서 자동으로 close() 호출`python
-	with open("c:/python_sample/test.txt", "r") as f:
-	    lines = f.read()
-	    print(lines)
-	`
+		```python
+		with open("c:/python_sample/test.txt", "r") as f:
+			lines = f.read()
+			print(lines)
+		```
