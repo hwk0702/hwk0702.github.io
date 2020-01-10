@@ -96,6 +96,7 @@ print(soup.find('div', class_='test')) # class는 키워드이기 때문에 뒤�
 attrs = {'id': 'upper', 'class': 'test'}
 print(soup.find('div', attrs=attrs))
 ```
+
 ```python
 # 출력 결과
 <h3 title="Content Title">Content Title</h3>
@@ -125,6 +126,7 @@ print(soup.find('div', attrs=attrs))
 ```python
 soup.find_all('div')
 ```
+
 ```python
 # 출력 결과
 [<div class="test" custom="1st" id="upper">
@@ -148,6 +150,7 @@ tag = soup.find('div')
 print(tag)
 print(tag.get_text())
 ```
+
 ```python
 # 출력 결과
 <h3 title="Content Title">Content Title</h3>
@@ -171,8 +174,52 @@ tag = soup.find('h3')
 print(tag)
 print(tag['title'])
 ```
+
 ```python
 # 출력 결과
 <h3 title="Content Title">Content Title</h3>
 'Content Title'
 ```
+
+### CSS를 이용하여 tag 찾기
+- select, select_one 함수 사용
+- css selector 사용법
+  * 태그명 찾기 tag
+
+  `soup.select('div')`
+
+  * 자손 태그 찾기 - 자손 관계 (tag tag)
+
+  `soup.select('div p')`
+
+  * 자식 태그 찾기 - 자식 관계 (tag > tag)
+
+  `soup.select('div > p')`
+
+  * 아이디 찾기 #id
+
+  `soup.select('#lower')`
+
+  * 클래스 찾기 .class
+
+  `soup.select('.test') # or div.test`
+
+  * 속성값 찾기 [name='test']
+
+    `soup.select('div[class="test"]')`
+
+    + 속성값 prefix 찾기 [name ^='test']
+
+    `soup.select('h3[title^="C"]')``
+
+    + 속성값 suffix 찾기 [name $='test']
+
+    `soup.select('h3[title$="e"]')`
+
+    + 속성값 substring 찾기 [name *='test']
+
+    `soup.select('h3[title*="tle"]')`
+
+  * n번째 자식 tag 찾기 :nth-child(n)
+
+    `soup.select('div.test:nth-child(1)')`
