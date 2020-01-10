@@ -225,3 +225,87 @@ print(tag['title'])
   * n번째 자식 tag 찾기 :nth-child(n)
 
     `soup.select('div.test:nth-child(1)')`
+
+-------------------------
+
+## 추가 내용
+
+### HTTP 상태 코드
+- 1xx (정보): 요청을 받았으며 프로세스를 계속한다.
+- 2xx (성공): 요청을 성공적으로 받았으며 인식했고 수용하였다.
+- 3xx (리다이렉션): 요청 완료를 위해 추가 작업 조치가 필요하다.
+- 4xx (클라이언트 오류): 요청의 문법이 잘못되었거나 요청을 처리할 수 없다.
+- 5xx (서버 오류): 서버가 명백히 유효한 요청에 대해 충족을 실패했다.
+
+### 처음 요청으로 받을 수 없는 정보 얻기
+- 처음 요청으로 받을 수 없고 추가 요청으로 가져 오는 자료 크롤링 방법
+- 예로 다음 기사 댓글 수 가져오기
+
+<img src='/img/다음기사.JPG'>
+
+'개발자 도구-Network'에서 댓글 수를 가져오는 url 이용
+
+```python
+url = 'https://comment.daum.net/apis/v1/posts/@20200110071011691'
+
+resp = requests.get(url)
+print(resp)
+```
+
+```python
+<Response [401]>
+```
+
+읽어올 수 없다.
+
+위 이미지 처럼 headers를 가져온다.
+
+```python
+headers = {
+    'Accept': '*/*',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb3J1bV9rZXkiOiJuZXdzIiwiZ3JhbnRfdHlwZSI6ImFsZXhfY3JlZGVudGlhbHMiLCJzY29wZSI6W10sImV4cCI6MTU3ODY3MzI5OCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9DTElFTlQiXSwianRpIjoiMjgwM2QzMWQtYTE1My00NThkLWExNWUtOTcwY2ExNDYxMzhiIiwiZm9ydW1faWQiOi05OSwiY2xpZW50X2lkIjoiMjZCWEF2S255NVdGNVowOWxyNWs3N1k4In0.kth0Q7vrA-ldW0OT3Ai7_x3tKu-vYOwjzeROrg_gp7A',
+    'Connection': 'keep-alive',
+    'Cookie': 'webid=5c722b7f04af4ba6964dc8f673793fb9; webid_sync=1578630125495; TIARA=4tyNbxA-QjdUlV9L3TldRm8NMDD.X.RlTkrwLqNsbAUIVLE3mZPIf-VyC5f653WAX74XToIdjgR8df32f7frvqNIqtju9DsP',
+    'Host': 'comment.daum.net',
+    'Origin': 'https://news.v.daum.net',
+    'Referer': 'https://news.v.daum.net/v/20200110071011691',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-site',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
+}
+```
+
+```python
+resp = requests.get(url, headers=headers)
+print(resp)
+```
+
+```python
+<Response [200]>
+```
+
+Json 파일 확인
+
+```python
+resp.json()
+```
+
+```python
+{'childCount': 0,
+ 'commentCount': 4,
+ 'createdAt': '2020-01-10T07:11:02+0900',
+ 'flags': 0,
+ 'forumId': -99,
+ 'icon': 'https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202001/10/yonhap/20200110071011702wnbx.jpg',
+ 'id': 139382726,
+ 'officialCount': 0,
+ 'postKey': '20200110071011691',
+ 'status': 'S',
+ 'title': '스마트홈부터 커넥티드카까지..구글·아마존 AI비서 경쟁 격화',
+ 'type': 'AUTO',
+ 'updatedAt': '2020-01-10T07:11:02+0900',
+ 'url': 'https://news.v.daum.net/v/20200110071011691',
+ 'userId': 0}
+```
