@@ -3,8 +3,6 @@
   dropdown:
     - name: Algorithm
       link: /PY/AL
-    - name: Crawler
-      link: /PY/CR
     - name: Tips
       link: /PY/TP
 
