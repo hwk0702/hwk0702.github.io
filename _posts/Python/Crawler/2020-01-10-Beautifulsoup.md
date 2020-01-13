@@ -345,4 +345,4 @@ soup.select('tag')
 
 <script src="https://gist.github.com/hwk0702/bfeb30df8e8f50b4c470b4bcd9985b5a.js"></script>
 
-<iframe width="1000" height="800" src='https://nbviewer.jupyter.org/gist/hwk0702/f765f5dfb155ad9033370feedd5add95'></iframe>
+<iframe style="display:block; width:100vw; height: 100vh"  src='https://nbviewer.jupyter.org/gist/hwk0702/f765f5dfb155ad9033370feedd5add95'></iframe>
