@@ -343,4 +343,4 @@ soup.select('tag')
 
 ## 예제
 
-<script src="https://gist.github.com/hwk0702/3989cb9a75d387b40dcc28f17470ff73.js"></script>
+<script src="https://gist.github.com/hwk0702/bfeb30df8e8f50b4c470b4bcd9985b5a.js"></script>
