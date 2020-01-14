@@ -159,6 +159,9 @@ $$\delta_{ij}^{(f)}=0$$일 때,
 
 $$sim(x,y) = {x\cdot y \over \left \| x \right \| \left \| y \right \|}$$, $$\left \| x \right \|$$는 벡터 x에 대한 유클리드 노름, difined as $$\sqrt{x_1^2+x_2^2+\cdots}$$  
 
+ex)
+<br> <img src="/img/cos_simil.PNG" width="500">
+
 ### 속성이 이진값일 때
 - 코사인 유사도는 공유된 특성이나 속성으로 해석
 - $$sim(x,y) = { {x\cdot y} \over {x\cdot x + y\cdot y - x\cdot y} }$$
