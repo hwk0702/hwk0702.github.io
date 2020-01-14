@@ -157,7 +157,7 @@ $$\delta_{ij}^{(f)}=0$$일 때,
 - 일반적으로 거리 측정값은 희소한 숫자형 데이터에 대해서는 적합하지 않음
 - 따라서 2개의 문서가 공통으로 보유하고 있는 단어와 해당 단어의 발생 빈도에 초점
 
-$$sim(x,y) = x\cdot y \over \left \| x \right \| \left \| y \right \|$$, $$\left \| x \right \|$$는 벡터 x에 대한 유클리드 노름, difined as $$\sqrt{x_1^2+x_2^2+\cdots}$$  
+$$sim(x,y) = {x\cdot y \over \left \| x \right \| \left \| y \right \|}$$, $$\left \| x \right \|$$는 벡터 x에 대한 유클리드 노름, difined as $$\sqrt{x_1^2+x_2^2+\cdots}$$  
 
 ### 속성이 이진값일 때
 - 코사인 유사도는 공유된 특성이나 속성으로 해석
