@@ -10,7 +10,7 @@ categories: [Data Engineering/SQL]
 
 description:
 
-image: /img/aws.png
+image: /img/sql.png
 
 published: true
 
@@ -37,6 +37,7 @@ canonical_url:
 |real|-3.40E +38|3.40E +38|
 
 ### SQL Date and Time Data Type
+
 |DATATYPE|DESCRIPTION|
 |:------:|:----------|
 |DATE|Stores data in the format YYYY-MM-DD|
@@ -44,3 +45,12 @@ canonical_url:
 |DATETIME|Stores date and time information in the format YYYY-MM-DD HH:MI:SS|
 |TIMESTAMP|Stores number of seconds passed since the Unix epoch('1970-01-01 00:00:00' UTC)|
 |YEAR|Stores year in 2 digit or 4 digit format. Range 1901 to 2155 in 4-digit format. Range 70 to 69, representing 1970 to 2069|
+
+### SQL Character and String Data Types
+
+|DATATYPE|DESCRIPTION|
+|:------:|:----------|
+|CHAR|Fixed length with maximum length of 8,000 Characters|
+|VARCHAR|Variable length storage with maximum length 8,000 Characters|
+|VARCHAR(max)|Variable length storage with provided max characters, not suppoerted in MYSQL|
+|TEXT|Variable length storage with maximum size of 2GB data|
