@@ -83,6 +83,30 @@ $$d(i,j) = { {r+s} \over {q+r+s}}$$ (Jaccard Coefficent라고도 불림)
 (ex)
 <br> <img src="/img/bi_simil2.PNG" width="500">
 
-### 3. For ordinal attributes
+### 3. For numeric attributes
+
+1) Euclidean Distance
+
+$$ d(i,j) = \sqrt{\sum^p_{k=1}(x_{ik}-x_{jk})^2} $$
+
+2) Manhattan Distance
+
+$$ d_{manhattan}(i,j) = \sum^p_{k=1}\left | x_{ik}-x_{jk} \right | $$
+
+- Euclidean, Manhattan Distance가 만족해야하는 조건
+  * 음이 아닌 수
+  * Identify of indiscernibles
+  * 대칭
+  * Triangle inequality
+
+3) Minkowski Distance
+
+$$ d(i,j) = (\sum^p_{k=1} \left | x_{ik}-x_{jk} \right |^r)^{1/r} $$
+
+- r=1 : Manhattan (L1 norm)
+- r=2 : Euclidean (L2 norm)
+- r= $$\infty$$ : Supremum (Lmax norm, L$$\infty$$ norm)
+
+### 4. For ordinal attributes
 
 -
