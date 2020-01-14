@@ -59,32 +59,30 @@ d(n,1) & d(n,2) & \cdots & \cdots & 0
 
 ## Similarity and Distance Measures
 
-### 1. For norminal attributes
+### 1. For nominal attributes
 - $$d(i,j) = { {p-m} \over p }$$
 - m = number of matches
 - p = total number of attributes descibing the objects
 
 ex)
-|ID|norminal|
-|--|--------|
-|1|A|
-|2|B|
-|3|C|
-|4|A|                               
 
-$$\begin{bmatrix}
-0 &  &  &  \\
-1 & 0 &  &  \\
-1 & 1 & 0 & \\
-0 & 1 & 1 & 0\\
-\end{bmatrix}$$
+<br> <img src="/img/nom_simil.PNG" width="400">
 
 ### 2. For binary attributes
 
 - For symmetric binary attributes (0과 1 모두 중요)
 
-$d(i,j) = { {r+s} \over {q+r+s+t}}$
+$$d(i,j) = { {r+s} \over {q+r+s+t}}$$
 
 - For asymmetric binary attributes (1이 더 중요)
 
-$d(i,j) = { {r+s} \over {q+r+s}}$ (Jaccard Coefficent라고도 불림)
+$$d(i,j) = { {r+s} \over {q+r+s}}$$ (Jaccard Coefficent라고도 불림)
+
+<br> <img src="/img/bi_simil.PNG" width="300">
+
+(ex)
+<br> <img src="/img/bi_simil2.PNG" width="500">
+
+### 3. For ordinal attributes
+
+-
