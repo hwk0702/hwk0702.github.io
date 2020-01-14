@@ -60,7 +60,7 @@ d(n,1) & d(n,2) & \cdots & \cdots & 0
 ## Similarity and Distance Measures
 
 ### 1. For norminal attributes
-- $d(i,j) = { {p-m} \over p }$
+- $$d(i,j) = { {p-m} \over p }$$
 - m = number of matches
 - p = total number of attributes descibing the objects
 
@@ -83,4 +83,8 @@ $$\begin{bmatrix}
 
 - For symmetric binary attributes (0과 1 모두 중요)
 
+$d(i,j) = { {r+s} \over {q+r+s+t}}$
+
 - For asymmetric binary attributes (1이 더 중요)
+
+$d(i,j) = { {r+s} \over {q+r+s}}$ (Jaccard Coefficent라고도 불림)
