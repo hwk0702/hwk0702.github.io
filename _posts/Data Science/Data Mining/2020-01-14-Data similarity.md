@@ -123,9 +123,9 @@ $$ Mahalanobis(X,Y) = (X-Y)^T{\sum}^{-1}(X-Y) $$
 ### 4. For ordinal attributes
 
 - ordinal attributes는 순서 or 순위가 있지만 크기는 알 수 없다.
-  * 1. 등급에 따라 점수를 준다.
-  * 2. normalizes
-  * 3. Euclidean Distance 이용
+  * 1) 등급에 따라 점수를 준다.
+  * 2) normalizes
+  * 3) Euclidean Distance 이용
 <br> <img src="/img/ord_dist.PNG" width="300"> <img src="/img/ord_dist2.PNG" width="150">
 
 ### 5. For mixed attributes
