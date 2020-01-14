@@ -26,7 +26,7 @@
     - name: SQL
       link: /DE/SQL
     - name: NoSQL
-      link: /PY/NS
+      link: /DE/NS
 
 - name: ML/DL
   link: /#
