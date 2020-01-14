@@ -141,7 +141,7 @@ $$\delta_{ij}^{(f)}=0$$일 때,
 
 1) $$x_{if}$$나$$x_{jf}$$가 없는 경우 2) $$x_{if}=x_{jf}=0$$이고 속성 f가 비대칭 이진값 $$d_{ij}^{(f)}$$인 경우
 
-- if f is numeric: $$d_{ij}^{(f)} = { {\left | x_{if}-x_{jf} \right |} \over max_hx_{hf}-min_hx_{hf} } $$
+- if f is numeric: $$d_{ij}^{(f)} = { {\left | x_{if} - x_{jf} \right |} \over max_h x_{hf} - min_h x_{hf} } $$
 - if f is nominal, binary or ordinal: 따로 구하는 방법과 같음
 
 -----------------------------------------------------------------
