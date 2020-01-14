@@ -138,4 +138,29 @@ $$ Mahalanobis(X,Y) = (X-Y)^T{\sum}^{-1}(X-Y) $$
 $$d(i,j) = { {\sum^p_{f=1}\delta_{ij}^{(f)}d_{ij}^{(f)} \over \sum^p_{f=1}\delta_{ij}^{(f)}} } $$
 
 $$\delta_{ij}^{(f)}=0$$일 때,
+
 1) $$x_{if}$$나$$x_{jf}$$가 없는 경우 2) $$x_{if}=x_{jf}=0$$이고 속성 f가 비대칭 이진값 $$d_{ij}^{(f)}$$인 경우
+
+- if f is numeric: $$d_{ij}^{(f)} = { {\left | x_{if}-x_{jf} \right |} \over max_hx_{hf}-min_hx_{hf} } $$
+- if f is nominal, binary or ordinal: 따로 구하는 방법과 같음
+
+-----------------------------------------------------------------
+## cosine similarity(코사인 유사도)
+
+- 내적공간의 두 벡터의 유사도를 측정함
+- 두 벡터간 각도의 코사인으로 측정하며 두 벡터가 동일한 방향을 향하고 있는지 여부를 판단
+- 종종 텍스트 분석에서 문서의 유사도를 측정하는데 사용
+
+### Term-Frequency 벡터
+
+- 일반적으로 매우 길고 데이터 값은 별로 없음, 따라서 대부분 0의 값을 가짐
+- 일반적으로 거리 측정값은 희소한 숫자형 데이터에 대해서는 적합하지 않음
+- 따라서 2개의 문서가 공통으로 보유하고 있는 단어와 해당 단어의 발생 빈도에 초점
+
+$$sim(x,y) = x\cdot y \over \left \| x \right \| \left \| y \right \|$$, $$\left \| x \right \|$$는 벡터 x에 대한 유클리드 노름, difined as $$\sqrt{x_1^2+x_2^2+\cdots}$$  
+
+### 속성이 이진값일 때
+- 코사인 유사도는 공유된 특성이나 속성으로 해석
+- $$sim(x,y) = { {x\cdot y} \over {x\cdot x + y\cdot y - x\cdot y} }$$
+- x 또는 y가 소유한 속성의 수에 대해 x와 y가 고유한 속성의 개수 비율
+- 타니모토계수나 타니모토 거리라고 함
