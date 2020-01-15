@@ -89,13 +89,18 @@ ex) 4,8,15,21,21,24,25,28,34
 - Numeric attributes - 상관계수, 공분산
 
 2-1. $$\chi^2$$ Correlation Test for Nominal Data
-- 귀무가설: A와 B는 독립이다. $$P(a_i\cap b_j)=P(a_i)P(b_j), i=1,\cdots,c, j=1,\cdots,r$$
+- 귀무가설: A와 B는 독립이다.
+
+$$P(a_i\cap b_j)=P(a_i)P(b_j), i=1,\cdots,c, j=1,\cdots,r$$
+
 - 예측 빈도수: $$e_{ij} = { {o_{i.}o_{.j} } \over e_{ij} }$$
 - $$\chi^2((c-1)(r-1)) = \sum^c_{i=1}\sum^r_{j=1} { (o_{ij}-e{ij})^2 \over e_{ij} }$$, degree of freedom: (c-1)(r-1)
 
 2-2. Correlation Coefficent for Numeric Data
 - 두 속성 A와 B의 상관관계는 상관계수로 계산할 수 있다.
+
   $$\gamma_{A,B} = { {\sum^n_{i=1}(a_i-\bar A)(b_i-\bar B) \over n\sigma_A \sigma_B} } = { {\sum^n_{i=1}(a_ib_i)-n \bar A \bar B} \over n\sigma_A\sigma_B }$$
+
 - \> 0 : 양의 상관 관계, = 0 : 독립, \< 0 : 음의 상관 관계
 
 2-3. Covariance of Numeric Data
