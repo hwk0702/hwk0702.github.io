@@ -34,6 +34,8 @@ canonical_url:
 - Data transformation
   * Transforming data for better analysis (보다 나은 분석을 위해 데이터 변환)
 
+<img src='/img/preprocess1.png' width='400'>
+
 ### Handling missing values (결측치)
 1. 행(튜플) 무시하기 - 분류 분석시 클래스 라벨이 없는 경우 일반적으로 사용, 효과적인 방법X
 2. 수작업으로 결측치 채우기 - 많은 시간 소요, 결측치가 많은 대량의 데이터에는 부적합
