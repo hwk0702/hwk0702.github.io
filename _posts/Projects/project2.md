@@ -10,25 +10,13 @@ categories: [Projects]
 
 description: This is a project description
 
-product_code: ABC124
-
-published: true
-
-layout: product
+layout: post
 
 image: /img/EDA.png
 
-price:
+published: true
 
-features:
-  - label: Great addition to any home
-    icon: fa-location-arrow
-  - label: Comes in a range of styles
-    icon: fa-grin-stars
-  - label: Available in multiple sizes
-    icon: fa-fighter-jet
-
-rating: 3
+canonical_url:
 
 ---
 
