@@ -20,11 +20,16 @@ canonical_url:
 
 ## Data Lake vs Data Warehouse
 
-### 시대의 변화에 따른 데이터 저장 방식의 진화
-
 |구분|데이터 레이크|데이터 웨어하우스|
 |----|:----------:|:-------------:|
 |Data Structure|Raw|Processed|
 |Purpose of Data|Not Yet Determined|In Use|
 |Users|Data Scientists|Business Professoinals|
 |Accessibility|High / Quick to update|Complicated / Costly|
+
+### ETL -> ELT
+
+- ETL : 추출(Extract), 변환(Transform), 적재(Load)
+- ETL에서 ELT로 변하는 추세. 즉, 데이터를 추출하고 적재를 한 다음에 나중에 변환하여 사용
+
+<img src='/img/datalake.PNG'>
