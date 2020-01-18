@@ -1,6 +1,8 @@
 - name: Python
   link: /#
   dropdown:
+    - name: Data Structure
+      link: /PY/DS
     - name: Algorithm
       link: /PY/AL
     - name: Crawler
