@@ -6,7 +6,7 @@ subtitle: Project 1 tagline here
 
 date: 2020-01-18 14:50:07
 
-categories: [Projects]
+categories: [projects]
 
 description: This is a project description
 
