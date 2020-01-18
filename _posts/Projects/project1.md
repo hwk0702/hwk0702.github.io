@@ -12,6 +12,8 @@ description: This is a project description
 
 product_code: ABC124
 
+published: true
+
 layout: products
 
 image: /img/EDA.png
