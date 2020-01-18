@@ -14,7 +14,7 @@ product_code: ABC124
 
 published: true
 
-layout: products
+layout: post
 
 image: /img/EDA.png
 

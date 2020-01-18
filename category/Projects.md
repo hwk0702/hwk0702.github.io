@@ -1,6 +1,6 @@
 ---
 
-layout: product-category
+layout: category
 
 title: Projects
 
