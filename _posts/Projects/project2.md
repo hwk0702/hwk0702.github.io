@@ -4,7 +4,7 @@ title: Project 1 Name
 
 date: 2020-01-18 14:50:07
 
-categories: Projects
+categories: [Projects]
 
 description: This is a project description
 

@@ -6,7 +6,7 @@ title: "데이터 타입"
 
 date: 2020-01-07 10:50:07
 
-categories: Projects
+categories: [Projects]
 
 description:
 
