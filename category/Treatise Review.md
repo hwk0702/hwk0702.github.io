@@ -4,7 +4,7 @@ layout: category
 
 title: Treatise Review
 
-permalink: '/TR'
+permalink: '/TR/'
 
 show_sidebar: false
 
