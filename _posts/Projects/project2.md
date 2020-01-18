@@ -2,8 +2,6 @@
 
 title: Project 1 Name
 
-subtitle: Project 1 tagline here
-
 date: 2020-01-18 14:50:07
 
 categories: [Projects]
