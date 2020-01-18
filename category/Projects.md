@@ -4,7 +4,7 @@ layout: category
 
 title: Projects
 
-permalink: '/projects'
+permalink: '/projects/'
 
 show_sidebar: false
 
