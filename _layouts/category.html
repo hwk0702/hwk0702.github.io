@@ -11,38 +11,9 @@ layout: default
     </div>
   {% endfor %}
   {% for product in site.categories[category] %}
-  <div class="column is-3-desktop is-8-tablet">
-
-    <a href="{{ product.url | prepend: site.baseurl }}">
-
-      <div class="card">
-
-        {% if product.image %}
-        <div class="card-image">
-            <img src="{{ product.image }}" alt="{{ product.title }}" />
-        </div>
-        {% else %}
-        <header class="card-header">
-            <a class="card-header-title" href="{{ site.baseurl }}{{ product.url }}">{{ post.title}}</a>
-        </header>
-        {% endif %}
-        <div class="card-content">
-          <div class="content">
-              {% if product.image %}
-              <a class="title is-6" href="{{ site.baseurl }}{{ product.url }}">{{ post.title}}</a>
-              {% endif %}
-              <!-- <p>{{ post.excerpt }}</p> -->
-          </div>
-          <div class="has-text-centered">
-              <a href="{{ site.baseurl }}{{ product.url }}" class="button is-primary">자세히 보기</a>
-          </div>
-        </div>
-        <footer class="card-footer">
-
-            <p class="card-footer-item"><i class="far fa-calendar-alt"></i>{{ post.date | date: "%Y-%m-%d" }}</p>
-        </footer>
-
-  </div>
+    <div class="column is-3-desktop is-8-tablet">
+        {% include post-card.html %}
+    </div>
   {% endfor %}
   <div class="column is-12">
           {% include pagination.html %}
