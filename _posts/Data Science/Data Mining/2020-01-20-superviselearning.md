@@ -98,7 +98,7 @@ canonical_url:
 
 ### Classification Evaluation Metric
 
-
+<img src='/img/classmatric.png' width='400'>
 
 |Method||
 |------|-----|
