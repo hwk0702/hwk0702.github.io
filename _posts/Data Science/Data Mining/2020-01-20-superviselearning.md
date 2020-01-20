@@ -98,8 +98,13 @@ canonical_url:
 
 ### Classification Evaluation Metric
 
-$$ {TP+TN} /over {P+N} $$
+
 
 |Method||
 |------|-----|
-|Accuracy| $$ {TP+TN} /over {P+N} $$ |
+|Accuracy| $$ {TP+TN} \over {P+N} $$ |
+|Error rate| $$ {FP+FN} \over {P+N} $$ |
+|Sensitivity| $$ TP \over P $$ |
+|Specificity| $$ TN \over N $$ |
+|Precision| $$ TP \over {TP+FP} $$ |
+|F-score| $$ {2*precision*recall} \over {precision+recall} $$ |
