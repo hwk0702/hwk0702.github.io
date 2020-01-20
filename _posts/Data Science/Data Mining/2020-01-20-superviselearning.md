@@ -131,4 +131,21 @@ canonical_url:
 
 -----------------------------------------------------------
 
-## Training & Test
+## Training vs Test
+
+### 1. Holdout
+
+- 데이터를 트레이닝과 테스트로 나누기 (8:2, 6:4, 2:1)
+
+### 2. K-fold cross validation (K-fold 교차 검증)
+
+- k개의 데이터로 등분
+- 분리된 k개의 subset 중 k-1개를 훈련 데이터로 사용하고 1개의 subset을 테스트 데이터로 사용
+- 비복원 추출의 개념으로 한번 테스트로 선택된 subset 데이터는 다시 선택하지 않는다.
+- fold수가 적을수록 정확한 측정이 가능
+
+### 3. Bootstrap
+
+- sample이 매우 적을 때 사용
+- 중복 허용
+- .632 bootstrap
