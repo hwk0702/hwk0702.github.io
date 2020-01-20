@@ -100,4 +100,4 @@ canonical_url:
 
 |Method||
 |------|-----|
-|Accuracy| $$ {TP+TN} /over {P+N} $$ |
+|Accuracy| $ {TP+TN} /over {P+N} $ |
