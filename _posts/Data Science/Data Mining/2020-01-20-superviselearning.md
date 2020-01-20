@@ -68,7 +68,7 @@ canonical_url:
 |---|----|
 |* 연속형과 명목형 모두 처리 가능 <br> * 비선형, 불연속 데이터도 학습 가능 <br> * 계산 속도가 빠름 <br> * 결과 해석이 비교적 쉬움 |* 데이터의 작은 변화에도 구조가 민감하게 변화 <br> * 트리가 커질수록 과적합에 빠질 수 있음 <br> * Missing value 처리 불가능|
 
-<img src='/img/decisiontree.png' width='500'>
+<img src='/img/decisiontree.PNG' width='500'>
 
 ### 4. Naive Bayesian (나이브베이즈)
 
@@ -106,7 +106,7 @@ canonical_url:
 
 ---------------------------------------------------------------------------
 
-## 성능 측정 방법
+## 성능 평가 방법
 
 ### Classification Evaluation Metric
 
@@ -120,3 +120,15 @@ canonical_url:
 |Specificity| $$ TN \over N $$ |
 |Precision| $$ TP \over {TP+FP} $$ |
 |F-score| $$ {2*precision*recall} \over {precision+recall} $$ |
+
+### ROC Curve
+
+- Classifier의 성능을 평가하는 척도 중 하나
+- Tuple들의 TPR(Sensitivity)와 FPR(1-Specificity) 관계를 나타낸 것으로 이를 타점하고 연결한 형태
+- 곡선이 굽어질수록, 즉, 왼쪽 위로 굽어있는 경우가 더 좋은 성능
+
+<img src='/img/roc.PNG' width='400'>
+
+-----------------------------------------------------------
+
+## Training & Test
