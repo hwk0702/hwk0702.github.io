@@ -10,7 +10,7 @@ categories: [Data Science/Data Mining]
 
 description:
 
-image: /img/super.png
+image: /img/super1.png
 
 published: true
 
