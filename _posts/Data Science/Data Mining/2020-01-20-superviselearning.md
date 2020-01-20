@@ -98,6 +98,8 @@ canonical_url:
 
 ### Classification Evaluation Metric
 
+$$ {TP+TN} /over {P+N} $$
+
 |Method||
 |------|-----|
 |Accuracy| $$ {TP+TN} /over {P+N} $$ |
