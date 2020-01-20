@@ -10,6 +10,8 @@ callouts: home_callouts
 
 show_sidebar: true
 
+sitemap :
+
 ---
 
 ## Dev-hwon's Data Science blog
