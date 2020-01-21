@@ -20,7 +20,7 @@ canonical_url:
 
 ## Statistical Learning
 
-<img src="/img/statistical.PNG" >
+<img src="/img/statistical.PNG" width='500'>
 
 ------------------------------
 
@@ -62,9 +62,11 @@ $$ E(Y)= \beta_0 + \beta_1X_1 + \beta_2X_2 + \cdots + \beta_pX_p $$
 
 $$ E(Y|X)=\beta_0+\beta_1X \;\;\;\;\;\;\;\;\;\;\; \varepsilon = Y-E(Y|X)$$
 
-$$\text{VS} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \text{VS}$$
+$$\text{VS} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \text{VS}$$
 
 $$ \hat{Y}=\hat{\beta_0}+\hat{\beta_1}X \;\;\;\;\;\;\;\;\;\;\;\;\; e=Y-\hat{Y}$$
 
 - 랜덤 에러( $$\varepsilon $$ )는 관심 수량의 실제 값과 관측 값의 편차
 - 잔차($$e$$)는 관심 수량의 관측값과 추정값의 차이
+
+### Least Square Estimate of Simple Regression Model
