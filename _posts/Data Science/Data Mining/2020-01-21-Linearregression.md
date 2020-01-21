@@ -20,7 +20,7 @@ canonical_url:
 
 ## Statistical Learning
 
-<img src="/img/statistical.png" >
+<img src="/img/statistical.PNG" >
 
 ------------------------------
 
@@ -60,4 +60,8 @@ $$ E(Y)= \beta_0 + \beta_1X_1 + \beta_2X_2 + \cdots + \beta_pX_p $$
 
 ### Difference between Expectation and Fitted Value of Regression models
 
-$$ E(Y|X)=\beta_0+\beta_1X$$ &nbsp;&nbsp;&nbsp;&nbsp; $$ \varepsilon = Y-E(Y|X)$$
+$$ E(Y|X)=\beta_0+\beta_1X \;\;\;\;\;\;\;\;\;\;\; \varepsilon = Y-E(Y|X)$$
+
+$$\text{VS} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \text{VS}$$
+
+$$ \hat{Y}=\hat{\beta_0}+\hat{\beta_1}X \;\;\;\;\;\;\;\;\;\;\;\;\; e=Y-\hat{Y}$$
