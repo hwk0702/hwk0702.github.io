@@ -12,7 +12,7 @@ description:
 
 image: /img/linearregression.png
 
-published: true
+published: False
 
 canonical_url:
 
@@ -52,6 +52,8 @@ $$ E(Y|X)=\beta_0+\beta_1X $$
 
 ### Purpose of Linear Regression model
 
+<img src='/img/linearregression3.png' width='400'>
+
 $$Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \cdots + \beta_pX_p+\varepsilon, \varepsilon \sim N(0,\sigma^2)$$
 
 $$ E(Y)= \beta_0 + \beta_1X_1 + \beta_2X_2 + \cdots + \beta_pX_p $$
@@ -66,7 +68,15 @@ $$\text{VS} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \text{VS}$$
 
 $$ \hat{Y}=\hat{\beta_0}+\hat{\beta_1}X \;\;\;\;\;\;\;\;\;\;\;\;\; e=Y-\hat{Y}$$
 
+<img src='/img/linearregression4.png' width='500'>
+
 - 랜덤 에러( $$\varepsilon $$ )는 관심 수량의 실제 값과 관측 값의 편차
 - 잔차($$e$$)는 관심 수량의 관측값과 추정값의 차이
 
 ### Least Square Estimate of Simple Regression Model
+
+$$ \varepsilon_i = y_i-E(y_i)=y_i-(\beta_0+\beta_1x_1)=y_i-\beta_0-\beta_1x_1 $$
+
+$$ Q(\beta_0,\beta_1)=\sum^n_{i=1}\varepsilon^2_i=\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)^2 $$
+
+$$ \text{Minimize} \; Q(\beta_0,\beta_1) $$
