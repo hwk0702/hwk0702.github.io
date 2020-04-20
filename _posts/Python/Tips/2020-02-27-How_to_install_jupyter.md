@@ -18,22 +18,23 @@ canonical_url:
 
 ---
 
-# Jupyter notebook 설치 및 실행 방법
+Jupyter notebook 설치 및 실행 방법
+==================================
 
-
-- 본 설치 방법은 Linux 기반 설치 방법입니다.
+-	본 설치 방법은 Linux 기반 설치 방법입니다.
 
 #### Anaconda의 jupyter notebook을 이용시에 [0번 목차](#0-anaconda-설치-및-실행-일반-python에서-jupyter-notebook-이용-시에는-생략) 부터
+
 #### Anaconda 설치 없이 jupyter notebook을 이용시에는 [1번 목차](#1-pip-사용) 부터 따라서 진행하시면 됩니다.
 
----------------------------------------------
+---
 
-## 0. Anaconda 설치 및 실행 (일반 python으로 jupyter notebook 이용 시에는 생략)
+0. Anaconda 설치 및 실행 (일반 python으로 jupyter notebook 이용 시에는 생략)
+----------------------------------------------------------------------------
 
 #### Anaconda 설치 파일 다운로드
 
-아래의 코드를 입력하여 Anaconda 설치 파일을 다운 받습니다.
-설치 전에 아나콘다 버전을 확인 후에 다운 받아 주시길 바랍니다.
+아래의 코드를 입력하여 Anaconda 설치 파일을 다운 받습니다. 설치 전에 아나콘다 버전을 확인 후에 다운 받아 주시길 바랍니다.
 
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
@@ -75,9 +76,10 @@ conda updata -n base conda
 conda update -all
 ```
 
------------------------------------------
+---
 
-## 1. PIP 사용
+1. PIP 사용
+-----------
 
 #### PIP 설치
 
@@ -101,13 +103,14 @@ pip install --upgrade pip
 python -m pip install --upgrade pip
 ```
 
------------------------------------------------
+---
 
-## 2. Jupyter notebook
+2. Jupyter notebook
+-------------------
 
 #### Jupyter notebook 설치
 
-- ***Anaconda를 설치 한 경우***
+-	***Anaconda를 설치 한 경우***
 
 Anaconda 설치 시 Jupyter notebook은 기본으로 설치가 됩니다. 하지만 가상환경 내에 jupyter를 설치하고자 할 때 다음과 같은 명령어를 사용하시면 됩니다.
 
@@ -115,7 +118,7 @@ Anaconda 설치 시 Jupyter notebook은 기본으로 설치가 됩니다. 하지
 conda install jupyter notebook
 ```
 
-- ***Anaconda를 설치하지 않고 일반 python으로 실행시키는 경우***
+-	***Anaconda를 설치하지 않고 일반 python으로 실행시키는 경우***
 
 Anaconda를 따로 설치하지 않고 jupyter notebook을 사용하고자 할 때 다음과 같은 명령어를 사용하시면 됩니다.
 
@@ -131,23 +134,21 @@ pip install jupyter
 jupyter notebook
 ```
 
-Anaconda를 통해서 실행 시에는 반드시 Anaconda를 실행시키고 명령어를 입력하여야 합니다.
-실행 시 아래와 같이 localhost:8888로 접속 가능합니다. (원격 접속 불가능)
+Anaconda를 통해서 실행 시에는 반드시 Anaconda를 실행시키고 명령어를 입력하여야 합니다. 실행 시 아래와 같이 localhost:8888로 접속 가능합니다. (원격 접속 불가능)
 
 <img src='/img/jupyter_notebook_local.PNG'>
 
 #### 원격으로 Jupyter notebook 접속
 
-1. 포트 방화벽 해제하기
+1.	포트 방화벽 해제하기
 
-아래의 명령어로 열고자 하는 포트의 방화벽을 해제합니다.
-포트포워딩도 필수로 해주어야 합니다.
+아래의 명령어로 열고자 하는 포트의 방화벽을 해제합니다. 포트포워딩도 필수로 해주어야 합니다.
 
 ```
 sudo ufw allow [port]
 ```
 
-2. config 파일 만들기
+1.	config 파일 만들기
 
 아래의 명령어를 실행하면 /home/username/.jupyter 디렉토리에 jupyter_notebook_config.py 파일이 생성됩니다.
 
@@ -155,7 +156,7 @@ sudo ufw allow [port]
 jupyter notebook --generate-config
 ```
 
-3. 서버 비밀번호 생성
+1.	서버 비밀번호 생성
 
 ```
 Ipython
@@ -174,7 +175,7 @@ Out[2]: 'sha1:12j30t94230g208ehdsflhsdgt3908' # 이런 식으로 입력한 비�
 
 암호화된 비밀번호를 복사합니다.
 
-4. 환경설정하기
+1.	환경설정하기
 
 /home/username/.jupyter 디렉토리에 가서 jupyter_notebook_config.py을 실행시킵니다.
 
@@ -182,8 +183,7 @@ Out[2]: 'sha1:12j30t94230g208ehdsflhsdgt3908' # 이런 식으로 입력한 비�
 vi jupyter_notebook_config.py
 ```
 
-vi, vim에서 수정시 i를 누르고 수정합니다.
-코드를 수정하는 부분은 #을 제거하여 주석처리를 제거합니다.
+vi, vim에서 수정시 i를 누르고 수정합니다. 코드를 수정하는 부분은 #을 제거하여 주석처리를 제거합니다.
 
 ```python
 # 코드 맨 위 코드 추가
@@ -226,9 +226,10 @@ jupyter notebook --config jupyter_notebook_config.py
 
 위와 같이 원격으로 접속이 되면 설정했던 비밀번호로 로그인하시면 됩니다.
 
--------------------------------------------
+---
 
-## 3. Jupyter notebook extensions
+3. Jupyter notebook extensions
+------------------------------
 
 Jupyter notebook extensions란 jupyter notebook의 다양한 확장 기능을 모아 놓은 것입니다.
 
@@ -246,17 +247,16 @@ Permission denied: '/usr/local/share/jupyter/nbextensions' 이 뜰 경우 아래
 pip install jupyter_contrib_nbextensions && jupyter contrib nbextension install --user
 ```
 
-설치가 완료되면 아래와 같이 Nbextensions 탭이 생깁니다.
-diable 박스 체크를 해제해주고 원하시는 기능들을 체크해서 사용하시면 됩니다.
+설치가 완료되면 아래와 같이 Nbextensions 탭이 생깁니다. diable 박스 체크를 해제해주고 원하시는 기능들을 체크해서 사용하시면 됩니다.
 
 <img src='/img/jupyter_notebook_extensions.PNG'>
 
 #### 추천 기능
 
-- Table of Conents: 마크다운 헤더 수준에 따른 목차 생성
-- Autopep8: 자동 코드정리기능
-- Variable inspector: 변수들을 트래킹 하는 익스텐션
-- ExecuteTime: 셀이 돌아가는 시간 측정
-- Hide input all: 코드부분을 숨기고 결과만 보여줍니다.
+-	Table of Conents: 마크다운 헤더 수준에 따른 목차 생성
+-	Autopep8: 자동 코드정리기능
+-	Variable inspector: 변수들을 트래킹 하는 익스텐션
+-	ExecuteTime: 셀이 돌아가는 시간 측정
+-	Hide input all: 코드부분을 숨기고 결과만 보여줍니다.
 
-------------------------------------------
+---
