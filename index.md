@@ -24,7 +24,7 @@ sitemap :
 
 ### Introduction
 
-전자부품연구원 지능정보연구본부 SW·Embedded 연구센터 2020.02~
+전자부품연구원 지능정보연구본부 지능융합SW 연구센터 2020.02~
 
 Industrial Management Engineering at Incheon University 2014.03~2020.02
 
