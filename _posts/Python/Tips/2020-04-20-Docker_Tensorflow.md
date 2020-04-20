@@ -10,7 +10,7 @@ categories: [Python/Tips]
 
 description:
 
-image: /img/docker_tensorflow.png
+image: /img/docker.png
 
 published: true
 
@@ -50,7 +50,7 @@ sudo docker run -it -p 8888:8888
 
 -	-v: volume (== --mount or --bind) 호스트의 파일시스템과 격리된 도커 컨테이너의 파일시스템을 이어주는 역할 컨테이너는 휘발성이기 때문에 작업하고 저장한 파일들은 호스트에서 직접 접근할 수 없고, 컨테이너가 내려간 상태에서 삭제되면 같이 삭제.
 
-<img src='./img/docker_tensorflow_volume.PNG'>
+<img src='/img/docker_tensorflow_volume.PNG'>
 
 -	이미지 이름의 형식은 <repo>/<image_name>:<tag_name> 입니다. tag name이 주어지지 않을 경우 default는 ‘latest’
 
@@ -58,7 +58,7 @@ sudo docker run -it -p 8888:8888
 
 #### 2. 실행 후
 
-<img src='./img/docker_tensorflow_1.PNG'>
+<img src='/img/docker_tensorflow_1.PNG'>
 
 -	tensorflow/tensorflow:latest 이미지를 컨테이너로 올리면, 컨테이너에서 Jupyter notebook이 컨테이너의 8888번 포트에서 디폴트로 실행됩니다.
 
@@ -66,7 +66,7 @@ sudo docker run -it -p 8888:8888
 
 -	Jupyter notebook 접속
 
-<img src='./img/docker_tensorflow_2.PNG'>
+<img src='/img/docker_tensorflow_2.PNG'>
 
 -	컨테이너의 8888 포트와 로컬의 8888 포트를 이전에 -p 옵션으로 포워딩 해 주었으니, 로컬의 브라우 저에서 8888 포트로 접속할 수 있습니다.
 
@@ -110,7 +110,7 @@ ubuntu-drivers devices
 
 gpu에 맞는 드라이버를 확인하실 수 있습니다.
 
-<img src='./img/ubuntu_drivers.PNG'>
+<img src='/img/ubuntu_drivers.PNG'>
 
 ```bashrc
 
@@ -124,7 +124,7 @@ sudo ubuntu-drivers autoinstall
 nvidia-smi
 ```
 
-<img src='./img/nvidia_smi.PNG'>
+<img src='/img/nvidia_smi.PNG'>
 
 #### 2. nvidia-docker2 설치
 
@@ -167,7 +167,7 @@ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 
 #### 3. Tensorflow-gpu 공식 이미지를 가져와서 컨테이너에 올립니다.
 
-<img src='./img/docker_tensorflow_gpu_1.PNG'>
+<img src='/img/docker_tensorflow_gpu_1.PNG'>
 
 그리고 실행시킨 gpu 컨테이너의 jupyter notebook 안에서 gpu를 잘 인식하는지 확인
 
@@ -179,7 +179,7 @@ def get_available_gpus():
 get_available_gpus()
 ```
 
-<img src='./img/docker_tensorflow_gpu_2.PNG'>
+<img src='/img/docker_tensorflow_gpu_2.PNG'>
 
 ---
 
@@ -246,7 +246,7 @@ sudo service docker restart
 
 pycharm에서 file -> setting을 열고 docker 설정을 합니다.
 
-<img src='./img/pycharm_docker_1.PNG'>
+<img src='/img/pycharm_docker_1.PNG'>
 
 tcp socket에서 Engine API URL에 서버 IP와 설정한 port로 연결합니다.
 
@@ -256,7 +256,7 @@ tcp socket에서 Engine API URL에 서버 IP와 설정한 port로 연결합니�
 
 setting -> Project -> Project Interpreter로 들어갑니다.
 
-<img src='./img/pycharm_docker_2.PNG'>
+<img src='/img/pycharm_docker_2.PNG'>
 
 위와 같이 세팅한 Docker에서 이미지를 설정합니다.
 
@@ -264,7 +264,7 @@ setting -> Project -> Project Interpreter로 들어갑니다.
 
 로컬에서 작성한 파일과 Docker상의 파일이 같아야하므로 맵핑을 해주어야 합니다.
 
-<img src='./img/pycharm_docker_3.PNG'>
+<img src='/img/pycharm_docker_3.PNG'>
 
 위와 같이 로컬에서의 경로와 Docker 상의 경로를 지정해줍니다.
 
@@ -278,6 +278,6 @@ def get_available_gpus():
 get_available_gpus()
 ```
 
-<img src='./img/pycharm_docker_4.PNG'>
+<img src='/img/pycharm_docker_4.PNG'>
 
 위와 같이 뜨면 성공입니다.
