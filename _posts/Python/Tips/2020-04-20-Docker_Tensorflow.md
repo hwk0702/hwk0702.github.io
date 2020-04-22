@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Jupyter notebook"
+title: "Docker Tensorflow 설치 및 환경 구축"
 
 date: 2020-04-20 18:36:07
 
@@ -10,7 +10,7 @@ categories: [Python/Tips]
 
 description:
 
-image: /img/docker.png
+image: /img/docker_tensorflow.png
 
 published: true
 
