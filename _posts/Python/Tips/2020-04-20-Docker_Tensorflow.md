@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Docker Tensorflow 설치 및 환경 구축"
+title: "Docker Tensorflow"
 
 date: 2020-04-20 18:36:07
 
