@@ -2,15 +2,15 @@
 
 layout: post
 
-title: "경사 하강법"
+title: "규제가 있는 선형 모델"
 
-date: 2020-05-28 12:48:07
+date: 2020-05-28 16:12:07
 
 categories: [ML/DL/Machine Learning]
 
 description:
 
-image: /img/gradient.png
+image: /img/regulation.PNG
 
 published: true
 
@@ -22,78 +22,54 @@ canonical_url:
 >
 > <img src='http://image.yes24.com/goods/89959711/800x0' width='150'>
 
-경사 하강법 (Gradient Desent, GR)
----------------------------------
+규제 (Regulation)
+-------------------------------------------
 
--	여러 종류의 문제에서 최적의 해법을 찾을 수 있는 일반 적인 최적화 알고리즘
--	**비용 함수를 최소화하기 위해 반복해서 파라미터를 조정해가는 방법**
+-	과대적합을 감소시키는 방법
+- 선형 회귀 모델에서는 모델의 가중치를 제한함으로써 규제
+- '릿지', '라쏘', '엘라스틱넷'
 
-파라미터 벡터 $\theta$를 임의의 값으로 시작해서(무작위 초기화) 비용 함수의 현재 그래디언트를 계산하고, 그래디언트가 감소하는 방향으로 진행하여 알고리즘이 최솟값에 수렴할 때까지 점진적으로 향상
+---------------------------------------------------------
+#### 1. 릿지 회귀(또는 티호노프 규제)
 
-<img src='/img/gradient.png' width='300'>
+- 규제항 $$\alpha\sum^{n}_{i=1}\theta^2_i$$이 비용 함수에 추가
+- 학습 알고리즘을 데이터에 맞추는 것뿐만 아니라 모델의 가중치가 가능한 작게 유지되도록 한다.
+- 모델의 훈련이 끝나면 모델의 성능을 규제가 없는 성능 지표로 평가
+- $$\alpha=0$$이면 릿지 회귀는 선형회귀와 같아지고, $$\alpha$$가 아주 크면 모든 가중치가 0에 가까워지고 데이터의 평균을 지나는 수평선이 된다. 
+- 릿지 회귀의 비용 함수: $$J(\theta)=MSE(\theta)+\alpha\frac{1}{2}\sum^{m}_{i=1}\theta^2_i$$ 
 
--	**학습률(learning late)**: 경사 하강법에서 중요한 파라미터로 스텝의 크기를 나타낸다. 학습률이 너무 작으면 알고리즘이 수렴하기 위해 반복을 많이 진행해야 하므로 시간이 오래 걸리고, 학습률이 너무 크면 골짜기를 가로질러 반대편으로 건너뛰게 되어 이전보다 더 큰값으로 발산하게 만들 수 있다.
+<img src='/img/regulation1.PNG' width='400'>
 
-<img src='/img/gradient1.PNG' width='300'><img src='/img/gradient2.PNG' width='280'>
+- 릿지 회귀의 정규방정식: $$\hat{\theta}=(\mathbf{X}^{\tau}\mathbf{X}+\alpha{A})^{-1}\mathbf{X}^{\tau}\mathbf{y}$$
 
--	경사 하강법의 문제점:
+#### 2. 라쏘 회귀
 
-&nbsp;&nbsp;&nbsp;&nbsp;1) 전역 최솟값보다 지역 최솟값에 수렴할 수 있다.
+- 릿지 회귀처럼 비용 함수에 규제항을 더하지만 $$\mathit{l}_2$$ 노름의 제곱을 2로 나눈 것 대신 가중치 벡터 $$\mathit{l}_1$$ 노름을 사용한다.
+- 덜 중요한 특성의 가중치를 제거하려 한다는 특징
+- 라쏘 회귀 비용 함수: $$J(\theta)=MSE(\theta)+\alpha\sum^{n}_{i=1}\left | {\theta_i}  \right |$$
 
-<img src='/img/gradient3.PNG' width='300'>
+<img src='/img/regulation2.PNG' width='400'>
 
-&nbsp;&nbsp;&nbsp;&nbsp;2) 특성들의 스케일이 다르면 최솟값에 도달하는데 시간이 오래 걸린다.
+<img src='/img/regulation3.PNG' width='400'>
 
-<img src='/img/gradient4.PNG' width='300'>
+- 라쏘의 비용 함수는 $$\theta_i = 0 (i=1,2,\cdots,n일 때)$$에서 미분 불가능, 하지만 $$\theta_i = 0$$일 때 서브그레디언트 벡터 $$\mathbf{g}$$를 사용하면 경사 하강법 적용 가능
+- 라쏘 회귀의 서브그레디언트 벡터
 
----
+$$\mathbf{g}(\theta,J)=\triangledown_{\theta}\textup{MSE}+\alpha\begin{pmatrix} \mathrm{sign}(\theta_1) \\ \mathrm{sign}(\theta_2) \\ \vdots \\ \mathrm{sign}(\theta_n) \end{pmatrix}$$ 여기서 $$\mathrm{sign}(\theta_i)=\left\{\begin{matrix}
+ -1& \theta_i < 0일 때 \\ 
+ 0& \theta_i = 0일 때 \\
+ +1& \theta_i > 0일 때
+\end{matrix}\right.$$ 
 
-#### 1. 배치 경사 하강법
+#### 3. 엘라스틱넷
+- 릿지 회귀와 라쏘 회귀를 절충한 모델
+- 릿지와 라쏘의 규제항을 더해서 사용, 혼합 비율 $$r$$을 사용해 조절
+- $$r=0$$이면 릿지 회귀, $$r=1$$이면 라쏘 회귀와 같다.
+- 엘라스틱넷 비용 함수: $$J(\theta)=MSE(\theta)+r\alpha\sum^{n}_{i=1}\left | {\theta_i}  \right | + \frac{1-r}{2}\alpha\sum^n_{i=1}\theta_i^2$$
+- 릿지를 기본을 사용, 쓰이는 특성이 몇 개뿐이라고 의심되면 라쏘나 엘라스틱넷 사용, 특성 수가 훈련 샘플 수보다 많거나 특성 몇 개가 강하게 연관되어 있을 때는 라쏘보다는 엘라스틱넷 선호
 
--	**매 경사 하강법 스텝에서 전체 훈련 세트 $$\mathbf{x}$$에 대해 계산하는 방법**
--	매우 큰 훈련 세트에서는 아주 느리다.
--	특성 수에 민감하지 않다.
--	편도함수: 각 모델 파라미터 $$\theta_{j}$$가 조금 변경 될 때 비용함수가 얼마나 바뀌는지 계산하는 함수
+#### 4. 조기종료
+- 검증 에러가 최솟값에 도달하면 바로 훈련을 중지시키는 것
 
-$$\frac{\delta}{\delta\theta*{j}}\mathbf{MSE}(\theta)=\frac{2}{m}\sum*{i=1}^{m}(\theta^{\tau}\mathbf{x}^{i}-y^{i})x^{i}_{j}$$
+<img src='/img/regulation4.PNG' width='400'>
 
--	그레디언트 벡터
-
-$$\triangledown*\{\theta}\mathbf{MSE}(\theta)= \begin{pmatrix} \frac{\delta}{\delta\theta*{0}}\mathbf{MSE}(\theta) \\ \frac{\delta}{\delta\theta*{1}}\mathbf{MSE}(\theta) \\ \vdots \\ \frac{\delta}{\delta\theta*{n}}\mathbf{MSE}(\theta) \end{pmatrix} = \frac{2}{m}\mathbf{x}^{\tau}(\mathbf{x}\theta-y)$$
-
--	경사 하강법의 스텝: $${\theta}^{(\mathrm{nextstep})}={\theta}-{\eta}{\triangledown_{\theta}}\mathbf{MSE}(\theta)$$
-
-<img src='/img/gradient5.PNG' width='400'>
-
-#### 2. 확률적 경사 하강법
-
--	**매 스텝에서 한 개의 샘플을 무작위로 선택하고 그 하나의 샘플에 대한 그레디언트 계산하는 방법**
--	매 반복에서 다뤄야 할 데이터가 적기 때문에 빠르고 매우 큰 훈련 세트도 가능하다.
--	비용 함수가 매우 불규칙할 경우 지역 최솟값을 건너뛸 수 있도록 도와주므로 배치 경사 하강법보다 전역 최솟값을 찾을 가능성이 높다.
--	반면에 확률적이기 때문에 배치 경사 하강법보다 불안정하여 전역 최솟값에 다다르지 못하게 한다.
--	해결법: 학습률을 점진적으로 감소시킨다.
--	학습 스케줄: 매 반복에서 학습률을 결정하는 함수
-
-<img src='/img/gradient6.PNG' width='300'>
-
-#### 3. 미니배치 경사 하강법
-
--	**미니배치라 부르는 임의의 작은 샘플 세트에 대해 그레디언트를 계산**
--	행렬 연산에 최적화된 하드웨어, 특히 GPU를 사용해서 얻는 성능 향상
--	SGD보다 최솟값에 더 가까이 도달할 수 있다.
--	하지만 지역 최솟값에서 더 빠져나오기 힘들 수 있다.
-
-<img src='/img/gradient7.PNG' width='300'>
-
--	배치 경사 하강법의 경로가 실제로 최솟값에서 멈춘 반면 확률적 경사 하강법과 미니배치 경사 하강법은 근처에서 맴돌고 있다.
--	배치 경사 하강법은 매 스텝에서 많은 시간이 소요되고, 확률적 경사 하강법과 미니배치 경사 하강법조 적절한 학습 스케줄을 사용하면 최솟값에 도달한다.
-
-#### 4. 선형 회귀를 사용한 알고리즘 비교
-
-| 알고리즘             | m이 클 때 | 외부 메모리 학습 지원 | n이 클 때 | 하이퍼파라미터 수 | 스케일 조정 필요 | 사이킷런         |
-|----------------------|-----------|-----------------------|-----------|-------------------|------------------|------------------|
-| 정규방정식           | 빠름      | No                    | 느림      | 0                 | No               | N/A              |
-| SVD                  | 빠름      | No                    | 느림      | 0                 | No               | LinearRegression |
-| 배치 경사 하강법     | 느림      | No                    | 빠름      | 2                 | Yes              | SGDRegressor     |
-| 확률적 경사 하강법   | 빠름      | Yes                   | 빠름      | $$\geq$$2         | Yes              | SGDRegressor     |
-| 미니배치 경사 하강법 | 빠름      | Yes                   | 빠름      | $$\geq$$2         | Yes              | SGDRegressor     |
