@@ -55,7 +55,7 @@ canonical_url:
 - 라쏘의 비용 함수는 $$\theta_i = 0 (i=1,2,\cdots,n일 때)$$에서 미분 불가능, 하지만 $$\theta_i = 0$$일 때 서브그레디언트 벡터 $$\mathbf{g}$$를 사용하면 경사 하강법 적용 가능
 - 라쏘 회귀의 서브그레디언트 벡터
 
-$$\mathbf{g}(\theta,J)=\triangledown_{\theta}\MSE+\alpha\begin{pmatrix} \mathrm{sign}(\theta_1) \\ \mathrm{sign}(\theta_2) \\ \vdots \\ \mathrm{sign}(\theta_n) \end{pmatrix}$$ 여기서 $$\mathrm{sign}(\theta_i)= \left \{\begin{matrix}
+$$\mathbf{g}(\theta,J)=\triangledown_{\theta}MSE+\alpha\begin{pmatrix} \mathrm{sign}(\theta_1) \\ \mathrm{sign}(\theta_2) \\ \vdots \\ \mathrm{sign}(\theta_n) \end{pmatrix}$$ 여기서 $$\mathrm{sign}(\theta_i)= \left \{\begin{matrix}
  -1& \theta_i < 0일 때 \\ 
  0& \theta_i = 0일 때 \\
  +1& \theta_i > 0일 때
