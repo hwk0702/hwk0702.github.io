@@ -46,7 +46,7 @@ canonical_url:
 
 - 릿지 회귀처럼 비용 함수에 규제항을 더하지만 $$\mathit{l}_2$$ 노름의 제곱을 2로 나눈 것 대신 가중치 벡터 $$\mathit{l}_1$$ 노름을 사용한다.
 - 덜 중요한 특성의 가중치를 제거하려 한다는 특징
-- 라쏘 회귀 비용 함수: $$J(\theta)=MSE(\theta)+\alpha\sum^{n}_{i=1}\left | {\theta_i}  \right |$$
+- 라쏘 회귀 비용 함수: $$J(\theta)=MSE(\theta)+\alpha\sum^{n}_{i=1}\left || {\theta_i}  \right ||$$
 
 <img src='/img/regulation2.PNG' width='400'>
 
@@ -55,7 +55,7 @@ canonical_url:
 - 라쏘의 비용 함수는 $$\theta_i = 0 (i=1,2,\cdots,n일 때)$$에서 미분 불가능, 하지만 $$\theta_i = 0$$일 때 서브그레디언트 벡터 $$\mathbf{g}$$를 사용하면 경사 하강법 적용 가능
 - 라쏘 회귀의 서브그레디언트 벡터
 
-$$\mathbf{g}(\theta,J)=\triangledown_{\theta}\textup{MSE}+\alpha\begin{pmatrix} \mathrm{sign}(\theta_1) \\ \mathrm{sign}(\theta_2) \\ \vdots \\ \mathrm{sign}(\theta_n) \end{pmatrix}$$ 여기서 $$\mathrm{sign}(\theta_i)=\left\{\begin{matrix}
+$$\mathbf{g}(\theta,J)=\triangledown_{\theta}\MSE+\alpha\begin{pmatrix} \mathrm{sign}(\theta_1) \\ \mathrm{sign}(\theta_2) \\ \vdots \\ \mathrm{sign}(\theta_n) \end{pmatrix}$$ 여기서 $$\mathrm{sign}(\theta_i)=\left\{\begin{matrix}
  -1& \theta_i < 0일 때 \\ 
  0& \theta_i = 0일 때 \\
  +1& \theta_i > 0일 때
