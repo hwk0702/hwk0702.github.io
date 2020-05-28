@@ -65,7 +65,7 @@ $$\mathbf{g}(\theta,J)=\triangledown_{\theta}\MSE+\alpha\begin{pmatrix} \mathrm{
 - 릿지 회귀와 라쏘 회귀를 절충한 모델
 - 릿지와 라쏘의 규제항을 더해서 사용, 혼합 비율 $$r$$을 사용해 조절
 - $$r=0$$이면 릿지 회귀, $$r=1$$이면 라쏘 회귀와 같다.
-- 엘라스틱넷 비용 함수: $$J(\theta)=MSE(\theta)+r\alpha\sum^{n}_{i=1}\left | {\theta_i}  \right | + \frac{1-r}{2}\alpha\sum^n_{i=1}\theta_i^2$$
+- 엘라스틱넷 비용 함수: $$J(\theta)=MSE(\theta)+r\alpha\sum^{n}_{i=1}\left || {\theta_i}  \right || + \frac{1-r}{2}\alpha\sum^n_{i=1}\theta_i^2$$
 - 릿지를 기본을 사용, 쓰이는 특성이 몇 개뿐이라고 의심되면 라쏘나 엘라스틱넷 사용, 특성 수가 훈련 샘플 수보다 많거나 특성 몇 개가 강하게 연관되어 있을 때는 라쏘보다는 엘라스틱넷 선호
 
 #### 4. 조기종료
