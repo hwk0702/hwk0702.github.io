@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Supervised Learning"
+title: "지도학습"
 
 date: 2020-01-20 10:57:07
 
