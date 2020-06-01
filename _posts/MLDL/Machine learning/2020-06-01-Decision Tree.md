@@ -10,7 +10,7 @@ categories: [ML/DL/Machine Learning]
 
 description:
 
-image: /img/decisiontree.PNG
+image: /img/decisiontree0.PNG
 
 published: true
 
