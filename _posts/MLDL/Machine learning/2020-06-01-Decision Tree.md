@@ -62,7 +62,7 @@ $$J(k,t_k)=\frac{m_{left}}{m}G_{left}+\frac{m_{right}}{m}G_{right}$$
 $$ 여기서 \left\{\begin{matrix}
 G_{left/right}는 왼쪽/오른쪽 서브넷의 불순도\\ 
 m_{left/right}는 왼쪽/오른쪽 서브넷의 샘플 수
-\end{matrix}\right.
+\end{matrix}\right.$$
 
 #### 4. 계산 복잡도
 
@@ -81,9 +81,9 @@ $$G_i=1-\sum^n_{k=1}P_{i,k}^2$$
 
 $$P_{i,k}$$는 i번째 노드에 있는 훈련 샘플 중 클래스 k에 속한 샘플의 비율
 
-엔트로피 불순도를
+엔트로피 불순도
 
-$$H_i=-\underset{P_{i,k} \neq 0}{\sum^n_{k=1}}log_2(P_{i,k})
+$$H_i=-\underset{P_{i,k} \neq 0}{\sum^n_{k=1}}log_2(P_{i,k})$$
 
 #### 6. 규제 매개변수
 
@@ -111,7 +111,7 @@ $$J(k,t_k)=\frac{m_{left}}{m}{MSE}_{left}+\frac{m_{right}}{m}{MSE}_{right}$$
 $$ 여기서 \left\{\begin{matrix}
 {MSE}_{node} = \sum_{i \in node}(\hat{y}_{node}-y^{(i)})^2\\ 
 \hat{y}_{node} = \frac{1}{m_{node}}\sum_{i \in node}y^{(i)}
-\end{matrix}\right.
+\end{matrix}\right.$$
 
 #### 8. 불안정성
 
