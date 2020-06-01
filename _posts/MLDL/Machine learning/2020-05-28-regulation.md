@@ -40,7 +40,7 @@ canonical_url:
 
 <img src='/img/regulation1.PNG' width='400'>
 
-- 릿지 회귀의 정규방정식: $$\hat{\theta}=(\mathbf{X}^{\tau}\mathbf{X}+\alpha{A})^{-1}\mathbf{X}^{\tau}\mathbf{y}$$
+- 릿지 회귀의 정규방정식: $$\hat{\theta}=(\mathbf{X}^{T}\mathbf{X}+\alpha{A})^{-1}\mathbf{X}^{T}\mathbf{y}$$
 
 #### 2. 라쏘 회귀
 
