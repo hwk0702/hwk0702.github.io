@@ -100,6 +100,15 @@ $$\mathbf{V} = \begin{pmatrix}
  | & | &  & |
 \end{pmatrix}$$
 
+##### 3.3 d차원으로 투영하기
+
+- 주성분을 추출 후 d개의 주성분으로 정의한 초평면에 투영하여 데이터 셋을 d차원으로 축소
+- d차원으로 축소된 데이터셋 $$\mathbf{X}^{d-proj}$$을 얻기 위해서는 행렬 $$\mathbf{X}$$와 $$\mathbf{V}$$의 첫 d열로 구성된 행렬 $$\mathbf{W}_d$$를 행렬 곱셈한다.
+
+훈련 세트를 d차원으로 투영하기
+
+$$\mathbf{X}_{d-proj}=\mathbf{X}\mathbf{W}_d$$
+
 ---
 
 아직 작성 중...
