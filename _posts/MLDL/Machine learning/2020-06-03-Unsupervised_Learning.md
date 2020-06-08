@@ -12,7 +12,7 @@ description:
 
 image: /img/UnSL.png
 
-published: True
+published: true
 
 canonical_url:
 
