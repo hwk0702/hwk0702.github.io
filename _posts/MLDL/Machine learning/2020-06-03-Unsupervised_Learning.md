@@ -202,7 +202,7 @@ canonical_url:
 BIC와 AIC 
 
 $$BIC = log(m)p-2log(\hat{L})$$
-
+<br>
 $$AIC = 2p-2log(\hat{L})$$
 
 > - $$m$$은 샘플의 개수
