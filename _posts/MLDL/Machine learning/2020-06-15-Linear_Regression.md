@@ -67,6 +67,8 @@ $$E(Y)=\beta_0+\beta_1\mathbf{X}_1+\beta_2\mathbf{X}_2+\cdots+\beta_p\mathbf{X}_
 - 랜덤 오차($$\varepsilon$$)는 관심 수량의 실제 값과 관측 값의 편차
 - 잔차($$e$$)는 관심 수량의 관측값과 추정 값의 차이
 
+---
+
 #### 2. 단순 회귀 모형의 최소 추정량
 
 $$\varepsilon_i=y_i-E(y_i)=y_i-(\beta_0+\beta_1x_i)=y_i-\beta_0-\beta_1x_i$$
@@ -75,16 +77,16 @@ $$Q(\beta_0\beta_1)=\sum^n_{i=1}\varepsilon_i^2=\sum^n_{i=1}(y_i-\beta_0-\beta_1
 
 $$MinimizeQ(\beta_0\beta_1)=\sum^n_{i=1}\varepsilon_i^2=\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)^2$$
 
-> $$\frac{\delta Q(\beta_0,\beta_1)}{\delta \beta_0}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)=0$$
-> $$\sum y_i-n\beta_0=\beta_1\sum x_i=0$$
+> $$\frac{\delta Q(\beta_0,\beta_1)}{\delta \beta_0}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)=0$$ <br>
+> $$\sum y_i-n\beta_0=\beta_1\sum x_i=0$$ <br>
 > $$\hat{\beta_0}=\frac{\sum y_i-\hat{\beta_1}\sum x_i}{n}=\bar{y}-\hat{\beta_1}\bar{x}$$
 
 
-> $$\frac{\delta Q(\beta_0,\beta_1)}{\delta \beta_1}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)x_i=0$$
-> $$\sum x_iy_i-\beta_0\sum x_i-\beta_1\sum(x_i)^2=0$$
-> $$\sum x_iy_i-(\bar{y}-\hat{\beta_1}\bar{x})\sum x_i-\beta_1\sum(x_i)^2=0$$
-> $$\sum x_iy_i-\bar{y}\sum x_i-\hat{\beta_1}\bar{x}\sum x_i-\beta_1\sum(x_i)^2=0$$
-> $$\sum x_iy_i-\bar{y}\sum x_i-\hat{\beta_1}(n\bar{x}^2-\sum(x_i)^2)=0$$
+> $$\frac{\delta Q(\beta_0,\beta_1)}{\delta \beta_1}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)x_i=0$$ <br>
+> $$\sum x_iy_i-\beta_0\sum x_i-\beta_1\sum(x_i)^2=0$$ <br>
+> $$\sum x_iy_i-(\bar{y}-\hat{\beta_1}\bar{x})\sum x_i-\beta_1\sum(x_i)^2=0$$ <br>
+> $$\sum x_iy_i-\bar{y}\sum x_i-\hat{\beta_1}\bar{x}\sum x_i-\beta_1\sum(x_i)^2=0$$ <br>
+> $$\sum x_iy_i-\bar{y}\sum x_i-\hat{\beta_1}(n\bar{x}^2-\sum(x_i)^2)=0$$ <br>
 > $$\hat{\beta_1}=\frac{n\bar{x}\bar{y}-\sum x_iy_i}{n\bar{x}^2-\sum{(x_i)^2}}=\frac{\sum{(x_i-\bar{x})(y_i-\bar{y})}}{\sum{(x_i-\bar{x})^2}}$$
 
 $$\hat{\beta_0}=\bar{y}-\hat{\beta_1}\bar{x}$$
@@ -94,4 +96,5 @@ $$\hat{\beta_1}=\frac{\sum{(x_i-\bar{x})(y_i-\bar{y})}}{\sum{(x_i-\bar{x})^2}}$$
 ##### 다중선형회귀에서의 최소 추정량
 
 <img src='/img/LR4.png' width='400'>
+
 
