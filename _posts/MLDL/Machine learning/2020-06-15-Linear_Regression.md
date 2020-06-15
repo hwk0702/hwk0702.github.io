@@ -36,7 +36,7 @@ canonical_url:
 
 $$Y=\beta_0+\beta_1\mathbf{X}_1+\beta_2\mathbf{X}_2+\cdots+\beta_p\mathbf{X}_p$$
 
-<img src='/img/LR2.png' width='400'>
+<img src='/img/LR2.PNG' width='400'>
 
 ##### 1.1 Two objectives of regression analysis
 
@@ -46,7 +46,7 @@ $$Y=\beta_0+\beta_1\mathbf{X}_1+\beta_2\mathbf{X}_2+\cdots+\beta_p\mathbf{X}_p$$
 
 ##### 1.2 선형 회귀 모델
 
-<img src='/img/LR1.png' width='400'>
+<img src='/img/LR1.PNG' width='400'>
 
 $$\varepsilon$$=Random error
 
@@ -62,14 +62,16 @@ $$E(Y)=\beta_0+\beta_1\mathbf{X}_1+\beta_2\mathbf{X}_2+\cdots+\beta_p\mathbf{X}_
 
 ##### 1.4 회귀 모형의 기대치와 적합치의 차이
 
-<img src='/img/LR3.png' width='400'>
+<img src='/img/LR3.PNG' width='400'>
 
 - 랜덤 오차($$\varepsilon$$)는 관심 수량의 실제 값과 관측 값의 편차
 - 잔차($$e$$)는 관심 수량의 관측값과 추정 값의 차이
 
 ---
 
-#### 2. 단순 회귀 모형의 최소 추정량
+#### 2. 최소 추정량
+
+##### 2.1 단순 회귀 모형의 최소 추정량
 
 $$\varepsilon_i=y_i-E(y_i)=y_i-(\beta_0+\beta_1x_i)=y_i-\beta_0-\beta_1x_i$$
 
@@ -93,8 +95,40 @@ $$\hat{\beta_0}=\bar{y}-\hat{\beta_1}\bar{x}$$
 
 $$\hat{\beta_1}=\frac{\sum{(x_i-\bar{x})(y_i-\bar{y})}}{\sum{(x_i-\bar{x})^2}}$$
 
-##### 다중선형회귀에서의 최소 추정량
+##### 2.2 다중 선형 회귀에서의 최소 추정량
 
-<img src='/img/LR4.png' width='400'>
+<img src='/img/LR4.PNG' width='400'>
 
+$$Y=X\beta+\varepsilon, \hat{Y}=X\hat{\beta}$$ 
+
+$$e=y-x\hat{\beta}$$
+
+$$Q=\sum e_i^2=e^Te=(y-x\hat{\beta})^T(y-x\hat{\beta}) \\ = y^Ty-\hat{\beta}^Tx^Ty-y^Tx\hat{\beta}+\hat{\beta}^Tx^Tx\hat{\beta} \\ = y^Ty-2\hat{\beta}^Tx^Ty+\hat{\beta}^Tx^Tx\hat{\beta}$$
+
+$$\frac{\delta Q}{\delta \beta}=-2x^Ty+2\hat{\beta}x^Tx=0$$
+
+$$\hat{\beta}=(x^Tx)^{-1}x^Ty$$
+
+##### 2.3 최소 제곱 추정의 속성
+
+- Gauss-Markov Theorem: 최소 제곱 추정기는 최고의 선형 비 편향 추정기
+- BLUE: 편차가 없고 다른 추정기에 비해 평균 제곱 오차가 가장 작다
+
+---
+
+#### 3. Unbiases Estimate of $$\sigma^2$$
+
+- 잔차가 정규분포 $$N(0,\sigma^2)$$를 따름
+
+$$\hat{\sigma}^2=(\frac{1}{n-2})\sum^n_{i=1}e^2_i \rightarrow  \hat{\sigma}=\sqrt{(\frac{1}{n-2})\sum^n_{i=1}e^2_i} \\ e_i=Y_i-\hat{Y_i}$$
+
+---
+
+#### 4.회귀계수에 대한 추론
+
+- 계수의 신뢰 구간을 구성하여 계수의 구간 추정
+
+$$\hat{\beta}-estimation\:error(\hat{\beta})\leq\beta\leq\hat{\beta}+estimation\:error(\hat{\beta})$$
+
+##### 4.1 추정 계수의 분포
 
