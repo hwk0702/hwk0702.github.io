@@ -183,4 +183,4 @@ $$\frac{odds(x_1+1,\cdots,x_n)}{odds(x_1,\cdots,x_n}=\frac{e^{\beta_0+\beta_1(x_
 
 ##### 2.9 다중 로지스틱 회귀 모델
 
-$$P(G=k|X=x)=\frac{e^{\beta_{k0}+\beta_k^Tx}}{1+\sum^{k-1}_{i=1}e^{(\beta_{i0}+\beta_i^Tx)}}$$
+$$P(G=k|X=x)=\frac{e^{\beta_{k0}+\beta_k^Tx}}{1+\sum^{k-1}_{i=1}e^{(\beta_{i0}+\beta_i^Tx)}},\:k=1,2,\cdots,K-1$$
