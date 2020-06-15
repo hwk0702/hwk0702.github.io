@@ -180,3 +180,7 @@ $$\frac{odds(x_1+1,\cdots,x_n)}{odds(x_1,\cdots,x_n}=\frac{e^{\beta_0+\beta_1(x_
 
 - $$\beta_i$$가 양수일 경우, $$X_i$$는 $$P(y=1)$$와 양의 상관 관계가 있다
 - $$\beta_i$$가 음수일 경우, $$X_i$$는 $$P(y=1)$$와 음의 상관 관계가 있다
+
+##### 2.9 다중 로지스틱 회귀 모델
+
+$$P(G=k|X=x)=\frac{e^{\beta_{k0}+\beta_k^Tx}}{1+\sum^{k-1}_{i=1}e^{(\beta_{i0}+\beta_i^Tx)}}$$
