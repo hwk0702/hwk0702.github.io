@@ -45,7 +45,7 @@ $$when \: y_i=1,\: \varepsilon_i=1-\beta_0=\beta_1x_i \\ when \: y_i=0,\: \varep
 
 (2) Nonconstant variace of error
 
-$$\text{Given} y_i=E(y_i)+\varepsilon_i \:\:\:\:\:\: \begin{matrix}
+$$\text{Given}\:y_i=E(y_i)+\varepsilon_i \:\:\:\:\:\: \begin{matrix}
 \varepsilon_i=y_i-E(y_i)\\ 
 V(\varepsilon_i)=V(y_i)
 \end{matrix}$$
@@ -108,9 +108,34 @@ $$logit[\pi(X=x)]=log(Odds)=log\frac{\pi(x)}{1-\pi(x)}=\beta_0+\beta_1x\:\:\:\: 
 
 ##### 2.4 Simple logistic regression & Multiple logistic regression
 
+- Simple logistic regression
+
 $$logit[\pi(X=x)]=log(Odds)=log\frac{\pi(x)}{1-\pi(x)}=\beta_0+\beta_1x$$
+
+- Multiple logistic regression
 
 $$logit[\pi(X=x)]=log(Odds)=log\frac{\pi(x)}{1-\pi(x)}=\beta_0+\beta_1x+\beta_2x_2+\cdots+\beta_px_p=\beta^Tx$$
 
+#### 2.5 로지스틱 회귀 모형의 모수 추정
 
+- 로지스틱 회귀의 모수는 최대 우도 추정 (MLE)으로 얻을 수 있다.
+
+$$\left\{\begin{matrix}
+P(y_i=1)=\pi_1\\ 
+P(y_i=0)=1-\pi_1
+\end{matrix}\right. \:\:\:\: f_i(y_i)=\pi_i^{y_i}(1-\pi_i)^{1-y_i}$$ By Bernoulli probability mass function
+
+- 트레이닝 데이터 X의 가능성 및 로그 가능성은 다음과 같이 정의 될 수 있다:
+
+$$L=\prod_i f_i(y_i)=\prod_i \pi_i^{y_i}(1-\pi_i)^{1-y_i} $$
+
+$$ln\:L=ln\begin{bmatrix}
+\prod_i \pi_i^{y_i}(1-\pi_i)^{1-y_i}
+\end{bmatrix}=ln\prod_i\begin{bmatrix}
+\frac{\pi_i}{1-\pi_i}
+\end{bmatrix}^{y_i}+\sum_iln(1-\pi_i)\\=\sum_i y_i ln\begin{bmatrix}
+\frac{\pi_i}{1-\pi_i}
+\end{bmatrix}+\sum_i ln(1-\pi_i)\\=sum_i y_i(\beta^Tx_i)-\sum_i ln(1+e^{\beta^Tx_i})$$
+
+- MLE : 우리가 보유한 데이터를 얻을 가능성을 최대화하는 추정치를 찾기 위해
  
