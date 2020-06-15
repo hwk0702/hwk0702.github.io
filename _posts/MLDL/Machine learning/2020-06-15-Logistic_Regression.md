@@ -135,7 +135,7 @@ $$ln\:L=ln\begin{bmatrix}
 \frac{\pi_i}{1-\pi_i}
 \end{bmatrix}^{y_i}+\sum_iln(1-\pi_i)\\=\sum_i y_i ln\begin{bmatrix}
 \frac{\pi_i}{1-\pi_i}
-\end{bmatrix}+\sum_i ln(1-\pi_i)\\=sum_i y_i(\beta^Tx_i)-\sum_i ln(1+e^{\beta^Tx_i})$$
+\end{bmatrix}+\sum_i ln(1-\pi_i)\\=\sum_i y_i(\beta^Tx_i)-\sum_i ln(1+e^{\beta^Tx_i})$$
 
 - MLE : 우리가 보유한 데이터를 얻을 가능성을 최대화하는 추정치를 찾기 위해
 
@@ -153,3 +153,30 @@ ln L을 최대화하는 닫힌 형태의 솔루션은 없다.
 > - Newton-Raphson (Gradient Ascent)
 > - Stochastic gradient ascent
 
+##### 2.6 Fitted Logistic Regression Model
+
+$$\hat{y}=\hat{\pi}(X=x)=\frac{e^{\hat{\beta}^Tx}}{1+e^{\hat{\beta}^Tx}}=\frac{1}{1+e^{-\hat{\beta}^Tx}}$$
+
+- 적합 된 로지스틱 회귀 모델을 사용하여 새 객체의 클래스 레이블을 분류 할 수 있다.
+
+$$\hat{y}_{new}=\hat{\pi}(X=x_{new})=\frac{e^{\hat{\beta}^Tx_{new}}}{1+e^{\hat{\beta}^Tx_{new}}}=\frac{1}{1+e^{-\hat{\beta}^Tx_{new}}}$$
+
+- 일반적으로 분류의 컷오프 값은 0.5이다.
+
+$$\text{if}\: \hat{y}_{new}=0.3\:\:\rightarrow\:\: \text{Classified as 0}$$
+
+$$\text{if}\: \hat{y}_{new}=0.9\:\:\rightarrow\:\: \text{Classified as 1}$$
+
+
+##### 2.7 로지스틱 회귀 함수의 기하학적 해석
+
+- 로지스틱 회귀 함수는 p 차원 데이터를 분류하기 위해 (p-1) 차원 초평면으로 간주 될 수 있다.
+
+<img src='/img/LoR5.png' width='400'> 
+
+##### 2.8 $$\beta_i$$에 대한 해석
+
+$$\frac{odds(x_1+1,\cdots,x_n)}{odds(x_1,\cdots,x_n}=\frac{e^{\beta_0+\beta_1(x_1+1)+\beta_2x_2+\cdots+\beta_nx_n}}{e^{\beta_0+\beta_1(x_1)+\beta_2x_2+\cdots+\beta_nx_n}}=e^{\beta_1}$$
+
+- $$\beta_i$$가 양수일 경우, $$X_i$$는 $$P(y=1)$$와 양의 상관 관계가 있다
+- $$\beta_i$$가 음수일 경우, $$X_i$$는 $$P(y=1)$$와 음의 상관 관계가 있다
