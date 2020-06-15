@@ -132,3 +132,61 @@ $$\hat{\beta}-estimation\:error(\hat{\beta})\leq\beta\leq\hat{\beta}+estimation\
 
 ##### 4.1 추정 계수의 분포
 
+$$\hat{\beta}=(X^TX)^{-1}X^TY$$
+
+$$E(\hat{\beta})=(X^TX)^{-1}X^TE(Y)=(X^TX)^{-1}X^TX\beta=\beta$$
+
+$$V(\hat{\beta})=(X^TX)^{-1}X^TV(Y)X(X^TX)^{-1} \\ = \hat{\sigma}(X^TX)^{-1}X^TX(X^TX)^{-1} \\ = \hat{\sigma}(X^TX)^{-1}$$
+
+$$\hat{\beta}\approx N(\beta, \sigma^2(X^TX)^{-1})$$ 하지만 실제 분산($$\sigma^2$$)이 알려져 있지 않기 때문 실제 분산 대신 추정 분산에 $$\beta$$의 신뢰 구간을 계산하는 데 사용 $$\hat{\sigma}^2=(\frac{1}{n-k})\sum^n_{i=1}\hat{e}^2_i$$
+
+##### 4.2 계수의 신뢰 구간
+
+- $$\beta_j$$에 대한 대략적인 $$100(1-\alpha)$$ 신뢰 구간은 다음과 같이 정의
+
+$$\hat{\beta}_j \pm z_{\alpha/2}se(\hat{\beta}_j)$$
+
+여기서 $$se(\beta_j)$$는 행렬의 j번째 대각선 요소이다.
+
+---
+
+#### 5. 모델의 적합성 판단
+
+- 결정 계수, R2
+- 수정된 결정계수, Adjusted R2
+
+##### 5.1 결정 계수, R2
+
+<img src='/img/LR5.PNG' width='400'>
+
+$$SST=\sum^n_{i=1}(Y_i-\bar{Y})^2 \: \: SSR=\sum^n_{i=1}(\hat{Y}_i-\bar{Y})^2 \: \: SSE= \sum^n_{i=1}(Y_i-\hat{Y}_i)^2$$ 
+
+$$SST=SSR+SSE$$
+
+$$R^2=\frac{SSR}{SST}=1-\frac{SSE}{SST}$$
+
+- $$R^2=1$$: Y의 전체 변형은 회귀 모형으로 완전히 해석 할 수 있다.
+- $$R^2=0$$: 회귀 모형이 X와 Y의 관계를 해석 할 수 없다.
+
+##### 5.2 수정된 결정계수, Adjusted R2
+
+- 해당 변수의 기여도 값에 관계없이 모델에 새 X 변수를 추가하면 R2가 항상 증가한다.
+- 변수를 추가하면 SSE가 감소하는 경우에 수정된 R2는 증가한다.
+
+$$R_a^2=1-[\frac{n-1}{n-k}]\frac{SSE}{SST}\leq1-\frac{SSE}{SST}=R^2 \\ where \: k=p+1$$
+
+---
+
+#### 6. 선형 회귀 적용 가정
+
+1) 예측 변수와 반응 변수 사이의 선형성 과정
+
+2) 랜덤 에러가 분산이 일정한지
+
+3) 랜덤 에러의 독립성
+
+4) 랜덤 에러가 정규분포를 따르는지
+
+<img src='/img/LR6.PNG' width='400'>
+
+<img src='/img/LR7.PNG' width='400'>
