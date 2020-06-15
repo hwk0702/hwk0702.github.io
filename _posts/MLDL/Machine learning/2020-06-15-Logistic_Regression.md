@@ -116,7 +116,7 @@ $$logit[\pi(X=x)]=log(Odds)=log\frac{\pi(x)}{1-\pi(x)}=\beta_0+\beta_1x$$
 
 $$logit[\pi(X=x)]=log(Odds)=log\frac{\pi(x)}{1-\pi(x)}=\beta_0+\beta_1x+\beta_2x_2+\cdots+\beta_px_p=\beta^Tx$$
 
-#### 2.5 로지스틱 회귀 모형의 모수 추정
+##### 2.5 로지스틱 회귀 모형의 모수 추정
 
 - 로지스틱 회귀의 모수는 최대 우도 추정 (MLE)으로 얻을 수 있다.
 
@@ -138,4 +138,18 @@ $$ln\:L=ln\begin{bmatrix}
 \end{bmatrix}+\sum_i ln(1-\pi_i)\\=sum_i y_i(\beta^Tx_i)-\sum_i ln(1+e^{\beta^Tx_i})$$
 
 - MLE : 우리가 보유한 데이터를 얻을 가능성을 최대화하는 추정치를 찾기 위해
- 
+
+- 로지스틱 회귀의 최적 매개 변수는 다음 방정식을 최대화하여 추정 할 수 있다.
+
+$$ln \: L=\sum_i y_i(\beta^Tx_i)-\sum_i ln(1+e^{\beta^Tx_i})$$
+
+ln L은 β의 오목한 함수이다.
+
+ln L을 최대화하는 닫힌 형태의 솔루션은 없다.
+
+최대 가능성 추정값을 계산하기 위해 Numerical search procedures를 사용할 수 있다.
+
+> - Iteratively reweight least square
+> - Newton-Raphson (Gradient Ascent)
+> - Stochastic gradient ascent
+
