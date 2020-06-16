@@ -30,7 +30,7 @@ canonical_url:
 
 #### 1. 장점
 
-- 특정 수의 클러스터를 가정할 필요가 없다(Dendrogram에서 적절한 수즌에서 절단)
+- 특정 수의 클러스터를 가정할 필요가 없다(Dendrogram에서 적절한 수준에서 절단)
 - meaningful taxonomies이다.
 
 #### 2. 방법
