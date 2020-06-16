@@ -84,6 +84,9 @@ Confidence(c): X가 포함된 트랜잭션에서 Y의 아이템이 얼마나 자
 - Apriori 원리: 아이템 세트가 빈번한 경우 모든 하위 세트도 빈번하게 있어야 한다.
 - $$\forall X,Y:(X\subseteq Y) \Rightarrow s(X) \geq s(Y)$$
 - 아이템 세트에 대한 support는 하위 세트에 대한 support를 초과하지 않는다. 이를 안티 모노톤 support 속성이라고 한다.
+- 장점: 병렬화 및 구현이 쉬움
+- 단점: 메모리에 트랜잭션이 다 들어가야함, m번의 데이터베이스 스캔이 필요함
+- 개선책: 해쉬 기반 item set 카운팅, 트랜잭션 나누기 
 
 <img src='/img/AR5.PNG' width='400'>  
 
