@@ -136,15 +136,15 @@ Confidence(c): X가 포함된 트랜잭션에서 Y의 아이템이 얼마나 자
 
 $$\rightarrow P(Y|X)=P(Y) \\ P(X,Y)=P(X) \times P(Y)$$
 
-$$if P(X,Y) > P(X)\times P(Y)$$ : 양의 상관관계
+$$if \: P(X,Y) > P(X)\times P(Y)$$ : 양의 상관관계
 
-$$if P(X,Y) < P(X)\times P(Y)$$ : 음의 상관관계
+$$if \: P(X,Y) < P(X)\times P(Y)$$ : 음의 상관관계
 
 #### 10. 통계적 의존성을 고려한 측정
 
 - $$lift(X \rightarrow Y)=\frac{confidence(X \rightarrow Y)}{support(Y)}=\frac{P(Y|X)}{P(Y)} = \frac{P(X \cap Y)}{P(X) \cdot P(Y)} $$
-- $$if lift(X \rightarrow Y)<1$$, 음의 상관관계
-- $$if lift(X \rightarrow Y)>1$$, 양의 상관관계
-- $$if lift(X \rightarrow Y)=1$$, 독립
+- $$if \: lift(X \rightarrow Y)<1$$, 음의 상관관계
+- $$if \: lift(X \rightarrow Y)>1$$, 양의 상관관계
+- $$if \: lift(X \rightarrow Y)=1$$, 독립
 
 <img src='/img/AR13.PNG' width='500'>
