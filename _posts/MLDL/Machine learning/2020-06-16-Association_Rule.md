@@ -54,7 +54,7 @@ canonical_url:
 
 Support(s): X와 Y를 모두 포함한다는 거래의 비율 ($$P(X\cap Y)$$)
 
-Confidence(c): X가 포함된 트랜잭션에서 Y의 아이템이 얼마나 자주 나타나는지 측정($$P(X\cap Y)/P(X)=P(Y|X)$$)
+Confidence(c): X가 포함된 트랜잭션에서 Y의 아이템이 얼마나 자주 나타나는지 측정($$P(X \cap Y)/P(X)=P(Y|X)$$)
 
 <img src='/img/AR2.PNG' width='500'>
 <img src='/img/AR3.PNG' width='500'>      
