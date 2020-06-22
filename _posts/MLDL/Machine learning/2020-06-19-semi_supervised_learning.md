@@ -12,7 +12,7 @@ description:
 
 image: /img/HC.png
 
-published: true
+published: false
 
 canonical_url:
 
