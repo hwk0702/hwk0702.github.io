@@ -144,6 +144,8 @@ Iteration이 증가 할 수록 납기를 어기는 지연시간 감소, setup �
 
 #### 4.6 video
 
+<iframe width="600" src="https://youtu.be/EA6qoCavDKk" frameborder="0" allowfullscreen></iframe>
+
 [![Video Label](https://i.ytimg.com/vi/EA6qoCavDKk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnZ-pGF_RLROjKioHa6mWqKiWgxA)](https://youtu.be/EA6qoCavDKk)
 
 
