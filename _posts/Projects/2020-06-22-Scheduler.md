@@ -16,7 +16,7 @@ published: true
 
 layout: product
 
-image: <img src='https://i.ytimg.com/vi/EA6qoCavDKk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnZ-pGF_RLROjKioHa6mWqKiWgxA'>
+image: https://i.ytimg.com/vi/EA6qoCavDKk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnZ-pGF_RLROjKioHa6mWqKiWgxA
 
 price:
 
