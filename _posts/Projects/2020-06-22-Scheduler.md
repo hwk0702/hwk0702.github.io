@@ -27,8 +27,7 @@ features:
     icon: fa-location-arrow
   - label: 2019.03 ~ 2019.09
     icon: fa-calendar-alt
-  - label: 스케줄링 분야에서 머신러닝(DQN,DDQN)을 응용하며, 
-Setup과 장비 별 작업 타입 제약을 고려하여 스케줄링 기법을 제안
+  - label: 스케줄링 분야에서 머신러닝(DQN,DDQN)을 응용하며, Setup과 장비 별 작업 타입 제약을 고려하여 스케줄링 기법을 제안
     icon: fa-file-alt
   - label: Python, Tensorflow, Keras, Vue.js
     icon: fa-code
