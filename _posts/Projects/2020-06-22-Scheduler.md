@@ -27,6 +27,8 @@ features:
     icon: fa-location-arrow
   - label: 2019.03 ~ 2019.09
     icon: fa-calendar-alt
+  - label: Python, Tensorflow, Keras, Vue.js
+    icon: fa-code
   - label: 대한산업공학회 추계 학술대회 대학생 프로젝트 경진대회 동상(2019.11)
     icon: fa-award
 
