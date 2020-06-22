@@ -16,7 +16,7 @@ published: true
 
 layout: product
 
-image: https://i.ytimg.com/vi/EA6qoCavDKk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDnZ-pGF_RLROjKioHa6mWqKiWgxA
+image: /img/scheduler.png
 
 price:
 
