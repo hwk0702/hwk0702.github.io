@@ -77,23 +77,23 @@ rating: 3
 
 2) Csv파일의 image_id와 실제 이미지 파일의 위치를 path로 저장
 
-<img src='/img/skincancer8.png' width='500'>
+<img src='/img/skincancer8.png'>
 
 3) 이미지 파일들을 읽어와서 array로 저장
 
-<img src='/img/skincancer9.png' width='500'>
+<img src='/img/skincancer9.png'>
 
 4) train, test 데이터 나누기
 
-<img src='/img/skincancer10.png' width='500'>
+<img src='/img/skincancer10.png'>
 
 5) 이미지 데이터를 정규화 하기
 
-<img src='/img/skincancer11.png' width='500'>
+<img src='/img/skincancer11.png'>
 
 6) Label Encoding 하기
 
-<img src='/img/skincancer12.png' width='500'>
+<img src='/img/skincancer12.png'>
 
 ---
 
@@ -103,19 +103,19 @@ rating: 3
 
 <img src='/img/skincancer13.png' width='500'>
 
-<img src='/img/skincancer14.png' width='500'>
+<img src='/img/skincancer14.png'>
 
-<img src='/img/skincancer15.png' width='500'>
+<img src='/img/skincancer15.png'>
 
-<img src='/img/skincancer16.png' width='500'>
+<img src='/img/skincancer16.png'>
 
 ---
 
 ### 5. 결과
 
-<img src='/img/skincancer17.png' width='500'>
+<img src='/img/skincancer17.png'>
 
-<img src='/img/skincancer18.png' width='200'>
+<img src='/img/skincancer18.png'>
 
 
 

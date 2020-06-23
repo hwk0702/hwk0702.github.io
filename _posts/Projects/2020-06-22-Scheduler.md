@@ -81,13 +81,13 @@ rating: 5
 
 #### 2.2 Order 설명
 
-<img src='/img/scheduler1.png' width='500'>
+<img src='/img/scheduler1.png'>
 
 #### 2.3 가정 사항
 
-<img src='/img/scheduler2.png' width='500'>
+<img src='/img/scheduler2.png'>
 
-<img src='/img/scheduler3.png' width='500'>
+<img src='/img/scheduler3.png'>
 
 ---
 
@@ -95,19 +95,19 @@ rating: 5
 
 #### 3.1 Framework
 
-<img src='/img/scheduler4.png' width='600'>
+<img src='/img/scheduler4.png'>
 
 #### 3.2 Input & Output
 
-<img src='/img/scheduler5.png' width='600'>
+<img src='/img/scheduler5.png'>
 
 #### 3.3 State
 
-<img src='/img/scheduler6.png' width='600'>
+<img src='/img/scheduler6.png'>
 
 #### 3.4 Network 구성
 
-<img src='/img/scheduler7.png' width='600'>
+<img src='/img/scheduler7.png'>
 
 ---
 
@@ -115,17 +115,17 @@ rating: 5
 
 #### 4.1 학습 결과
 
-<img src='/img/scheduler8.png' width='600'>
+<img src='/img/scheduler8.png'>
 
 Iteration이 증가 할 수록 납기를 어기는 지연시간 감소, setup 감소, 전체적인 스케줄 밀집도 증가  
 
 #### 4.2 DQN, DDQN 비교 (lot 1개 고려, 10개 고려)
 
-<img src='/img/scheduler9.png' width='600'>
+<img src='/img/scheduler9.png'>
 
 #### 4.3 전체 결과
 
-<img src='/img/scheduler10.png' width='600'>
+<img src='/img/scheduler10.png'>
 
 - Setup time과 장비 별 작업 타입 제약(constraint)이 존재하는 강화학습 기법 (DQN, DDQN) 모델 생성
 - 기본 룰(SLACK-EDD, SPT, LPT, FIFO)보다 좋은 성능을 보임
@@ -136,11 +136,11 @@ Iteration이 증가 할 수록 납기를 어기는 지연시간 감소, setup �
 
 #### 4.4 Schedule visualization
 
-<img src='/img/scheduler11.png' width='600'>
+<img src='/img/scheduler11.png'>
 
 #### 4.5 Schedule visualization(Density 0.9 order list  1st list)
 
-<img src='/img/scheduler12.png' width='600'>
+<img src='/img/scheduler12.png'>
 
 #### 4.6 video
 
