@@ -31,6 +31,8 @@ features:
     icon: fa-file-alt
   - label: Python, Tensorflow, Keras
     icon: fa-code
+  - label: https://github.com/hwk0702/Skin-cancer-data-analysis-and-prediction-model
+    icon: fab fa-github
 
 rating: 3
 
