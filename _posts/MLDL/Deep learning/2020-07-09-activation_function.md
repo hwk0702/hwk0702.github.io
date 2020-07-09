@@ -25,7 +25,7 @@ canonical_url:
 - 층 사이에 비선형성을 추가
 - 비선형 활성화 함수가 있는 충분히 큰 심층 신경망은 이론적으로 어떤 연속 함수도 근사 가능
 
-<img src='/img/activate1.PNG' width='400'>
+<img src='/img/activate1.png' width='400'>
 
 ---
 
