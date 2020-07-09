@@ -79,12 +79,12 @@ $$Q(\beta_0\beta_1)=\sum^n_{i=1}\varepsilon_i^2=\sum^n_{i=1}(y_i-\beta_0-\beta_1
 
 $$Minimize\:Q(\beta_0\beta_1)=\sum^n_{i=1}\varepsilon_i^2=\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)^2$$
 
-> $$\frac{\delta Q(\beta_0,\beta_1)}{\delta \beta_0}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)=0$$ <br>
+> $$\frac{\partial Q(\beta_0,\beta_1)}{\partial \beta_0}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)=0$$ <br>
 > $$\sum y_i-n\beta_0=\beta_1\sum x_i=0$$ <br>
 > $$\hat{\beta_0}=\frac{\sum y_i-\hat{\beta_1}\sum x_i}{n}=\bar{y}-\hat{\beta_1}\bar{x}$$
 
 
-> $$\frac{\delta Q(\beta_0,\beta_1)}{\delta \beta_1}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)x_i=0$$ <br>
+> $$\frac{\partial  Q(\beta_0,\beta_1)}{\partial  \beta_1}=-2\sum^n_{i=1}(y_i-\beta_0-\beta_1x_i)x_i=0$$ <br>
 > $$\sum x_iy_i-\beta_0\sum x_i-\beta_1\sum(x_i)^2=0$$ <br>
 > $$\sum x_iy_i-(\bar{y}-\hat{\beta_1}\bar{x})\sum x_i-\beta_1\sum(x_i)^2=0$$ <br>
 > $$\sum x_iy_i-\bar{y}\sum x_i-\hat{\beta_1}\bar{x}\sum x_i-\beta_1\sum(x_i)^2=0$$ <br>
@@ -105,7 +105,7 @@ $$e=y-x\hat{\beta}$$
 
 $$Q=\sum e_i^2=e^Te=(y-x\hat{\beta})^T(y-x\hat{\beta}) \\ = y^Ty-\hat{\beta}^Tx^Ty-y^Tx\hat{\beta}+\hat{\beta}^Tx^Tx\hat{\beta} \\ = y^Ty-2\hat{\beta}^Tx^Ty+\hat{\beta}^Tx^Tx\hat{\beta}$$
 
-$$\frac{\delta Q}{\delta \beta}=-2x^Ty+2\hat{\beta}x^Tx=0$$
+$$\frac{\partial  Q}{\partial  \beta}=-2x^Ty+2\hat{\beta}x^Tx=0$$
 
 $$\hat{\beta}=(x^Tx)^{-1}x^Ty$$
 
