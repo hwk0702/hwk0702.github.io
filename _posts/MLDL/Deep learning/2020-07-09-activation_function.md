@@ -66,7 +66,9 @@ $$tanh'(x)=1-tanh^2(x)$$
 
 <img src='/img/tanh.png' width='300'> <img src='/img/dtanh.png' width='300'>
 
-- 여전히 $$|x|$$가 커지면 미분값이 소실되는 gradient vanishing 문제
+- 여전히 $$\begin{vmatrix}
+x
+\end{vmatrix}$$가 커지면 미분값이 소실되는 gradient vanishing 문제
 
 ---
 
