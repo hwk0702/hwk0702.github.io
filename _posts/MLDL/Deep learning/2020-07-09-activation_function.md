@@ -44,7 +44,9 @@ $$\sigma'(x)=\sigma(x)(1-\sigma(x))$$
 
 - 단점
 
-1) gradient vanishing 현상이 발생한다. 미분함수에 대해 $$x=0$$ 에서 최댓값 $$\frac{1}{4}$$ 을 가지고, $$|x|$$ 값이 커질 수록 미분값이 거의 0에 수렴
+1) gradient vanishing 현상이 발생한다. 미분함수에 대해 $$x=0$$에서 최댓값 $$\frac{1}{4}$$을 가지고, $$\begin{vmatrix}
+x
+\end{vmatrix}$$값이 커질 수록 미분값이 거의 0에 수렴
 
 2) 함수값 중심이 0이 아니어서 학습이 느려질 수 있다. 만약 모든 x값들이 같은 부호(ex. for all x is positive) 라고 가정하면 파라미터 w에 대한 미분함수식은 $$\frac{\partial{L}}{\partial{w}}=\frac{\partial{L}}{\partial{a}}\frac{\partial{a}}{\partial{w}}$$ 그리고 $$\frac{\partial{a}}{\partial{w}}=x$$이기 때문에, $$\frac{\partial{L}}{\partial{w}}=\frac{\partial{L}}{\partial{a}}x$$ 이다. 위 식에서 모든 $$x$$가 양수라면 결국 $$\frac{\partial{L}}{\partial{w}}$$는 $$\frac{\partial{L}}{\partial{a}}$$ 부호에 의해 결정된다. 따라서 한 노드에 대해 모든 파라미터w의 미분값은 모두 같은 부호를 같게된다. 따라서 같은 방향으로 update되는데 이러한 과정은 학습을 zigzag 형태로 만들어 느리게 만드는 원인이 된다.
 
