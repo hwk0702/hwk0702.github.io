@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [SQL, Data Types, 데이터 타입]
+
 ---
 
 ## SQL Data Types
