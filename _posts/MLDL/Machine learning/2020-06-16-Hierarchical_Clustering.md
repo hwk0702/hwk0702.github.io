@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [계층적 군집화, Hierarchical Clustering, 머신러닝, Machine Learning]
+
 ---
 
 계층적 군집화(Hierarchical Clustering)

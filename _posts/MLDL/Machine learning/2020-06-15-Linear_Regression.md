@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [회귀, 회귀 분석, Regression, Linear Regression, 최소 추정량, 회귀계수, 추정계수, 결정계수, 머신러닝, Machine Learning]
+
 ---
 
 회귀분석(Regression)

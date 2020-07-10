@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [차원 축소, Dimensionality Reduction, 주성분 분석, PCA, 커널 PCA, 지역 선형 임베딩, LLE, 차원의 저주, 투영, 매니폴드, 머신러닝, Machine Learning]
+
 ---
 
 > 이 내용은 핸즈온 머신러닝 2판 책을 보고 정리한 것 입니다.

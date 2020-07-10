@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [회귀, 회귀 분석, Regression, 로지스틱 회귀, Logistic Regression, odds, 머신러닝, Machine Learning]
+
 ---
 
 로지스틱 회귀(Logistic Regression)

@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [연관 규칙 분석, Association Rule, Analysis, 지지도, Support, 신뢰도, Confidence, 빈번 아이템 집합, Frequent item set, Apriori, FP-growth, 머신러닝, Machine Learning]
+
 ---
 
 연관 규칙 분석(Association Rule Analysis)

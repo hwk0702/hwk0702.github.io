@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [비지도 학습, Unsupervised Learning, 군집, 클러스터, cluster, k-means, 실루엣, 이너셔, DBSCAN, 가우시안 혼합, EM, 베이즈 가우시안 혼합, 머신러닝, Machine Learning]
+
 ---
 
 > 이 내용은 핸즈온 머신러닝 2판 책을 보고 정리한 것 입니다.

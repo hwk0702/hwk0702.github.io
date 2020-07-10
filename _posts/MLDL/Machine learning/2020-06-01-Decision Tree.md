@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [의사 결정 나무, Decision Tree, 결정 트리, CART, 지니 불순도, 엔트로피 , Entropy, 머신러닝, Machine Learning]
+
 ---
 
 > 이 내용은 핸즈온 머신러닝 2판 책을 보고 정리한 것 입니다.
