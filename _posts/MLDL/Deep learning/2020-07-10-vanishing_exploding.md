@@ -4,7 +4,7 @@ layout: post
 
 title: "그래디언트 소실/폭주"
 
-date: 2020-07-09 11:27:07
+date: 2020-07-10 15:27:07
 
 categories: [ML/DL/Deep Learning]
 
