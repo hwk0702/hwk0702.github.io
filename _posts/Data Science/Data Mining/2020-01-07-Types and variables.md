@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [데이터, Data, 데이터 타입, Data Type, Attribute, Nominal, Binary, Ordinal, Numeric, 데이터 마이닝, Data Mining]
+
 ---
 
 데이터 객체 및 속성 유형

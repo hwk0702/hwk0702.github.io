@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [비지도학습, Unsupervised Learning, 군집, 클러스터, Cluster, K-means, K-medoids, 계층 분석, Hierarchical Clustering, 데이터 마이닝, Data Mining]
+
 ---
 
 ## Unsupervised Learning (비지도학습)

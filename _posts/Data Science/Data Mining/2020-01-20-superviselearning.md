@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [지도학습, Supervised Learning, 회귀분석, Regression, K nearest neighbors, KNN, 의사결정트리, Decision Tree, 나이브베이즈, Naive Bayesian, 서포트 벡터 머신, Support Vector Machine, SVM, Neural Network, ROC, Holdout, K-fold cross validation, K-fold 교차검증, Bootstrap, 데이터 마이닝, Data Mining]
+
 ---
 
 ## Supervised Learning (지도학습)

@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [데이터 전처리, Data Preprocessing, Data Cleaning, Data Integration, Data Transformation, 데이터 마이닝, Data Mining]
+
 ---
 
 ## Data Preprocessing

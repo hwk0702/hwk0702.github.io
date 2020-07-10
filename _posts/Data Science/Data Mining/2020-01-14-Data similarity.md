@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [데이터 유사도, Data Similarity, Similarity, Distance, 유클리디언, 맨해튼, Euclidean, Manhattan, Minkowski, Mahalanobis, 코사인 유사도, Cosine Similarity, Term Frequency Vector, 데이터 마이닝, Data Mining]
+
 ---
 
 ## Data similarity(데이터 유사도)

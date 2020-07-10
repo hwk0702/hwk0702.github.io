@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [탐색적 데이터 분석, Exploratory Data Analysis, 빈도수, 최빈수, 평균, 중위수, 분산, Frequency, Mode, Percentiles, Mean, Median, Variance, IQR, Interquartile Range, 왜도, Skewness, 첨도, Kurtosis, 시각화, Visualization, 데이터 마이닝, Data Mining]
+
 ---
 
 ## What is Data Exploration
