@@ -16,7 +16,7 @@ published: true
 
 canonical_url:
 
-tags: ActivationFunction 활성화함수 딥러닝 Deeplearning tensorflow keras sigmoid tanh ReLU LeakyReLU RReLU PReLU ELU SELU Maxout
+tags: [Activation Function, 활성화 함수, 딥러닝, Deeplearning, 텐서플로우,  tensorflow, keras, sigmoid, tanh, ReLU, LeakyReLU, RReLU, PReLU, ELU, SELU, Maxout]
 
 ---
 
