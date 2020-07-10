@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [규제, Regulation, 릿지, 라쏘, 엘라스틱넷, Ridge, Lasso, Elastic Net, Regression]
+
 ---
 
 > 이 내용은 핸즈온 머신러닝 2판 책을 보고 정리한 것 입니다.
