@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [웹, Web, HTTP, HyperText Transfer Protocol, Request, Get, Post, HTML, Hyper Text Markup Language, Tag, 크롤러, Crawler]
+
 ---
 
 ## HTTP 이해하기

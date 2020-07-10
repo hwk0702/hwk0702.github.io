@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [beautifulsoup, 파이썬, python, beautifulsoup4, HTML, urllib, CSS, HTTP, 크롤러, Crawler]
+
 ---
 
 ## beautifulsoup
