@@ -16,6 +16,7 @@ published: true
 
 canonical_url:
 
+tags: [데이터 레이크, 데이터 웨어하우스, Data Lake, Data Warehouse, ETL, ELT, 데이터 엔지니어링, Data Engineering]
 ---
 
 ## Data Lake vs Data Warehouse

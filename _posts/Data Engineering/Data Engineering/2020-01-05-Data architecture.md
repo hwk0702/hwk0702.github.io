@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [데이터 아키텍쳐, Data Architecture, 데이터 거버넌스, Data Governance, 데이터 파이프라인, Data Pipeline, 데이터 엔지니어링, Data Engineering]
+
 ---
 
 데이터 아키텍쳐시 고려사항

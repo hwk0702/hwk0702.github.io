@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [데이터 엔지니어링, Data Engineering]
+
 ---
 
 데이터 분석과 데이터 엔지니어링의 차이
