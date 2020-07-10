@@ -86,7 +86,7 @@ tags: [그래디언트 소실, 그래디언트 폭주, Vanishing Gradient, Explo
 
 2. $$\sigma_B^2=\frac{1}{m_B}\sum^{m_B}_{i=1}(\mathbf{x}^{(i)}-\mu_B)^2$$
 
-3. $$\hat{\mathbf{x}}^{(i)}=\frac{\mathbf{x}^{(i)}-\mu_B}{\sqrt{{\sigma_B}^2+\varepsilon}}$$
+3. $$\hat{\mathbf{x}}^{(i)}=\frac{\mathbf{x}^{(i)}-\mu_B}{\sqrt{\sigma_B^2+\varepsilon}}$$
 
 4. $$\mathbf{z}^{(i)}=\gamma\otimes\hat{\mathbf{x}}^{(i)}+\beta$$
 
