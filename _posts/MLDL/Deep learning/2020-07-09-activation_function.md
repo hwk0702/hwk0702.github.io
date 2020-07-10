@@ -16,9 +16,11 @@ published: true
 
 canonical_url:
 
+tags: ActivationFunction 활성화함수 딥러닝 Deeplearning keras sigmoid tanh ReLU
+
 ---
 
-## 활성화 함수 (Activate Function)
+## 활성화 함수 (Activation Function)
 
 - 각 노드가 이전 노드들로부터 전달 받은 정보를 다음 노드에 얼마만큼 전달해 줄 것인가를 결정
 - 선형 변환을 여러개 연결해도 얻을 수 있는 것은 선형 변환뿐
