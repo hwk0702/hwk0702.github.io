@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [주피터 노트북, Jupyter Notebook, Anaconda, 원격, Jupyter Notebook Extensions, 파이썬, Python]
+
 ---
 
 Jupyter notebook 설치 및 실행 방법

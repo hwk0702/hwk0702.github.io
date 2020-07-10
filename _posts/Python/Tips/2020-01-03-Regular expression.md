@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [정규표현식, Regular Expression, re, 파이썬, Python]
+
 ---
 
 정규표현식

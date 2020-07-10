@@ -16,6 +16,7 @@ published: true
 
 canonical_url:
 
+tags: [도커, Docker, 텐서플로우, Tensorflow, Tensorflow GPU, Pycharm, 파이썬, Python]
 ---
 
 Tensorflow Docker 환경 구축 방법

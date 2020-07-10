@@ -16,6 +16,8 @@ published: true
 
 canonical_url:
 
+tags: [데이터 형식, Data Formats, CSV, XML, JSON, 파이썬, Python]
+
 ---
 
 Data formats
