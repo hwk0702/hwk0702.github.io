@@ -46,3 +46,4 @@ Data Science, Data Mining, Big Data, Machine Learning, Deep Learning, Statistics
 
 ### Contact
 E-mail: [hwk0702@gmail.com](mailto:hwk0702@gmail.com)
+LinkdIn: https://www.linkedin.com/in/hyeongwon/
