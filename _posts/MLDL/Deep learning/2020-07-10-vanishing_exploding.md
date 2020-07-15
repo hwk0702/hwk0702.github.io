@@ -16,7 +16,7 @@ published: true
 
 canonical_url:
 
-tags: [그래디언트 소실, 그래디언트 폭주, Vanishing Gradient, Exploding Gradient, 글로럿, He, 르쿤, 배치 정규화, Batch Normalization, 그래디언트 클리핑 , Gradient Clipping, 딥러닝, Deep Learnig, 텐서플로우, Tensorflow, 케라스, Keras]
+tags: [그래디언트 소실, 그래디언트 폭주, Vanishing Gradient, Exploding Gradient, 글로럿, He, 르쿤, 배치 정규화, Batch Normalization, 그래디언트 클리핑 , Gradient Clipping, 딥러닝, Deep Learning, 텐서플로우, Tensorflow, 케라스, Keras]
 
 ---
 

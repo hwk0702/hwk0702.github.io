@@ -40,7 +40,7 @@ tags: [Activation Function, 활성화 함수, 딥러닝, Deeplearning, 텐서플
 
 $$\sigma(x)=\frac{1}{1+e^{-x}}$$
 
-$$\sigma'(x)=\sigma(x)(1-\sigma(x))$$ 
+$$\sigma'(x)=\sigma(x)(1-\sigma(x))$$
 
 <img src='/img/sigmoid.png' width='300'> <img src='/img/dsigmoid.png' width='300'>
 
@@ -126,8 +126,8 @@ $$LeakyReLU_\alpha(x)=max(\alpha x, x)$$
 - 훈련 시간이 줄고 신경망의 테스트 세트 성능도 더 높았다.
 
 $$ELU_{\alpha}(x)=\left\{\begin{matrix}
- \alpha(exp(x)-1)&x<0일 때 \\ 
- x&x \geq 0일 때 
+ \alpha(exp(x)-1)&x<0일 때 \\
+ x&x \geq 0일 때
 \end{matrix}\right.$$
 
 <img src='/img/elu.png' width='300'>
@@ -160,7 +160,7 @@ $$ELU_{\alpha}(x)=\left\{\begin{matrix}
 $$Maxout(x)=max(w_1^Tx+b_1,w_2^Tx+b_2)$$
 
 - ReLU가 가지는 모든 장점을 가졌으며, ReLU의 뉴런이 죽는 현상도 해결
-- 계산량이 복잡하다는 단점 
+- 계산량이 복잡하다는 단점
 
 ---
 
