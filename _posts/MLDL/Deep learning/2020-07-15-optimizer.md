@@ -16,7 +16,7 @@ published: true
 
 canonical_url:
 
-tags: [고속 옵티마이저, Optimizer, 경사 하강법, Gradient Desent, 딥러닝, Deep Learning, 텐서플로우, Tensorflow, 케라스, Keras]
+tags: [고속 옵티마이저, Optimizer, 경사 하강법, Gradient Desent, Momentum, AdaGrad, NAG, Nesterov, RMSProp, Adam, Nadam, AdaMax, 딥러닝, Deep Learning, 텐서플로우, Tensorflow, 케라스, Keras]
 
 ---
 
