@@ -164,7 +164,21 @@ $$Maxout(x)=max(w_1^Tx+b_1,w_2^Tx+b_2)$$
 
 ---
 
-#### 10. 활성화 함수 쓰는 방법
+#### 10. GELU (Gaussian Error Linear Unit)
+
+- 2018년에 도입
+- neuron output을 야기하는 switch
+- 네트워크가 깊어질수록 잘 작동
+- 비선형 함수
+- adaptive dropout에 대한 수정된 기대로서, 뉴런의 출력이 더 높은 확률론적 관점을 제공
+
+$$GELU(x) = 0.5x(1+tanh(\sqrt{2/\pi}(x+0.044715x^3)))$$
+
+<img src='/img/gelu.png' width='500'>
+
+---
+
+#### 11. 활성화 함수 쓰는 방법
 
 - 일반적으로 SELU > ELU > LeakyReLU(그리고 변종들) > ReLU > tanh > sigmoid 순
 - 네트워크가 자기 정규화되지 못하는 구조라면 SELU 보단 ELU
