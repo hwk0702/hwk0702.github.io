@@ -10,7 +10,7 @@ categories: [Projects]
 
 description: This is a project description
 
-product_code: 
+product_code:
 
 published: true
 
@@ -25,7 +25,7 @@ show_sidebar: false
 features:
   - label: KETI
     icon: fa-location-arrow
-  - label: 2020.06 ~ 
+  - label: 2020.06 ~
     icon: fa-calendar-alt
   - label: 커넥티드 차량 이상치 탐지 및 제거
     icon: fa-file-alt
@@ -38,7 +38,7 @@ rating: 3
 
 # CV Novelty Detection
 
-본 프로젝트는 전자부품연구원(KETI)에서 진행되는 프로젝트로 데이터 및 코드는 대외비 입니다. 
+본 프로젝트는 전자기술연구원(KETI)에서 진행되는 프로젝트로 데이터 및 코드는 대외비 입니다. 
 
 데이터, 코드를 제외한 프로젝트 과제 내용만 공유합니다.
 
@@ -54,7 +54,7 @@ rating: 3
 
 -	데이터의 구조 이해
 
-①	실시간으로 elex, triphos 등의 회사로 부터 레미콘 차량의 데이터를 받아 DB에 저장하고 있다. 
+①	실시간으로 elex, triphos 등의 회사로 부터 레미콘 차량의 데이터를 받아 DB에 저장하고 있다.
 
 ②	레미콘 차량의 주행 속도, 냉각수 온도, GPS 위치, DTC, RPM 등 센서 데이터 수집
 
@@ -96,7 +96,7 @@ rating: 3
 #### 2.3 One-class SVM
 
 - SVM이지만 클래스가 하나. 원본 공간으로부터 고차원 공간에 있는 샘플을 분리
-- 새로운 샘플이 이 영역 안에 놓이지 않는 다면 이는 이상치. 
+- 새로운 샘플이 이 영역 안에 놓이지 않는 다면 이는 이상치.
 - 고차원 데이터셋에 잘 작동하나 대규모 데이터셋으로 확장은 어렵다.
 
 <img src='/img/cv_novelty5.png' width='700'>
@@ -119,5 +119,5 @@ rating: 3
 
 ### 3. 결과
 
-- 현재 사용하는 cv, 2차원 데이터에서 가우시안 밀도 추정 방법이 가장 적절하다고 판단 
+- 현재 사용하는 cv, 2차원 데이터에서 가우시안 밀도 추정 방법이 가장 적절하다고 판단
 - 현재 가우시안 밀도 추정 방법을 이용하여 데이터 이상치를 제거하여 DB에 저장하는 코드 작성 중
