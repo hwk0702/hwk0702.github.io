@@ -24,7 +24,7 @@ sitemap :
 
 ### Introduction
 
-한국전자기술연구원 지능정보연구본부 지능융합SW 연구센터 (Korea Electronics Technology Institute, KETI) 2020.02~
+한국전자기술연구원 지능정보연구본부 지능융합SW 연구센터 (Korea Electronics Technology Institute, KETI) 2020.02~2021.02
 
 MS: Industrial Management Engineering at Korea University 2021.03~
 
