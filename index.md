@@ -28,6 +28,8 @@ sitemap :
 
 MS: Industrial Management Engineering at Korea University 2021.03~
 
+- Mamber in [Data Science & Business Analytics Lab](http://dsba.korea.ac.kr/)
+
 BS: Industrial Management Engineering at Incheon University 2014.03~2020.02
 
 - Intern in [IT Service Lab](https://sites.google.com/site/itservicelab32/)
