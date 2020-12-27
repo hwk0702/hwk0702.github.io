@@ -32,7 +32,12 @@ tags: [차원 축소, Dimensionality Reduction, 주성분 분석, PCA, 커널 PC
 |장점|단점|
 |---|----|
 |* 특성 수를 줄여 훈련 속도를 높일 수 있다. <br> * 잡음이나 불필요한 세부사항을 걸러내 성능을 높일 수 있다. <br> * 데이터 시각화에도 유용하다. |* 일부 정보가 유실된다.(성능이 조금 나빠질 수 있다.) <br> * 작업 파이프라인이 더 복잡하게 되고 유지 관리가 어려워진다. |
-  
+
+
+차원 축소 관련 더 자세한 내용 보러 가기
+
+- [Supervised Variable Selection]()
+
 ---
 
 #### 1. 차원의 저주
@@ -97,8 +102,8 @@ tags: [차원 축소, Dimensionality Reduction, 주성분 분석, PCA, 커널 PC
 주성분 행렬
 
 $$\mathbf{V} = \begin{pmatrix}
- |& | &  & |\\ 
- c_1& c_2 & \cdots & c_n\\ 
+ |& | &  & |\\
+ c_1& c_2 & \cdots & c_n\\
  | & | &  & |
 \end{pmatrix}$$
 
@@ -173,7 +178,7 @@ $$\mathbf{X}_{d-proj}=\mathbf{X}\mathbf{W}_d$$
 $$\hat{\mathbf{W}}=\underset{\mathbf{w}}{argmin}\sum^{m}_{i=1}(\mathbf{x}^{(i)}-\sum^m_{j=1}w_{i,j}\mathbf{x}^{(i)})^2$$
 
 [조건] $$\left\{\begin{matrix}
- w_{i,j}=0 & \mathbf{x}^{(j)}가 \mathbf{x}^{(i)}의 최근접 이웃 k개 중 하나가 아닐 때 \\ 
+ w_{i,j}=0 & \mathbf{x}^{(j)}가 \mathbf{x}^{(i)}의 최근접 이웃 k개 중 하나가 아닐 때 \\
  \sum^m_{j=1}w_{i,j}=1 & i=1,2,\cdots, m일 때
 \end{matrix}\right.$$
 
@@ -190,12 +195,12 @@ $$\mathbf{Z}=\underset{\mathbf{z}}{argmin}\sum^m_{i=1}(\mathbf{z}^{(i)}-\sum^m_{
 - 대량의 데이터셋에 적용하기 어렵다(계산 복잡도에서 저차원 표현 만들때 $$m^2$$ 때문)
 
 <img src='/img/dim_red11.png' width='400'>
- 
+
 ---
 
 #### 6. 다른 차원 축소 기법
 
-- **랜덤 투영**: 랜덤한 선형 투영을 사용해 데이터를 저차원 공간으로 투영. 
+- **랜덤 투영**: 랜덤한 선형 투영을 사용해 데이터를 저차원 공간으로 투영.
 - **다차원 스케일링(MDS)**: 샘플 간의 거리를 보존하면서 차원을 축소
 - **Isomap**: 각 샘플을 가장 가까운 이웃과 연결하는 식으로 그래프 생성, 그 다음 샘플 간의 지오데식 거리(두 노드 사이의 최단 경로를 이루는 노드의 수)를 유지하면서 차원 축소
 - **t-SNE**: 비슷한 샘플은 가까이, 비슷하지 않은 샘플은 멀리 떨어지도록 하면서 차원 축소. 주로 시각화에 사용(고차원 공간에 있는 샘플의 군집을 시각화할 때)

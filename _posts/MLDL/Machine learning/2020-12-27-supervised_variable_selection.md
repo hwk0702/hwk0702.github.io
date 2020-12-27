@@ -16,6 +16,8 @@ published: false
 
 canonical_url:
 
+tags: [Machine Learning, Dimensionality Reduction, Supervised Variable Selection, Exhaustive Search, Forward Selection, Backward Elimination, Stepwise Selection, 머신러닝, 차원축소]
+
 ---
 
 > 이 내용은 고려대학교 강필성 교수님의 Business Analytics 수업을 보고 정리한 것입니다.
@@ -68,4 +70,4 @@ Supervised Variable Selection
 
 - Forward Selection/Backward Elimination과는 다르게 선택/제거 된 변수는 선택/제거를 위해 다시 고려할 수 있다.
 
-<img src='/img/stepwise_selection01.PNG' width='600'>
+<img src='/img/stepwise_selection01.png' width='600'>
