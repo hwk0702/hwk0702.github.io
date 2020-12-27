@@ -12,7 +12,7 @@ description:
 
 image: /img/supervised_variable_selection.png
 
-published: false
+published: True
 
 canonical_url:
 
