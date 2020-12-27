@@ -21,8 +21,10 @@ tags: [Machine Learning, Dimensionality Reduction, Supervised Variable Selection
 ---
 
 > 이 내용은 고려대학교 강필성 교수님의 Business Analytics 수업을 보고 정리한 것입니다.
-> youtube URL: https://youtu.be/A69fxxdU0mk
-> <img src='https://i.ytimg.com/vi/A69fxxdU0mk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBjfOaA-n3YZRo5U644s5rLxvnlyw' width='150'>
+>
+> 아래 이미지 클릭 시 강의 영상 Youtube URL로 넘어갑니다.
+>
+>[![01-2: Dimensionality Reduction - Supervised Selection](https://i.ytimg.com/vi/A69fxxdU0mk/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLBjfOaA-n3YZRo5U644s5rLxvnlyw)](https://youtu.be/A69fxxdU0mk)
 
 Supervised Variable Selection
 ----------------------------------------------
