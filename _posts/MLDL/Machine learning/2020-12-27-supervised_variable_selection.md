@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "계층적 군집화"
+title: "Supervised Variable Selection"
 
 date: 2020-12-27 21:30:07
 
