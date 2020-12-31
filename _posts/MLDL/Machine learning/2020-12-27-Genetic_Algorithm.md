@@ -24,7 +24,7 @@ tags: [Machine Learning, Dimensionality Reduction, Genetic Algorithm, 머신러�
 >
 > 아래 이미지 클릭 시 강의 영상 Youtube URL로 넘어갑니다.
 >
->[![01-2: Dimensionality Reduction - Supervised Selection](https://i.ytimg.com/vi/yUW8yg4_j6w/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&amp;rs=AOn4CLD5BQve4HJ0RstbdbopZstdXUtLHA)](https://youtu.be/yUW8yg4_j6w)
+>[![01-2: Dimensionality Reduction - Supervised Selection](https://img.youtube.com/vi/yUW8yg4_j6w/mqdefault.jpg)](https://youtu.be/yUW8yg4_j6w)
 
 ## Genetic Algorithm
 
