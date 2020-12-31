@@ -4,13 +4,13 @@ layout: post
 
 title: "Supervised Variable Selection"
 
-date: 2020-12-31 23:30:07
+date: 2020-12-27 20:30:07
 
 categories: [ML/DL/Machine Learning]
 
 description:
 
-image: /img/mds.png
+image: /img/supervised_variable_selection.png
 
 published: True
 
