@@ -16,7 +16,7 @@ published: True
 
 canonical_url:
 
-tags: [Machine Learning, Dimensionality Reduction, Genetic Algorithm, 머신러닝, 차원축소, Selection, Crossover, Mutation]
+tags: [Machine Learning, Dimensionality Reduction, Genetic Algorithm, 머신러닝, 차원축소, 유전 알고리즘, Selection, Crossover, Mutation]
 
 ---
 
