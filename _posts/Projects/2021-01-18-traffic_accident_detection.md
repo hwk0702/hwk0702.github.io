@@ -16,7 +16,7 @@ published: true
 
 layout: product
 
-image: /img/cv_novelty.png
+image: /img/tad.png
 
 price:
 
