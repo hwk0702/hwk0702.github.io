@@ -67,7 +67,7 @@ rating: 5
 
 #### 2.1 원본 영상
 
-<iframe width="600" height="308" src="https://www.youtube.com/embed/B28ld4d8IXo" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="308" src="https://www.youtube.com/embed/8iTKbFVVtZc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### 2.2 객체 탐지 + 트래킹
 
