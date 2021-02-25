@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Python/Tips
+title: Tips
 
 permalink: '/PY/TP'
 

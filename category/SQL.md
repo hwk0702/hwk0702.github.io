@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Data Engineering/SQL
+title: SQL
 
 permalink: '/DE/SQL'
 

@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Python/Data Structure
+title: Data Structure
 
 permalink: '/PY/DS'
 
