@@ -2,7 +2,7 @@
 
 layout: category
 
-title: ML/DL/NLP
+title: NLP
 
 permalink: '/MLDL/NLP'
 
