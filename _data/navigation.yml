@@ -17,8 +17,8 @@
       link: /DS/ST
     - name: Data Mining
       link: /DS/DM
-    - name: R Programming
-      link: /DS/RP
+    # - name: R Programming
+    #   link: /DS/RP
 
 - name: Data Engineering
   link: /#
@@ -37,12 +37,16 @@
       link: /MLDL/ML
     - name: Deep Learning
       link: /MLDL/DL
+    - name: NLP
+      link: /MLDL/NLP
+    - name: Computer Vision
+      link: /MLDL/CV
     - name: Latest Trends
       link: /MLDL/LT
 
 - name: Projects
   link: /Projects/
-- name: Treatise Review
-  link: /TR/
+- name: Paper Review
+  link: /PR/
 - name: Blog
   link: /blog/

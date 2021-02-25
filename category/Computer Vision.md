@@ -2,9 +2,9 @@
 
 layout: category
 
-title: Treatise Review
+title: ML/DL/Computer Vision
 
-permalink: '/TR/'
+permalink: '/MLDL/CV'
 
 show_sidebar: false
 
