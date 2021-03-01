@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Machine Learning
+title: ML/DL/Machine Learning
 
 permalink: '/MLDL/ML'
 

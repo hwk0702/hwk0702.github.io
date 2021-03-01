@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Crawler
+title: Python/Crawler
 
 permalink: '/PY/CR'
 

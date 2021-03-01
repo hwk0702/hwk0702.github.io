@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Statistics
+title: Data Science/Statistics
 
 permalink: '/DS/ST'
 

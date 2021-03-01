@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Data Engineering
+title: Data Engineering/Data Engineering
 
 permalink: '/DE/DE'
 

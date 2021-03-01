@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Latest Trends
+title: ML/DL/Latest Trends
 
 permalink: '/MLDL/LT'
 

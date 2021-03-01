@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Computer Vision
+title: ML/DL/Computer Vision
 
 permalink: '/MLDL/CV'
 

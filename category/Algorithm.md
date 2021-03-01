@@ -2,7 +2,7 @@
 
 layout: category
 
-title: Algorithm
+title: Python/Algorithm
 
 permalink: '/PY/AL'
 

@@ -2,7 +2,7 @@
 
 layout: category
 
-title: NoSQL
+title: Data Engineering/NoSQL
 
 permalink: '/DE/NS'
 

@@ -2,7 +2,7 @@
 
 layout: category
 
-title: R Programming
+title: Data Science/R Programming
 
 permalink: '/DS/RP'
 
