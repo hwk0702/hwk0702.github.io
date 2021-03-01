@@ -36,10 +36,10 @@ tags: [차원 축소, Dimensionality Reduction, 주성분 분석, PCA, 커널 PC
 
 차원 축소 관련 더 자세한 내용 보러 가기
 
-- [Supervised Variable Selection](https://hwk0702.github.io/ml/dl/machine%20learning/2020/12/27/supervised_variable_selection/)
-- [Genetic Algorithm](https://hwk0702.github.io/ml/dl/machine%20learning/2020/12/27/Genetic_Algorithm/)
-- [PCA](https://hwk0702.github.io/ml/dl/machine%20learning/2020/12/29/PCA/)
-- [MDS](https://hwk0702.github.io/ml/dl/machine%20learning/2020/12/31/mds/)
+- [Supervised Variable Selection](https://hwk0702.github.io/machine%20learning/2020/12/27/supervised_variable_selection/)
+- [Genetic Algorithm](https://hwk0702.github.io/machine%20learning/2020/12/27/Genetic_Algorithm/)
+- [PCA](https://hwk0702.github.io/machine%20learning/2020/12/29/PCA/)
+- [MDS](https://hwk0702.github.io/machine%20learning/2020/12/31/mds/)
 
 ---
 
