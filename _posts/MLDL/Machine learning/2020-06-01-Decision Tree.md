@@ -6,7 +6,7 @@ title: "의사 결정 나무"
 
 date: 2020-06-01 16:02:07
 
-categories: [Machine Learning]
+categories: [ML/DL/Machine Learning]
 
 description:
 
@@ -62,7 +62,7 @@ tags: [의사 결정 나무, Decision Tree, 결정 트리, CART, 지니 불순�
 $$J(k,t_k)=\frac{m_{left}}{m}G_{left}+\frac{m_{right}}{m}G_{right}$$
 
 $$ 여기서 \left\{\begin{matrix}
-G_{left/right}는 왼쪽/오른쪽 서브넷의 불순도\\
+G_{left/right}는 왼쪽/오른쪽 서브넷의 불순도\\ 
 m_{left/right}는 왼쪽/오른쪽 서브넷의 샘플 수
 \end{matrix}\right.$$
 
@@ -111,7 +111,7 @@ $$H_i=-\underset{P_{i,k} \neq 0}{\sum^n_{k=1}}log_2(P_{i,k})$$
 $$J(k,t_k)=\frac{m_{left}}{m}{MSE}_{left}+\frac{m_{right}}{m}{MSE}_{right}$$
 
 $$ 여기서 \left\{\begin{matrix}
-{MSE}_{node} = \sum_{i \in node}(\hat{y}_{node}-y^{(i)})^2\\
+{MSE}_{node} = \sum_{i \in node}(\hat{y}_{node}-y^{(i)})^2\\ 
 \hat{y}_{node} = \frac{1}{m_{node}}\sum_{i \in node}y^{(i)}
 \end{matrix}\right.$$
 

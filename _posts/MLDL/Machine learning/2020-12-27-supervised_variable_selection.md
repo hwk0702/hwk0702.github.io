@@ -6,7 +6,7 @@ title: "Supervised Variable Selection"
 
 date: 2020-12-27 20:30:07
 
-categories: [Machine Learning]
+categories: [ML/DL/Machine Learning]
 
 description:
 

@@ -6,7 +6,7 @@ title: "웹 기본 지식 이해하기"
 
 date: 2020-01-08 14:50:07
 
-categories: [Crawler]
+categories: [Python/Crawler]
 
 description:
 

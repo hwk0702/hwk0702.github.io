@@ -6,7 +6,7 @@ title: "고속 옵티마이저"
 
 date: 2020-07-15 15:37:07
 
-categories: [Deep Learning]
+categories: [ML/DL/Deep Learning]
 
 description:
 

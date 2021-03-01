@@ -6,7 +6,7 @@ title: "비지도학습"
 
 date: 2020-01-21 10:57:07
 
-categories: [Data Mining]
+categories: [Data Science/Data Mining]
 
 description:
 
@@ -62,7 +62,7 @@ tags: [비지도학습, Unsupervised Learning, 군집, 클러스터, Cluster, K-
 -  클러스터 내 중심에 위치한 객체를 이용
 - k-means보다 이상치에 강하고 인풋의 순서에 영향을 받지 않음
 - k-means보다 느림
-- 하나의 클러스터가 하나의 객체로 대표될 수 있다는 특징
+- 하나의 클러스터가 하나의 객체로 대표될 수 있다는 특징 
 
 1) k개의 대표 객체를 임의로 선택
 

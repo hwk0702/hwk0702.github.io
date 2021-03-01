@@ -6,7 +6,7 @@ title: "데이터 타입"
 
 date: 2020-01-07 10:50:07
 
-categories: [Data Mining]
+categories: [Data Science/Data Mining]
 
 description:
 

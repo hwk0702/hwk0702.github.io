@@ -6,7 +6,7 @@ title: "Basic Data Formats"
 
 date: 2020-01-08 15:50:07
 
-categories: [Tips]
+categories: [Python/Tips]
 
 description:
 

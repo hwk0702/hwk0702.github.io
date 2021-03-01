@@ -6,7 +6,7 @@ title: "정규표현식과 re 모듈"
 
 date: 2020-01-03 10:50:07
 
-categories: [Tips]
+categories: [Python/Tips]
 
 description:
 

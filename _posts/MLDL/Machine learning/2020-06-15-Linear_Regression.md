@@ -6,7 +6,7 @@ title: "선형회귀"
 
 date: 2020-06-15 16:02:07
 
-categories: [Machine Learning]
+categories: [ML/DL/Machine Learning]
 
 description:
 
@@ -52,7 +52,7 @@ $$Y=\beta_0+\beta_1\mathbf{X}_1+\beta_2\mathbf{X}_2+\cdots+\beta_p\mathbf{X}_p$$
 
 $$\varepsilon$$=Random error
 
-랜덤 오차에 대한 가정: $$\varepsilon~N(0,\sigma^2) \rightarrow E(\varepsilon)=0, Var(\varepsilon)=\sigma^2$$
+랜덤 오차에 대한 가정: $$\varepsilon~N(0,\sigma^2) \rightarrow E(\varepsilon)=0, Var(\varepsilon)=\sigma^2$$ 
 
 ##### 1.3 선형 회귀의 목적
 
@@ -101,7 +101,7 @@ $$\hat{\beta_1}=\frac{\sum{(x_i-\bar{x})(y_i-\bar{y})}}{\sum{(x_i-\bar{x})^2}}$$
 
 <img src='/img/LR4.PNG' width='400'>
 
-$$Y=X\beta+\varepsilon, \hat{Y}=X\hat{\beta}$$
+$$Y=X\beta+\varepsilon, \hat{Y}=X\hat{\beta}$$ 
 
 $$e=y-x\hat{\beta}$$
 
@@ -161,7 +161,7 @@ $$\hat{\beta}_j \pm z_{\alpha/2}se(\hat{\beta}_j)$$
 
 <img src='/img/LR5.PNG' width='400'>
 
-$$SST=\sum^n_{i=1}(Y_i-\bar{Y})^2 \: \: SSR=\sum^n_{i=1}(\hat{Y}_i-\bar{Y})^2 \: \: SSE= \sum^n_{i=1}(Y_i-\hat{Y}_i)^2$$
+$$SST=\sum^n_{i=1}(Y_i-\bar{Y})^2 \: \: SSR=\sum^n_{i=1}(\hat{Y}_i-\bar{Y})^2 \: \: SSE= \sum^n_{i=1}(Y_i-\hat{Y}_i)^2$$ 
 
 $$SST=SSR+SSE$$
 

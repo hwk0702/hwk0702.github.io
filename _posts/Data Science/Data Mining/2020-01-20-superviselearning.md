@@ -6,7 +6,7 @@ title: "지도학습"
 
 date: 2020-01-20 10:57:07
 
-categories: [Data Mining]
+categories: [Data Science/Data Mining]
 
 description:
 

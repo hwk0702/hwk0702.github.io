@@ -6,7 +6,7 @@ title: "데이터 엔지니어링"
 
 date: 2020-01-05 10:50:07
 
-categories: [Data Engineering]
+categories: [Data Engineering/Data Engineering]
 
 description:
 

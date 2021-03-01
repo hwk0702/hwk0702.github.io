@@ -6,7 +6,7 @@ title: "Docker Tensorflow"
 
 date: 2020-04-20 18:36:07
 
-categories: [Tips]
+categories: [Python/Tips]
 
 description:
 

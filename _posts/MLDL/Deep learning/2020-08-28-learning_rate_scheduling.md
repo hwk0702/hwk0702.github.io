@@ -6,7 +6,7 @@ title: "학습률 스케줄링"
 
 date: 2020-08-28 15:37:07
 
-categories: [Deep Learning]
+categories: [ML/DL/Deep Learning]
 
 description:
 

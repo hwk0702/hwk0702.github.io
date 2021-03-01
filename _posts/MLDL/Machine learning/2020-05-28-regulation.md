@@ -6,7 +6,7 @@ title: "규제가 있는 선형모델"
 
 date: 2020-05-28 16:12:07
 
-categories: [Machine Learning]
+categories: [ML/DL/Machine Learning]
 
 description:
 

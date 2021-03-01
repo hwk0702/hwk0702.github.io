@@ -6,7 +6,7 @@ title: "ISOMAP & LLE"
 
 date: 2021-01-01 19:30:07
 
-categories: [Machine Learning]
+categories: [ML/DL/Machine Learning]
 
 description:
 

@@ -6,7 +6,7 @@ title: "SQL Data Types"
 
 date: 2020-01-13 14:50:07
 
-categories: [SQL]
+categories: [Data Engineering/SQL]
 
 description:
 

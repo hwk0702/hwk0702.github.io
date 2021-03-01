@@ -6,7 +6,7 @@ title: "데이터 레이크 vs 데이터 웨어하우스"
 
 date: 2020-01-18 11:50:07
 
-categories: [Data Engineering]
+categories: [Data Engineering/Data Engineering]
 
 description:
 
