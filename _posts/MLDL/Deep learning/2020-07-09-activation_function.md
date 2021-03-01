@@ -6,7 +6,7 @@ title: "활성화 함수"
 
 date: 2020-07-09 16:27:07
 
-categories: [ML/DL/Deep Learning]
+categories: [Deep Learning]
 
 description:
 

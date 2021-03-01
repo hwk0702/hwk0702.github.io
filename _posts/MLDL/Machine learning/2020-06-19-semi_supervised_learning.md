@@ -6,7 +6,7 @@ title: "계층적 군집화"
 
 date: 2020-06-16 17:02:07
 
-categories: [ML/DL/Machine Learning]
+categories: [Machine Learning]
 
 description:
 
@@ -24,7 +24,7 @@ canonical_url:
 - 계층적 트리로 구성된 중첩 클러스터 셋 생성
 - Dendrogram으로 시각화
 
-<img src='/img/HC1.PNG' width='400'> 
+<img src='/img/HC1.PNG' width='400'>
 
 ---
 
@@ -37,19 +37,19 @@ canonical_url:
 
 1) 모든 관측치를 개별 군집으로 간주한다.
 
-<img src='/img/HC2.PNG' width='400'> 
+<img src='/img/HC2.PNG' width='400'>
 
 2) 가장 작은 거리를 가진 두 개의 클러스터를 선택한다.
 
-<img src='/img/HC3.PNG' width='400'> 
+<img src='/img/HC3.PNG' width='400'>
 
 3) 군집 사이의 거리를 정의한다(다른 군집의 관측치 간의 최소거리로 정의)
 
-<img src='/img/HC4.PNG' width='400'> 
+<img src='/img/HC4.PNG' width='400'>
 
 4) 모든 관측치가 단일 군집에 속할 때까지 병합한다.
 
-<img src='/img/HC5.PNG' width='400'> 
+<img src='/img/HC5.PNG' width='400'>
 
 <img src='/img/HC6.PNG' width='400'>
 
@@ -79,4 +79,3 @@ canonical_url:
 4) Distance between centroid
 
 <img src='/img/HC13.PNG' width='400'>   
-

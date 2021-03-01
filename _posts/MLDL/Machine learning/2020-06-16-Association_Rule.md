@@ -6,7 +6,7 @@ title: "연관 규칙 분석"
 
 date: 2020-06-16 18:02:07
 
-categories: [ML/DL/Machine Learning]
+categories: [Machine Learning]
 
 description:
 
@@ -96,7 +96,7 @@ Confidence(c): X가 포함된 트랜잭션에서 Y의 아이템이 얼마나 자
 - 아이템 세트에 대한 support는 하위 세트에 대한 support를 초과하지 않는다. 이를 안티 모노톤 support 속성이라고 한다.
 - 장점: 병렬화 및 구현이 쉬움
 - 단점: 메모리에 트랜잭션이 다 들어가야함, m번의 데이터베이스 스캔이 필요함
-- 개선책: 해쉬 기반 item set 카운팅, 트랜잭션 나누기 
+- 개선책: 해쉬 기반 item set 카운팅, 트랜잭션 나누기
 
 <img src='/img/AR5.PNG' width='400'>  
 

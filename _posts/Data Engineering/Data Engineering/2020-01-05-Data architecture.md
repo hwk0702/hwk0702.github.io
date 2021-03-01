@@ -6,7 +6,7 @@ title: "데이터 아키텍쳐"
 
 date: 2020-01-05 10:50:07
 
-categories: [Data Engineering/Data Engineering]
+categories: [Data Engineering]
 
 description:
 

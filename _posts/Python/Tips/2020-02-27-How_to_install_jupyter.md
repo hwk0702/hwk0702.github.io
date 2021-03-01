@@ -6,7 +6,7 @@ title: "Jupyter notebook"
 
 date: 2020-02-27 17:28:07
 
-categories: [Python/Tips]
+categories: [Tips]
 
 description:
 

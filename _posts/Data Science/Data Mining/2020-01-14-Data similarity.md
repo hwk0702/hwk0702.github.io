@@ -6,7 +6,7 @@ title: "데이터 유사도"
 
 date: 2020-01-14 10:57:07
 
-categories: [Data Science/Data Mining]
+categories: [Data Mining]
 
 description:
 

@@ -6,7 +6,7 @@ title: "beautifulsoup 모듈"
 
 date: 2020-01-10 13:50:07
 
-categories: [Python/Crawler]
+categories: [Crawler]
 
 description:
 

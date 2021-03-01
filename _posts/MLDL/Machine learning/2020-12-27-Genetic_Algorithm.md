@@ -6,7 +6,7 @@ title: "Genetic Algorithm"
 
 date: 2020-12-27 22:13:07
 
-categories: [ML/DL/Machine Learning]
+categories: [Machine Learning]
 
 description:
 

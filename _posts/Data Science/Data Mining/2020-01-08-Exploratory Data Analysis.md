@@ -6,7 +6,7 @@ title: "탐색적 데이터 분석"
 
 date: 2020-01-08 09:57:07
 
-categories: [Data Science/Data Mining]
+categories: [Data Mining]
 
 description:
 

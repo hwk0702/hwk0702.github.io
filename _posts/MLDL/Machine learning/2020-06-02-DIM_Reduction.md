@@ -6,7 +6,7 @@ title: "차원 축소"
 
 date: 2020-06-02 17:22:07
 
-categories: [ML/DL/Machine Learning]
+categories: [Machine Learning]
 
 description:
 

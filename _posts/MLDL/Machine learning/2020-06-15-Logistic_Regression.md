@@ -6,7 +6,7 @@ title: "로지스틱 회귀"
 
 date: 2020-06-15 17:02:07
 
-categories: [ML/DL/Machine Learning]
+categories: [Machine Learning]
 
 description:
 
@@ -48,7 +48,7 @@ $$when \: y_i=1,\: \varepsilon_i=1-\beta_0=\beta_1x_i \\ when \: y_i=0,\: \varep
 (2) Nonconstant variace of error
 
 $$\text{Given}\:y_i=E(y_i)+\varepsilon_i \:\:\:\:\:\: \begin{matrix}
-\varepsilon_i=y_i-E(y_i)\\ 
+\varepsilon_i=y_i-E(y_i)\\
 V(\varepsilon_i)=V(y_i)
 \end{matrix}$$
 
@@ -71,15 +71,15 @@ $$E(y_i)=\pi_i \\ 0 \leq E(y_i) \leq 1$$
 - 선형 회귀 개념을 반응 변수가 이진인 상황으로 확장
 - 예측 변수 값을 기반으로 클래스를 알 수 없는 새 관측치를 클래스 중 하나로 분류하는데 사용
 
-<img src='/img/LoR1.png' width='400'> 
+<img src='/img/LoR1.png' width='400'>
 
-<img src='/img/LoR2.png' width='400'> 
+<img src='/img/LoR2.png' width='400'>
 
 ##### 2.1 S-Curve fitting for Classification
 
 - 많은 실제 상황에서 예측 변수의 확률을 S-Curve 모양으로 변경할 수 있다.
 
-<img src='/img/LoR3.png' width='400'> 
+<img src='/img/LoR3.png' width='400'>
 
 $$p(x)=\frac{exp(\beta x)}{1+exp(\beta x)}=\frac{e^{\beta x}}{1+e^{\beta x}}$$
 
@@ -91,16 +91,16 @@ $$\pi(X=x)=P(Y=1|X=x)\\1-P(Y=0|X=x)$$
 
 $$E(y)=\pi(X=x)\\=\frac{exp(\beta_0+\beta_1 x)}{1+exp(\beta_0+\beta_1 x)} \:\:\:\: or \:\:\:\: \frac{1}{1+exp(-(\beta_0+\beta_1 x))}$$
 
-<img src='/img/LoR4.png' width='400'> 
+<img src='/img/LoR4.png' width='400'>
 
-##### 2.3 Odds and Logit Transform 
+##### 2.3 Odds and Logit Transform
 
 - 로지스틱 반응 함수를 정의하려면 먼저 Odds를 정의해야한다.
 
 $$\pi(X=x)=\frac{e^{(\beta_0+\beta_1x)}}{1+e^{(\beta_0+\beta_1x)}}=\frac{1}{1+e^{-(\beta_0+\beta_1x)}} \:\:\:\: 0 \leq\pi(X=x)\leq 1$$
 
 - Odds: $$\frac{\pi(X-x)}{1-\pi(X=x)}\:\:\begin{matrix}
-\rightarrow \text{Probability of belonging to class 1}\\ 
+\rightarrow \text{Probability of belonging to class 1}\\
 \rightarrow \text{Probability of belonging to class 0}
 \end{matrix} \:\:\:\: 0 < Odds < 1$$
 
@@ -123,7 +123,7 @@ $$logit[\pi(X=x)]=log(Odds)=log\frac{\pi(x)}{1-\pi(x)}=\beta_0+\beta_1x+\beta_2x
 - 로지스틱 회귀의 모수는 최대 우도 추정 (MLE)으로 얻을 수 있다.
 
 $$\left\{\begin{matrix}
-P(y_i=1)=\pi_1\\ 
+P(y_i=1)=\pi_1\\
 P(y_i=0)=1-\pi_1
 \end{matrix}\right. \:\:\:\: f_i(y_i)=\pi_i^{y_i}(1-\pi_i)^{1-y_i}$$ By Bernoulli probability mass function
 
@@ -174,7 +174,7 @@ $$\text{if}\: \hat{y}_{new}=0.9\:\:\rightarrow\:\: \text{Classified as 1}$$
 
 - 로지스틱 회귀 함수는 p 차원 데이터를 분류하기 위해 (p-1) 차원 초평면으로 간주 될 수 있다.
 
-<img src='/img/LoR5.png' width='400'> 
+<img src='/img/LoR5.png' width='400'>
 
 ##### 2.8 $$\beta_i$$에 대한 해석
 
