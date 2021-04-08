@@ -92,7 +92,7 @@ $$\begin{aligned}
 
 - Sequential data의 temporal dimension을 보존하는 RNN의 변형
 
-<img src='/img/2DConvLSTMAE_2.png' width='600'>
+<img src='/img/2DConvLSTMAE_2.png' width='400'>
 
 - LSTM memory cell은 크게 두 가지 구성요소를 가지고 있다.
 
@@ -119,7 +119,7 @@ h_{t}&=o_th(c_t)
 - ConvLSTM model은 FC layer 연산자를 Convolution 연산자로 대체하는 LSTM의 변형이다.
 - 수식은 LSTM과 동일하나 Input vector $$x_t$$가 이미지이다.
 
-<img src='/img/2DConvLSTMAE_3.png' width='600'>
+<img src='/img/2DConvLSTMAE_3.png' width='400'>
 
 #### E. Autoencoder
 
@@ -133,7 +133,7 @@ h_{t}&=o_th(c_t)
 
 - 전체 model architechture
 
-<img src='/img/2DConvLSTMAE_6.png' width='600'>
+<img src='/img/2DConvLSTMAE_6.png' width='400'>
 
 #### A. ConvLSTM Encoder
 
@@ -153,14 +153,14 @@ h_{t}&=o^{t,l}\circ\mathrm{tanh}(c^{t,l})
 - $$b_z^l, b_r^l, b_c^l, b_o^l$$ : lth layer의 bias parameters
 - ConvLSTM Encoder architechture
 
-<img src='/img/2DConvLSTMAE_4.png' width='600'>
+<img src='/img/2DConvLSTMAE_4.png' width='400'>
 
 - ConvLSTM에서 Sequence의 길이는 모델 성능에 영향을 미치는 hyperparmeter이므로 최적화해야한다.
 - Grid search framework를 이용하여 결정한다.
 
 #### B. Bidirectional LSTM Decoder
 
-<img src='/img/2DConvLSTMAE_7.png' width='600'>
+<img src='/img/2DConvLSTMAE_7.png' width='400'>
 
 - encoder phase의 output은 $$(n\times 1\times 8 \times 64)$$차원의 일련의 featrue map vactors (n은 학습 샘플의 수)
 - 이 layer의 주요 기능은 decoder의 각 time step에 대한 일정한 input 형태로 encoding layer로 부터의 최종 output 벡터를 반복하는 것, 이러한 방식으로 decoding layer는 원래 입력 sequence를 재구성 한다.
@@ -174,7 +174,7 @@ h_{t}&=o^{t,l}\circ\mathrm{tanh}(c^{t,l})
 - DL models의 성능은 optimization process를 사용하여 미리 결정된 hyperparmeters에 따라 달라진다.
 - 이 제안 모델에서는 8개의 hyperparmeter가 최적화되었다.
 
-<img src='/img/2DConvLSTMAE_5.png' width='600'>
+<img src='/img/2DConvLSTMAE_5.png' width='400'>
 
 - hyperparmeter 최적화 방법으로는 random search, grid search, bayesian optimization 등이 있지만 grid search approch가 manual search와 비교하여 현재 연구과 같은 저차원 공간에서 신뢰성이 있기 때문에 제안하는 2-DConvLSTM와 baseling/competitor model 모두 grid framework를 적용하여 hyperparmeter를 최적화하였다.
 - 또한 Grid search는 구현이 간단하며 병렬화를 쉽게 구성할 수 있다.
@@ -210,7 +210,7 @@ $$\mathrm{RMSE}=\sqrt{\frac{1}{n}\sum^n_{i=1}(\hat{y}_i-y_i)^2}$$
 - sequential supervised learning을 위한 적합한 형식으로 변환한다.
 - sliding window size w=60으로, recurrent step size을 1로 하고 예측 간격 k=10분으로 하였다.
 
-<img src='/img/2DConvLSTMAE_8.png' width='600'>
+<img src='/img/2DConvLSTMAE_8.png' width='400'>
 
 - Input size의 변화
 
