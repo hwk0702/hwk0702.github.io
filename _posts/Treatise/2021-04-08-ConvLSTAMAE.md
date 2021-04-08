@@ -40,9 +40,13 @@ tags: [smart manufacturing, ConvLSTM, Convolution, CNN, LSTM, Autoencoder, Encod
 - CNN은 주로 벡터 공간에서 작동하므로 입력 시계열의 고차원 features를 학습하는데는 어려움이 있다. 따라서 CNN은 시계열 예측 문제에서의 적용은 차선책이다.
 - Convolutional LSTM(ConvLSTM)은 spatial information을 보존하고 sequential learning에 잘 수행한다.
 - 2-DConvLSTMAE를 제안(Deep ConvLSTM stacked autoencoder for univariate, multistep machine speed forecasting)
+
   1) ConvLSTM encoding layers
+
   2) Bidirectional stacked LSTM decoding layers
+
   3) Time-distributed supervised learning[Fully connected(FC)] layers
+
 - Input: 금속 캔 bodymaker 기계의 내부 속도 (분당 스트로크 수로 측정)
 
 ### TECHNICAL PRELIMINARIES
@@ -53,7 +57,10 @@ tags: [smart manufacturing, ConvLSTM, Convolution, CNN, LSTM, Autoencoder, Encod
 - Sequential 입력 데이터를 지도 학습 문제로 변환하는 sliding-window method를 사용
 - 입력 시계열 sequence의 일부가 Input features로 사용되도록 재구성
 - 이전 Time step을 window width/size로 나타낸다.
-- 단변량 time series $$x(t)={x_1,x_2,\cdots,x_t}$$를 이용하여 미래의 k값들을 예측 $$\hat{y}=(\hat{y_1},\hat{y_2},\cdots,\hat{y_k})\cong(x_{t+1},x_{t+2},\cdots,x_{t+k})$$
+- 단변량 time series $$x(t)={x_1,x_2,\cdots,x_t}$$를 이용하여 미래의 k값들을 예측
+
+$$\hat{y}=(\hat{y_1},\hat{y_2},\cdots,\hat{y_k})\cong(x_{t+1},x_{t+2},\cdots,x_{t+k})$$
+
 - sliding window size로 나타내면 $$\hat{y}=(\hat{y_1},\hat{y_2},\cdots,\hat{y_k})=f(x_{t-w},x_{t-w+1},x_{t-w+2},\cdots,x_t)$$
 - Input은 일정 기간(1분)동안 얻은 기계의 속도
 - Input matrix : $$X\in\mathbb{R}^{n\times w}$$, Output matrix : $$Y\in\mathbb{R}^{n\times k}$$, Training samples의 갯수 : $$n=(N-w-k+1)$$
