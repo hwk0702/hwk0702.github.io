@@ -113,3 +113,10 @@ h_{t}&=o_th(c_t)
 
 - $$W$$ : 가중치 매트릭스, $$b$$ : 편향 $$\sigma(.)$$ :  standard logistic sigmoid function
 - $$i$$ : input gate, $$f$$ : forget gate, $$o$$ : output gate
+
+#### D. Convolutional LSTM
+
+- ConvLSTM model은 FC layer 연산자를 Convolution 연산자로 대체하는 LSTM의 변형이다.
+- 수식은 LSTM과 동일하나 Input vector $$x_t$$가 이미지이다.
+
+<img src='/img/2DConvLSTMAE_3.png' width='600'>
