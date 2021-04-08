@@ -67,7 +67,7 @@ $$\hat{y}=(\hat{y_1},\hat{y_2},\cdots,\hat{y_k})\cong(x_{t+1},x_{t+2},\cdots,x_{
 
 #### B. Structure of the CNN
 
-- CNN은 주로 이미지, 비디오 인식에 사용되는 feed forward neural network
+- CNN은 주로 이미지, 비디오 인식에 사용되는 feedforward neural network
 
 <img src='/img/2DConvLSTMAE_1.png' width='600'>
 
@@ -120,3 +120,18 @@ h_{t}&=o_th(c_t)
 - 수식은 LSTM과 동일하나 Input vector $$x_t$$가 이미지이다.
 
 <img src='/img/2DConvLSTMAE_3.png' width='600'>
+
+#### E. Autoencoder
+
+- Input과 Output이 동일한 feedforward neural network
+- Input으로 부터 features를 추출
+- Three basic component : encoder, code, decoder
+- encoder는 입력을 code로 압축하고 이후 decoder에 의해 디코딩 된다.
+- autoencoder는 차원 축소 전력으로 사용 가능하다.
+
+### 2-DConvLSTMAE MODEL
+
+#### A. ConvLSTM Encoder
+
+- ConvLSTM은 Sequence의 길이가 늘어나면 성능이 저하된다.
+- 이를 해결하고자 attention-based mechanism을 적용한다.
