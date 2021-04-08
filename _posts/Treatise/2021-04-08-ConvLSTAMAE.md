@@ -135,3 +135,37 @@ h_{t}&=o_th(c_t)
 
 - ConvLSTM은 Sequence의 길이가 늘어나면 성능이 저하된다.
 - 이를 해결하고자 attention-based mechanism을 적용한다.
+
+$$\begin{aligned}
+i^{t,l}&=\sigma(W^l_{xz}x^{t,l}+W^l_{hz}h^{t-1,l}+W^l_{cz}\circ C^{t-1,l}+b^l_z) \\
+f^{t,l}&=\sigma(W^l_{xr}x^{t,l}+W^l_{hr}h^{t-1,l}+W^l_{cr}\circ C^{t-1,l}+b^l_r) \\
+c^{t,l}&=i^{t,l}\circ \mathrm{tanh}(W^l_{xc}x^{t,l}+W^l_{hc}h^{t,l}+b^l_c)+r^{t,l}\circ c^{t-1,l} \\
+o^{t,l}&=\sigma(W^l_{xo}x^{t,l}+W^l_{ho}h^{t-1,l}+W^l_{co}C^{t,l}+b^l_o) \\
+h_{t}&=o^{t,l}\circ\mathrm{tanh}(c^{t,l})
+\end{aligned}$$
+
+- $$\circ$$ : Hadamard product, $$\sigma$$ : sigmoid function
+- $$W^l_{xz},W^l_{xr},W^l_{xc},W^l_{cr},W^l_{xc},W^l_{hc},W^l_{xo},W^l_{ho},W^l_{co}\in\mathbb{R}^{n\times T}$$ : convolutional kernels
+- $$b_z^l, b_r^l, b_c^l, b_o^l$$ : lth layer의 bias parameters
+- ConvLSTM Encoder architechture
+
+<img src='/img/2DConvLSTMAE_4.png' width='600'>
+
+- ConvLSTM에서 Sequence의 길이는 모델 성능에 영향을 미치는 hyperparmeter이므로 최적화해야한다.
+- Grid search framework를 이용하여 결정한다.
+
+#### B. Bidirectional LSTM Decoder
+
+- encoder phase의 output은 $$(n\times 1\times 8 \times 64)$$차원의 일련의 featrue map vactors (n은 학습 샘플의 수)
+- 이 layer의 주요 기능은 decoder의 각 time step에 대한 일정한 input 형태로 encoding layer로 부터의 최종 output 벡터를 반복하는 것, 이러한 방식으로 decoding layer는 원래 입력 sequence를 재구성 한다.
+- 이 반복 벡터 layer의 출력은 bidirectional LSTM stacked network로 전달한다.
+- 각 LSTM은 ReLU가 적용된 200개의 LSTM 유닛으로 구성한다.
+- 이전 LSTM layer의 출력은 계층적 방식으로 다음 layer에 입력으로 전달한다.
+- 이런 방식으로 decoder layer는 ConvLSTM encoder의 encoding된 출력 벡터를 통합, 이는 개별 layer에서 representation larning을 강화하여 예측 모델의 성능을 향상시킨다.
+
+#### C. hyperparmeter Optimization
+
+- DL models의 성능은 optimization process를 사용하여 미리 결정된 hyperparmeters에 따라 달라진다.
+- 이 제안 모델에서는 8개의 hyperparmeter가 최적화되었다.
+
+<img src='/img/2DConvLSTMAE_5.png' width='600'>
