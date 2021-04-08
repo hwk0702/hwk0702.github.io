@@ -81,3 +81,13 @@ $$\begin{aligned}
 - $$H$$ : 높이, $$W$$ : 너비, $$F$$ : 커널의 크기, $$S$$ : stride
 - $$x_{(r+1\times S)(c+j\times S)}$$는 좌표 $$(r+1 \times S)(c+j \times S)$$에 있는 입력 데이터 요소
 - $$w_{rc}$$ : 가중치, $$b$$ : 편향, $$\sigma$$ : 비선형 활성화 함수
+- Input(size: $$H \times W \times D$$)이 Convolution layer를 거치면 $$(\frac{H-F+2P}{S+q})\times (\frac{W-F+2P}{S+1})\times k$$ size로 바뀐다. (K는 필터의 개수)
+- 이 process는 convolution layer stack이 깊어짐에 따라 점차적으로 차원을 감소
+- pooling layer에는 두 가지 주요 기능이 있다.
+
+  1. Input layer의 spatial dimension을 최대 75% 줄인다.
+  2. 과적합을 제어한다.
+
+#### C. LSTM Neural network
+
+- Sequential data의 temporal dimension을 보존하는 RNN의 변형
