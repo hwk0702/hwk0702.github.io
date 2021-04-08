@@ -285,7 +285,7 @@ sMAPE &= \frac{200}{n}\sum^n_{i=1}\frac{|\hat{y}_i-y_i|}{|\hat{y}_i|+|y_i|}.
 
   1. Deep ConvLSTM layers는 LSTM과 CNN models의 장점을 활용하여 sequential data의 공간적, 시간적 분포를 적절하게 캡처한다.
 
-  2. encoder-decoder architechture는 dimensionality reductioin과 비지도 학습 체제로 두배가 되어 representation learning을 촉진시켜 model 학습시간을 단축시킨다. encoder-decoder architechture에 ConvLSTM과 LSTM layer를 사용하여 기계 속도 예측에 접근하는 방식의 조합은 기계 속도의 univariate time-series 예측 성능을 높였다.
+  2. encoder-decoder architechture는 dimensionality reductioin과 비지도 학습 체제로 representation learning을 촉진시켜 model 학습시간을 단축시킨다. encoder-decoder architechture에 ConvLSTM과 LSTM layer를 사용하여 기계 속도 예측에 접근하는 방식의 조합은 기계 속도의 univariate time-series 예측 성능을 높였다.
 
 #### E. Analysis of Sensitivity of 2-DConvLSTMAE with Respect to Sequence Length
 
