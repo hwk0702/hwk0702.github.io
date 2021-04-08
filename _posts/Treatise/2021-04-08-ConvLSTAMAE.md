@@ -181,7 +181,7 @@ h_{t}&=o^{t,l}\circ\mathrm{tanh}(c^{t,l})
 
 1. n개의 가능한 구성 hyperparmeter $$h$$의 인덱스를 갖는 집합 $$\forall$$이 주어지면, Grid search는 validation loss를 최소화하는 각 hyperparmeter $$(h^1,\cdots,h^k)$$에 대한 values set을 선택
 
-2. Grid search 시행 횟수가 $$S=\prod^n_{n=1}|h^{(k)}|$$가 되도록 grid 형식의 모든 값을 조합한다.
+2. Grid search 시행 횟수가 $$S=\prod^n_{n=1}\begin{vmatrix}h^{(k)}\end{vmatrix}$$가 되도록 grid 형식의 모든 값을 조합한다.
 
 #### D. Optimizer
 
