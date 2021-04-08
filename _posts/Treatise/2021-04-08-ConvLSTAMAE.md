@@ -91,3 +91,25 @@ $$\begin{aligned}
 #### C. LSTM Neural network
 
 - Sequential data의 temporal dimension을 보존하는 RNN의 변형
+
+<img src='/img/2DConvLSTMAE_2.png' width='600'>
+
+- LSTM memory cell은 크게 두 가지 구성요소를 가지고 있다.
+
+  1) Long-term state component $$c_{(t)}$$
+
+  2) Short-term state component $$h_{(t)}$$
+
+- 세 개의 control gates(input, output, forget)를 통해 각 셀이 쓰기, 읽기, 리셋 기능을 한다.
+- LSTM은 Multiplicative gates를 사용하여 RNN의 vanishing gradient 문제를 해결
+
+$$\begin{aligned}
+i_{t}&=\sigma(W_{xi}x_t+W_{hi}h_{t-1}+W_{ci}C_{t-1}+b_i) \\
+f_{t}&=\sigma(W_{xf}x_t+W_{hf}h_{t-1}+W_{cf}C_{t-1}+b_f) \\
+c_{t}&=f_tC_{t-1}+i_tg(W_{xc}x_t+W_{hc}h_{t-1}+b_c) \\
+o_{t}&=\sigma(W_{xo}x_t+W_{ho}h_{t-1}+W_{co}C_{t-1}+b_o) \\
+h_{t}&=o_th(c_t)
+\end{aligned}$$
+
+- $$W$$ : 가중치 매트릭스, $$b$$ : 편향 $$\sigma(.)$$ :  standard logistic sigmoid function
+- $$i$$ : input gate, $$f$$ : forget gate, $$o$$ : output gate
