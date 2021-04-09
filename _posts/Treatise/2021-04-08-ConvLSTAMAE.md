@@ -32,7 +32,7 @@ tags: [smart manufacturing, ConvLSTM, Convolution, CNN, LSTM, Autoencoder, Encod
 
 - Machine Speed Prediction은 다양한 시스템 조건에 따라 생산 프로세스를 동적으로 조정하고 생산 처리량을 최적화하여 에너지 소비량을 최소화하는데 사용
 - 정확한 데이터 기반 기계 속도 예측은 어렵다.
-- 산업 제조 공정 데이터의 복잡한 특성을 감안할 때 noise에 강하고 입력 시계열 신호의 시간 및 공간 분포를 캡처 할 수 있는 에측 모델이 전제조건이 되어야 한다.
+- 산업 제조 공정 데이터의 복잡한 특성을 감안할 때 noise에 강하고 입력 시계열 신호의 시간 및 공간 분포를 캡처 할 수 있는 예측 모델이 전제조건이 되어야 한다.
 - End-to-End model for multistep machine speed prediction인 Deep convolutional LSTM encoder-decoder architechture를 제안
 
 ### INTRODUCTION
@@ -53,7 +53,7 @@ tags: [smart manufacturing, ConvLSTM, Convolution, CNN, LSTM, Autoencoder, Encod
 
 #### A. Problem Formulation
 
-- Multistep(sequence to sequence) 시계열 에측의 목표는 이전에 관찰된 입력 sequence를 이용하여 미래 시계열 값의 고정 길이 sequence를 예측하는 것
+- Multistep(sequence to sequence) 시계열 예측의 목표는 이전에 관찰된 입력 sequence를 이용하여 미래 시계열 값의 고정 길이 sequence를 예측하는 것
 - Sequential 입력 데이터를 지도 학습 문제로 변환하는 sliding-window method를 사용
 - 입력 시계열 sequence의 일부가 Input features로 사용되도록 재구성
 - 이전 Time step을 window width/size로 나타낸다.
@@ -127,7 +127,7 @@ h_{t}&=o_th(c_t)
 - Input으로 부터 features를 추출
 - Three basic component : encoder, code, decoder
 - encoder는 입력을 code로 압축하고 이후 decoder에 의해 디코딩 된다.
-- autoencoder는 차원 축소 전력으로 사용 가능하다.
+- autoencoder는 차원 축소 전략으로 사용 가능하다.
 
 ### 2-DConvLSTMAE MODEL
 
@@ -176,7 +176,7 @@ h_{t}&=o^{t,l}\circ\mathrm{tanh}(c^{t,l})
 
 <img src='/img/2DConvLSTMAE_5.png' width='400'>
 
-- hyperparmeter 최적화 방법으로는 random search, grid search, bayesian optimization 등이 있지만 grid search approch가 manual search와 비교하여 현재 연구과 같은 저차원 공간에서 신뢰성이 있기 때문에 제안하는 2-DConvLSTM와 baseling/competitor model 모두 grid framework를 적용하여 hyperparmeter를 최적화하였다.
+- hyperparmeter 최적화 방법으로는 random search, grid search, bayesian optimization 등이 있지만 grid search approch가 manual search와 비교하여 현재 연구과 같은 저차원 공간에서 신뢰성이 있기 때문에 제안하는 2-DConvLSTM와 baseline/competitor model 모두 grid framework를 적용하여 hyperparmeter를 최적화하였다.
 - 또한 Grid search는 구현이 간단하며 병렬화를 쉽게 구성할 수 있다.
 
 1. n개의 가능한 구성 hyperparmeter $$h$$의 인덱스를 갖는 집합 $$\forall$$이 주어지면, Grid search는 validation loss를 최소화하는 각 hyperparmeter $$(h^1,\cdots,h^k)$$에 대한 values set을 선택
