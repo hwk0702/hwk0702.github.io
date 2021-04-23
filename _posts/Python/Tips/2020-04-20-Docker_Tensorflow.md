@@ -133,7 +133,7 @@ nvidia-smi
 
 ```bashrc
 
-docer volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker
+docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker
 
 sudo apt-get purge -y nvidia-docker
 ```
