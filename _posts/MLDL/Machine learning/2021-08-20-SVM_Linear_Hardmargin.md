@@ -32,7 +32,7 @@ tags: [Machine Learning, Kernel-based Learning, SVM, Support Vector Machine, Lin
 
 - Original SVM은 기본적으로 Linear Model
 
-## 2.1. Linear Classification (Binary)
+## 1. Linear Classification (Binary)
 
 ### ✓ Training data : i.i.d(independent and identically distribution)로 부터 $X\in R^d$
 
@@ -56,7 +56,7 @@ tags: [Machine Learning, Kernel-based Learning, SVM, Support Vector Machine, Lin
 
 <img src='/img/Supprot Vector Machine(SVM) - Linear & Hard Margin 9044f1ec45664cbe8c63b8592e4b9aaa/Untitled 4.png' width='600'>
 
-## 2.2.  Formulation
+## 2.  Formulation
 
 ### ✓ margin 계산 방법
 
@@ -87,11 +87,11 @@ p=\frac{1}{-w^Tw}=-\frac{1}{\left \| w \right \|^2}\\
 
 - 높은 margin을 갖는 hyperplane을 선택하는 경우, 데이터를 분류하는데 적은 수의 경우가 존재 → lower VC dimension
 
-## 2.3. Cases
+## 3. Cases
 
 <img src='/img/Supprot Vector Machine(SVM) - Linear & Hard Margin 9044f1ec45664cbe8c63b8592e4b9aaa/Untitled 8.png' width='450'>
 
-## 2.4. Linear Case & Hard Margin
+## 4. Linear Case & Hard Margin
 
 ### ✓ Objective function
 
