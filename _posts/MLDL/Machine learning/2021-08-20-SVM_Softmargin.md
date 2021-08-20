@@ -24,7 +24,8 @@ tags: [Machine Learning, Kernel-based Learning, SVM, Support Vector Machine, Sof
 >
 > 아래 이미지 클릭 시 강의 영상 Youtube URL로 넘어갑니다.
 >
->[![02-2: Kernel-based Learning - SVM (Linear Case with Hard Margin)](https://img.youtube.com/vi/RKMiTJAnLy8/mqdefault.jpg)](https://www.youtube.com/watch?v=RKMiTJAnLy8&list=PLetSlH8YjIfWMdw9AuLR5ybkVvGcoG2EW&index=10)
+>[![02-3: Kernel based Learning - SVM (Soft Margin)
+](https://img.youtube.com/vi/RKMiTJAnLy8/mqdefault.jpg)](https://www.youtube.com/watch?v=RKMiTJAnLy8&list=PLetSlH8YjIfWMdw9AuLR5ybkVvGcoG2EW&index=10)
 
 # 1. Support Vector Machine(SVM) - Soft Margin
 
