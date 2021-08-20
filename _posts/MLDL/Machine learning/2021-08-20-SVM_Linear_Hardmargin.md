@@ -34,13 +34,13 @@ tags: [Machine Learning, Kernel-based Learning, SVM, Support Vector Machine, Lin
 
 ## 1. Linear Classification (Binary)
 
-### ✓ Training data : i.i.d(independent and identically distribution)로 부터 $X\in R^d$
+### ✓ Training data : i.i.d(independent and identically distribution)로 부터 $$X\in R^d$$
 
 <img src='/img/Supprot Vector Machine(SVM) - Linear & Hard Margin 9044f1ec45664cbe8c63b8592e4b9aaa/Untitled 1.png' width='500'>
 
 - 보통은 label을 1과 0으로 표현하지만 SVM에서는 formulation을 단순화하기 위해 +1, -1로 표현
 
-### ✓ Problem : $h:X \rightarrow {-1,+1}$를 잘 분류하면서 generalization error $R_D(h)$를 가장 최소화하는 Classifier H를 찾는 것
+### ✓ Problem : $$h:X \rightarrow {-1,+1}$$를 잘 분류하면서 generalization error $$R_D(h)$$를 가장 최소화하는 Classifier H를 찾는 것
 
 ### ✓ Purpose : d-dimension에서 두 범주를 잘 구분하는 (d-1)차원의 hyperplane을 찾자!
 
@@ -64,7 +64,7 @@ tags: [Machine Learning, Kernel-based Learning, SVM, Support Vector Machine, Lin
 
 <img src='/img/Supprot Vector Machine(SVM) - Linear & Hard Margin 9044f1ec45664cbe8c63b8592e4b9aaa/Untitled 5.png' width='600'>
 
-- $x_0$가 분류 경계면에 있고 $x_1$이 plus plane 위에 있다고 하였을 때 $w^Tx_0+b=0$이고 $x_1=x_0+pw$라고 할 수 있다.
+- $$x_0$$가 분류 경계면에 있고 $$x_1$$이 plus plane 위에 있다고 하였을 때 $$w^Tx_0+b=0$$이고 $$x_1=x_0+pw$$라고 할 수 있다.
 
 $$\begin{matrix}
 w^T(x_o+pw)+b=1 \;\;\;\;\rightarrow\;\;\;\; w^Tx_0+pw^Tw+b=1\\
@@ -131,8 +131,8 @@ s.t.\;\;y_i(\textbf{w}^T\textbf{x}_i+b)\geq 1, \;\forall_i\end{matrix}$$
 
   $$\alpha_i(y_i(\text{w}^T\text{x}_i+b)-1)=0$$
 
-  - 여기서 $\alpha_i \neq 0$이면 $y_i(\text{w}^T\text{x}_i+b)-1=0$이 성립하고 그 경우 margin 위에 있는 data이다.
-  - $\alpha_i \neq 0$인 경우를 support vector라고 한다.
+  - 여기서 $$\alpha_i \neq 0$$이면 $$y_i(\text{w}^T\text{x}_i+b)-1=0$$이 성립하고 그 경우 margin 위에 있는 data이다.
+  - $$\alpha_i \neq 0$$인 경우를 support vector라고 한다.
 
 <img src='/img/Supprot Vector Machine(SVM) - Linear & Hard Margin 9044f1ec45664cbe8c63b8592e4b9aaa/Untitled 16.png' width='300'>
 
@@ -146,7 +146,7 @@ s.t.\;\;y_i(\textbf{w}^T\textbf{x}_i+b)\geq 1, \;\forall_i\end{matrix}$$
 
 $$b=y_i-\sum_{i=1}^N\alpha_iy_i(\text{x}_j,\text{x}_i)\;\;\;\;(\because\;\text{w}=\sum^N_{i=1}\alpha_iy_i\text{x}_i)$$
 
-- 양변에 $\alpha_iy_i$를 곱해준다
+- 양변에 $$\alpha_iy_i$$를 곱해준다
 
 $$\begin{matrix} \sum^N_{i=1}\alpha_iy_ib=\sum^N_{i=1}\alpha_iy_i^2-\sum^N_{i,j=1}\alpha_i\alpha_jy_iy_j(\text{x}_i,\text{x}_j) \\ b\sum^N_{i=1}\alpha_iy_i=\sum^N_{i=1}\alpha_i-\text{w}^T\text{w}\;\;(\because\;b\text{ is constant, }y_i^2=1,\;\sum^N_{i,j=1}\alpha_i\alpha_jy_iy_j(\text{x}_i,\text{x}_j)=\text{w}^T\text{w})\\0=\sum^N_{i=1}\alpha_i-\text{w}^T\text{w}\;\;(\because\;\sum^N_{i=1}\alpha_iy_i=0)\end{matrix}$$
 
